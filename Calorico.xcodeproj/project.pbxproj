@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037629DB6E5A008EF134 /* AppDelegate.swift */; };
+		DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */; };
+		DBAA037B29DB6E5A008EF134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* ViewController.swift */; };
+		DBAA037E29DB6E5A008EF134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAA037C29DB6E5A008EF134 /* Main.storyboard */; };
+		DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */; };
+		DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038229DB6E5B008EF134 /* Assets.xcassets */; };
+		DBAA038629DB6E5B008EF134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */; };
+		DBAA039129DB6E5B008EF134 /* CaloricoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */; };
+		DBAA039B29DB6E5B008EF134 /* CaloricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */; };
+		DBAA039D29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBAA038D29DB6E5B008EF134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAA036B29DB6E5A008EF134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBAA037229DB6E5A008EF134;
+			remoteInfo = Calorico;
+		};
+		DBAA039729DB6E5B008EF134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAA036B29DB6E5A008EF134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBAA037229DB6E5A008EF134;
+			remoteInfo = Calorico;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBAA037329DB6E5A008EF134 /* Calorico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAA037629DB6E5A008EF134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DBAA037A29DB6E5A008EF134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBAA037D29DB6E5A008EF134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBAA038029DB6E5A008EF134 /* Calorico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calorico.xcdatamodel; sourceTree = "<group>"; };
+		DBAA038229DB6E5B008EF134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBAA038529DB6E5B008EF134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBAA038729DB6E5B008EF134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBAA038C29DB6E5B008EF134 /* CaloricoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaloricoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoTests.swift; sourceTree = "<group>"; };
+		DBAA039629DB6E5B008EF134 /* CaloricoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaloricoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoUITests.swift; sourceTree = "<group>"; };
+		DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBAA037029DB6E5A008EF134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAA038929DB6E5B008EF134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAA039329DB6E5B008EF134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBAA036A29DB6E5A008EF134 = {
+			isa = PBXGroup;
+			children = (
+				DBAA037529DB6E5A008EF134 /* Calorico */,
+				DBAA038F29DB6E5B008EF134 /* CaloricoTests */,
+				DBAA039929DB6E5B008EF134 /* CaloricoUITests */,
+				DBAA037429DB6E5A008EF134 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBAA037429DB6E5A008EF134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA037329DB6E5A008EF134 /* Calorico.app */,
+				DBAA038C29DB6E5B008EF134 /* CaloricoTests.xctest */,
+				DBAA039629DB6E5B008EF134 /* CaloricoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBAA037529DB6E5A008EF134 /* Calorico */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA037629DB6E5A008EF134 /* AppDelegate.swift */,
+				DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */,
+				DBAA037A29DB6E5A008EF134 /* ViewController.swift */,
+				DBAA037C29DB6E5A008EF134 /* Main.storyboard */,
+				DBAA038229DB6E5B008EF134 /* Assets.xcassets */,
+				DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */,
+				DBAA038729DB6E5B008EF134 /* Info.plist */,
+				DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */,
+			);
+			path = Calorico;
+			sourceTree = "<group>";
+		};
+		DBAA038F29DB6E5B008EF134 /* CaloricoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */,
+			);
+			path = CaloricoTests;
+			sourceTree = "<group>";
+		};
+		DBAA039929DB6E5B008EF134 /* CaloricoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */,
+				DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */,
+			);
+			path = CaloricoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBAA037229DB6E5A008EF134 /* Calorico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBAA03A029DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "Calorico" */;
+			buildPhases = (
+				DBAA036F29DB6E5A008EF134 /* Sources */,
+				DBAA037029DB6E5A008EF134 /* Frameworks */,
+				DBAA037129DB6E5A008EF134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calorico;
+			productName = Calorico;
+			productReference = DBAA037329DB6E5A008EF134 /* Calorico.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBAA038B29DB6E5B008EF134 /* CaloricoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBAA03A329DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "CaloricoTests" */;
+			buildPhases = (
+				DBAA038829DB6E5B008EF134 /* Sources */,
+				DBAA038929DB6E5B008EF134 /* Frameworks */,
+				DBAA038A29DB6E5B008EF134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBAA038E29DB6E5B008EF134 /* PBXTargetDependency */,
+			);
+			name = CaloricoTests;
+			productName = CaloricoTests;
+			productReference = DBAA038C29DB6E5B008EF134 /* CaloricoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBAA039529DB6E5B008EF134 /* CaloricoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBAA03A629DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "CaloricoUITests" */;
+			buildPhases = (
+				DBAA039229DB6E5B008EF134 /* Sources */,
+				DBAA039329DB6E5B008EF134 /* Frameworks */,
+				DBAA039429DB6E5B008EF134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBAA039829DB6E5B008EF134 /* PBXTargetDependency */,
+			);
+			name = CaloricoUITests;
+			productName = CaloricoUITests;
+			productReference = DBAA039629DB6E5B008EF134 /* CaloricoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBAA036B29DB6E5A008EF134 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DBAA037229DB6E5A008EF134 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DBAA038B29DB6E5B008EF134 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DBAA037229DB6E5A008EF134;
+					};
+					DBAA039529DB6E5B008EF134 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DBAA037229DB6E5A008EF134;
+					};
+				};
+			};
+			buildConfigurationList = DBAA036E29DB6E5A008EF134 /* Build configuration list for PBXProject "Calorico" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBAA036A29DB6E5A008EF134;
+			productRefGroup = DBAA037429DB6E5A008EF134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBAA037229DB6E5A008EF134 /* Calorico */,
+				DBAA038B29DB6E5B008EF134 /* CaloricoTests */,
+				DBAA039529DB6E5B008EF134 /* CaloricoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBAA037129DB6E5A008EF134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAA038629DB6E5B008EF134 /* LaunchScreen.storyboard in Resources */,
+				DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */,
+				DBAA037E29DB6E5A008EF134 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAA038A29DB6E5B008EF134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAA039429DB6E5B008EF134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBAA036F29DB6E5A008EF134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAA037B29DB6E5A008EF134 /* ViewController.swift in Sources */,
+				DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */,
+				DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */,
+				DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAA038829DB6E5B008EF134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAA039129DB6E5B008EF134 /* CaloricoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBAA039229DB6E5B008EF134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAA039D29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift in Sources */,
+				DBAA039B29DB6E5B008EF134 /* CaloricoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBAA038E29DB6E5B008EF134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBAA037229DB6E5A008EF134 /* Calorico */;
+			targetProxy = DBAA038D29DB6E5B008EF134 /* PBXContainerItemProxy */;
+		};
+		DBAA039829DB6E5B008EF134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBAA037229DB6E5A008EF134 /* Calorico */;
+			targetProxy = DBAA039729DB6E5B008EF134 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBAA037C29DB6E5A008EF134 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBAA037D29DB6E5A008EF134 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBAA038529DB6E5B008EF134 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBAA039E29DB6E5B008EF134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBAA039F29DB6E5B008EF134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBAA03A129DB6E5B008EF134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN446JPPP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Calorico/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DaneJApps.Calorico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBAA03A229DB6E5B008EF134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN446JPPP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Calorico/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DaneJApps.Calorico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBAA03A429DB6E5B008EF134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN446JPPP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DaneJApps.CaloricoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Calorico";
+			};
+			name = Debug;
+		};
+		DBAA03A529DB6E5B008EF134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN446JPPP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DaneJApps.CaloricoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Calorico";
+			};
+			name = Release;
+		};
+		DBAA03A729DB6E5B008EF134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN446JPPP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DaneJApps.CaloricoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calorico;
+			};
+			name = Debug;
+		};
+		DBAA03A829DB6E5B008EF134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN446JPPP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DaneJApps.CaloricoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calorico;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBAA036E29DB6E5A008EF134 /* Build configuration list for PBXProject "Calorico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBAA039E29DB6E5B008EF134 /* Debug */,
+				DBAA039F29DB6E5B008EF134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBAA03A029DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "Calorico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBAA03A129DB6E5B008EF134 /* Debug */,
+				DBAA03A229DB6E5B008EF134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBAA03A329DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "CaloricoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBAA03A429DB6E5B008EF134 /* Debug */,
+				DBAA03A529DB6E5B008EF134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBAA03A629DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "CaloricoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBAA03A729DB6E5B008EF134 /* Debug */,
+				DBAA03A829DB6E5B008EF134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBAA038029DB6E5A008EF134 /* Calorico.xcdatamodel */,
+			);
+			currentVersion = DBAA038029DB6E5A008EF134 /* Calorico.xcdatamodel */;
+			path = Calorico.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DBAA036B29DB6E5A008EF134 /* Project object */;
+}
