@@ -3,20 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1626CDB414C5EF159A39F98C /* Pods_Calorico_CaloricoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D35D32D78EB760507FD575 /* Pods_Calorico_CaloricoUITests.framework */; };
+		C95D46405AB627D1668B0D72 /* Pods_CaloricoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF7F752E152E10B83732939 /* Pods_CaloricoTests.framework */; };
+		DB2AE91529DCA24400741673 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE91429DCA24400741673 /* FoodItem.swift */; };
+		DB2AE91729DCA37B00741673 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE91629DCA37B00741673 /* NetworkManager.swift */; };
+		DB2AE91929DCFF6400741673 /* MacroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE91829DCFF6400741673 /* MacroView.swift */; };
 		DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037629DB6E5A008EF134 /* AppDelegate.swift */; };
 		DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */; };
-		DBAA037B29DB6E5A008EF134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* ViewController.swift */; };
-		DBAA037E29DB6E5A008EF134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAA037C29DB6E5A008EF134 /* Main.storyboard */; };
+		DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */; };
 		DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */; };
 		DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038229DB6E5B008EF134 /* Assets.xcassets */; };
 		DBAA038629DB6E5B008EF134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */; };
 		DBAA039129DB6E5B008EF134 /* CaloricoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */; };
 		DBAA039B29DB6E5B008EF134 /* CaloricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */; };
 		DBAA039D29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */; };
+		DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03A929DB6EA4008EF134 /* Constants.swift */; };
+		DBAA03AC29DB6F2D008EF134 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03AB29DB6F2D008EF134 /* NetworkLayer.swift */; };
+		DBAA03B029DB8640008EF134 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03AF29DB8640008EF134 /* CircleButton.swift */; };
+		DBAA03B329DC0665008EF134 /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03B229DC0665008EF134 /* MainLabel.swift */; };
+		DBCD2DCE29E207F700513FEC /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2DCD29E207F700513FEC /* CalorieView.swift */; };
+		DBCD2DD029E5150A00513FEC /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2DCF29E5150A00513FEC /* AddFood.swift */; };
+		DBCD2E1C29E646D100513FEC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2E1B29E646D100513FEC /* UserModel.swift */; };
+		DBCD2E1F29E670B500513FEC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2E1E29E670B500513FEC /* CoreDataStack.swift */; };
+		DBDF01C429DC0B0C00DD4C21 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01C329DC0B0C00DD4C21 /* Poppins-Bold.ttf */; };
+		DBDF01D829DC0B2700DD4C21 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01C629DC0B2600DD4C21 /* Poppins-Regular.ttf */; };
+		DBDF01D929DC0B2700DD4C21 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01C729DC0B2600DD4C21 /* Poppins-ExtraBold.ttf */; };
+		DBDF01DB29DC0B2700DD4C21 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01C929DC0B2600DD4C21 /* Poppins-SemiBoldItalic.ttf */; };
+		DBDF01DC29DC0B2700DD4C21 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01CA29DC0B2600DD4C21 /* Poppins-MediumItalic.ttf */; };
+		DBDF01DD29DC0B2700DD4C21 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01CB29DC0B2600DD4C21 /* Poppins-Black.ttf */; };
+		DBDF01DE29DC0B2700DD4C21 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01CC29DC0B2600DD4C21 /* Poppins-LightItalic.ttf */; };
+		DBDF01DF29DC0B2700DD4C21 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01CD29DC0B2600DD4C21 /* Poppins-SemiBold.ttf */; };
+		DBDF01E029DC0B2700DD4C21 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01CE29DC0B2600DD4C21 /* Poppins-ThinItalic.ttf */; };
+		DBDF01E129DC0B2700DD4C21 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01CF29DC0B2600DD4C21 /* Poppins-Italic.ttf */; };
+		DBDF01E229DC0B2700DD4C21 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D029DC0B2600DD4C21 /* Poppins-Medium.ttf */; };
+		DBDF01E329DC0B2700DD4C21 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D129DC0B2600DD4C21 /* Poppins-BoldItalic.ttf */; };
+		DBDF01E429DC0B2700DD4C21 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D229DC0B2600DD4C21 /* Poppins-BlackItalic.ttf */; };
+		DBDF01E529DC0B2700DD4C21 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D329DC0B2600DD4C21 /* Poppins-ExtraLight.ttf */; };
+		DBDF01E629DC0B2700DD4C21 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D429DC0B2700DD4C21 /* Poppins-ExtraLightItalic.ttf */; };
+		DBDF01E729DC0B2700DD4C21 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D529DC0B2700DD4C21 /* Poppins-Thin.ttf */; };
+		DBDF01E829DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D629DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf */; };
+		DBDF01E929DC0B2700DD4C21 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D729DC0B2700DD4C21 /* Poppins-Light.ttf */; };
+		DE9035BC58CA81E330D38D0A /* Pods_Calorico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F34A79438FCDB986F7A99F /* Pods_Calorico.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +68,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0144CE81DC4ADDFEE0E13C7F /* Pods-CaloricoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaloricoTests.debug.xcconfig"; path = "Target Support Files/Pods-CaloricoTests/Pods-CaloricoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		055EBB78C6BEF41C0C5F42CF /* Pods-Calorico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorico.release.xcconfig"; path = "Target Support Files/Pods-Calorico/Pods-Calorico.release.xcconfig"; sourceTree = "<group>"; };
+		20D1F7625F96B02647577D3D /* Pods-CaloricoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaloricoTests.release.xcconfig"; path = "Target Support Files/Pods-CaloricoTests/Pods-CaloricoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B322F23347456F53872D3F3 /* Pods-Calorico-CaloricoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorico-CaloricoUITests.release.xcconfig"; path = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D6DE88E34DE5978452DE440 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorico-CaloricoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91D35D32D78EB760507FD575 /* Pods_Calorico_CaloricoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calorico_CaloricoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		971D973DD0C478E04159B5C5 /* Pods-Calorico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calorico.debug.xcconfig"; path = "Target Support Files/Pods-Calorico/Pods-Calorico.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF7F752E152E10B83732939 /* Pods_CaloricoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaloricoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2AE91429DCA24400741673 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		DB2AE91629DCA37B00741673 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DB2AE91829DCFF6400741673 /* MacroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroView.swift; sourceTree = "<group>"; };
 		DBAA037329DB6E5A008EF134 /* Calorico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAA037629DB6E5A008EF134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBAA037A29DB6E5A008EF134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBAA037D29DB6E5A008EF134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		DBAA038029DB6E5A008EF134 /* Calorico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calorico.xcdatamodel; sourceTree = "<group>"; };
 		DBAA038229DB6E5B008EF134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAA038529DB6E5B008EF134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +92,33 @@
 		DBAA039629DB6E5B008EF134 /* CaloricoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaloricoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoUITests.swift; sourceTree = "<group>"; };
 		DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBAA03A929DB6EA4008EF134 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBAA03AB29DB6F2D008EF134 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		DBAA03AF29DB8640008EF134 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		DBAA03B229DC0665008EF134 /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
+		DBCD2DCD29E207F700513FEC /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
+		DBCD2DCF29E5150A00513FEC /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
+		DBCD2E1B29E646D100513FEC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DBCD2E1E29E670B500513FEC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DBDF01C329DC0B0C00DD4C21 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		DBDF01C629DC0B2600DD4C21 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		DBDF01C729DC0B2600DD4C21 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DBDF01C929DC0B2600DD4C21 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01CA29DC0B2600DD4C21 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01CB29DC0B2600DD4C21 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		DBDF01CC29DC0B2600DD4C21 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01CD29DC0B2600DD4C21 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		DBDF01CE29DC0B2600DD4C21 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01CF29DC0B2600DD4C21 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		DBDF01D029DC0B2600DD4C21 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		DBDF01D129DC0B2600DD4C21 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01D229DC0B2600DD4C21 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01D329DC0B2600DD4C21 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DBDF01D429DC0B2700DD4C21 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01D529DC0B2700DD4C21 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		DBDF01D629DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		DBDF01D729DC0B2700DD4C21 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		E6F34A79438FCDB986F7A99F /* Pods_Calorico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calorico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9035BC58CA81E330D38D0A /* Pods_Calorico.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95D46405AB627D1668B0D72 /* Pods_CaloricoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +142,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1626CDB414C5EF159A39F98C /* Pods_Calorico_CaloricoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D91A9C8993DFCB73549931B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				971D973DD0C478E04159B5C5 /* Pods-Calorico.debug.xcconfig */,
+				055EBB78C6BEF41C0C5F42CF /* Pods-Calorico.release.xcconfig */,
+				6D6DE88E34DE5978452DE440 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */,
+				2B322F23347456F53872D3F3 /* Pods-Calorico-CaloricoUITests.release.xcconfig */,
+				0144CE81DC4ADDFEE0E13C7F /* Pods-CaloricoTests.debug.xcconfig */,
+				20D1F7625F96B02647577D3D /* Pods-CaloricoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DBAA036A29DB6E5A008EF134 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +169,8 @@
 				DBAA038F29DB6E5B008EF134 /* CaloricoTests */,
 				DBAA039929DB6E5B008EF134 /* CaloricoUITests */,
 				DBAA037429DB6E5A008EF134 /* Products */,
+				D91A9C8993DFCB73549931B6 /* Pods */,
+				F846EA2006AA3CAD0D5B21C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,13 +188,15 @@
 			isa = PBXGroup;
 			children = (
 				DBAA037629DB6E5A008EF134 /* AppDelegate.swift */,
+				DBCD2E1D29E670A000513FEC /* CoreData */,
 				DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */,
-				DBAA037A29DB6E5A008EF134 /* ViewController.swift */,
-				DBAA037C29DB6E5A008EF134 /* Main.storyboard */,
+				DBCD2DD129E5151200513FEC /* Model */,
+				DBCD2DD229E5151900513FEC /* View */,
+				DBCD2DD329E5151F00513FEC /* Controller */,
 				DBAA038229DB6E5B008EF134 /* Assets.xcassets */,
 				DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */,
 				DBAA038729DB6E5B008EF134 /* Info.plist */,
-				DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */,
+				DBDF01C529DC0B1600DD4C21 /* Fonts */,
 			);
 			path = Calorico;
 			sourceTree = "<group>";
@@ -130,6 +218,90 @@
 			path = CaloricoUITests;
 			sourceTree = "<group>";
 		};
+		DBAA03B129DB8644008EF134 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA03AF29DB8640008EF134 /* CircleButton.swift */,
+				DBAA03B229DC0665008EF134 /* MainLabel.swift */,
+				DB2AE91829DCFF6400741673 /* MacroView.swift */,
+				DBCD2DCD29E207F700513FEC /* CalorieView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DBCD2DD129E5151200513FEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA03A929DB6EA4008EF134 /* Constants.swift */,
+				DBAA03AB29DB6F2D008EF134 /* NetworkLayer.swift */,
+				DB2AE91629DCA37B00741673 /* NetworkManager.swift */,
+				DB2AE91429DCA24400741673 /* FoodItem.swift */,
+				DBCD2E1B29E646D100513FEC /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBCD2DD229E5151900513FEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA03B129DB8644008EF134 /* UIComponents */,
+				DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */,
+				DBCD2DCF29E5150A00513FEC /* AddFood.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBCD2DD329E5151F00513FEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBCD2E1D29E670A000513FEC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */,
+				DBCD2E1E29E670B500513FEC /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DBDF01C529DC0B1600DD4C21 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DBDF01CB29DC0B2600DD4C21 /* Poppins-Black.ttf */,
+				DBDF01D229DC0B2600DD4C21 /* Poppins-BlackItalic.ttf */,
+				DBDF01D129DC0B2600DD4C21 /* Poppins-BoldItalic.ttf */,
+				DBDF01C729DC0B2600DD4C21 /* Poppins-ExtraBold.ttf */,
+				DBDF01D629DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf */,
+				DBDF01D329DC0B2600DD4C21 /* Poppins-ExtraLight.ttf */,
+				DBDF01D429DC0B2700DD4C21 /* Poppins-ExtraLightItalic.ttf */,
+				DBDF01CF29DC0B2600DD4C21 /* Poppins-Italic.ttf */,
+				DBDF01D729DC0B2700DD4C21 /* Poppins-Light.ttf */,
+				DBDF01CC29DC0B2600DD4C21 /* Poppins-LightItalic.ttf */,
+				DBDF01D029DC0B2600DD4C21 /* Poppins-Medium.ttf */,
+				DBDF01CA29DC0B2600DD4C21 /* Poppins-MediumItalic.ttf */,
+				DBDF01C629DC0B2600DD4C21 /* Poppins-Regular.ttf */,
+				DBDF01CD29DC0B2600DD4C21 /* Poppins-SemiBold.ttf */,
+				DBDF01C929DC0B2600DD4C21 /* Poppins-SemiBoldItalic.ttf */,
+				DBDF01D529DC0B2700DD4C21 /* Poppins-Thin.ttf */,
+				DBDF01CE29DC0B2600DD4C21 /* Poppins-ThinItalic.ttf */,
+				DBDF01C329DC0B0C00DD4C21 /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F846EA2006AA3CAD0D5B21C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F34A79438FCDB986F7A99F /* Pods_Calorico.framework */,
+				91D35D32D78EB760507FD575 /* Pods_Calorico_CaloricoUITests.framework */,
+				BBF7F752E152E10B83732939 /* Pods_CaloricoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBAA03A029DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "Calorico" */;
 			buildPhases = (
+				2731DA820663EFD443F50C90 /* [CP] Check Pods Manifest.lock */,
 				DBAA036F29DB6E5A008EF134 /* Sources */,
 				DBAA037029DB6E5A008EF134 /* Frameworks */,
 				DBAA037129DB6E5A008EF134 /* Resources */,
+				904E90E4BCB70E981EFCA78C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBAA03A329DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "CaloricoTests" */;
 			buildPhases = (
+				A4B9258AFB9DF27E01D0A06C /* [CP] Check Pods Manifest.lock */,
 				DBAA038829DB6E5B008EF134 /* Sources */,
 				DBAA038929DB6E5B008EF134 /* Frameworks */,
 				DBAA038A29DB6E5B008EF134 /* Resources */,
@@ -172,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBAA03A629DB6E5B008EF134 /* Build configuration list for PBXNativeTarget "CaloricoUITests" */;
 			buildPhases = (
+				15D84F7D33AF19FA5C2BF58C /* [CP] Check Pods Manifest.lock */,
 				DBAA039229DB6E5B008EF134 /* Sources */,
 				DBAA039329DB6E5B008EF134 /* Frameworks */,
 				DBAA039429DB6E5B008EF134 /* Resources */,
+				3A399C10E78B4BC15E3A86EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +387,7 @@
 				};
 			};
 			buildConfigurationList = DBAA036E29DB6E5A008EF134 /* Build configuration list for PBXProject "Calorico" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -234,9 +411,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDF01DB29DC0B2700DD4C21 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				DBDF01E629DC0B2700DD4C21 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				DBDF01E829DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				DBDF01E129DC0B2700DD4C21 /* Poppins-Italic.ttf in Resources */,
+				DBDF01E429DC0B2700DD4C21 /* Poppins-BlackItalic.ttf in Resources */,
 				DBAA038629DB6E5B008EF134 /* LaunchScreen.storyboard in Resources */,
+				DBDF01DD29DC0B2700DD4C21 /* Poppins-Black.ttf in Resources */,
+				DBDF01E929DC0B2700DD4C21 /* Poppins-Light.ttf in Resources */,
 				DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */,
-				DBAA037E29DB6E5A008EF134 /* Main.storyboard in Resources */,
+				DBDF01E729DC0B2700DD4C21 /* Poppins-Thin.ttf in Resources */,
+				DBDF01C429DC0B0C00DD4C21 /* Poppins-Bold.ttf in Resources */,
+				DBDF01D929DC0B2700DD4C21 /* Poppins-ExtraBold.ttf in Resources */,
+				DBDF01E229DC0B2700DD4C21 /* Poppins-Medium.ttf in Resources */,
+				DBDF01DC29DC0B2700DD4C21 /* Poppins-MediumItalic.ttf in Resources */,
+				DBDF01E529DC0B2700DD4C21 /* Poppins-ExtraLight.ttf in Resources */,
+				DBDF01DF29DC0B2700DD4C21 /* Poppins-SemiBold.ttf in Resources */,
+				DBDF01E029DC0B2700DD4C21 /* Poppins-ThinItalic.ttf in Resources */,
+				DBDF01D829DC0B2700DD4C21 /* Poppins-Regular.ttf in Resources */,
+				DBDF01DE29DC0B2700DD4C21 /* Poppins-LightItalic.ttf in Resources */,
+				DBDF01E329DC0B2700DD4C21 /* Poppins-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +450,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15D84F7D33AF19FA5C2BF58C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calorico-CaloricoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2731DA820663EFD443F50C90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calorico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A399C10E78B4BC15E3A86EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		904E90E4BCB70E981EFCA78C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calorico/Pods-Calorico-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calorico/Pods-Calorico-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calorico/Pods-Calorico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B9258AFB9DF27E01D0A06C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaloricoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBAA036F29DB6E5A008EF134 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBAA037B29DB6E5A008EF134 /* ViewController.swift in Sources */,
+				DBCD2E1F29E670B500513FEC /* CoreDataStack.swift in Sources */,
+				DBAA03B029DB8640008EF134 /* CircleButton.swift in Sources */,
+				DBAA03AC29DB6F2D008EF134 /* NetworkLayer.swift in Sources */,
+				DBCD2DD029E5150A00513FEC /* AddFood.swift in Sources */,
+				DBCD2DCE29E207F700513FEC /* CalorieView.swift in Sources */,
+				DB2AE91729DCA37B00741673 /* NetworkManager.swift in Sources */,
+				DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */,
+				DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */,
+				DB2AE91529DCA24400741673 /* FoodItem.swift in Sources */,
+				DBCD2E1C29E646D100513FEC /* UserModel.swift in Sources */,
+				DB2AE91929DCFF6400741673 /* MacroView.swift in Sources */,
 				DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */,
 				DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */,
 				DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */,
+				DBAA03B329DC0665008EF134 /* MainLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DBAA037C29DB6E5A008EF134 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBAA037D29DB6E5A008EF134 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +736,7 @@
 		};
 		DBAA03A129DB6E5B008EF134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971D973DD0C478E04159B5C5 /* Pods-Calorico.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +747,6 @@
 				INFOPLIST_FILE = Calorico/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +764,7 @@
 		};
 		DBAA03A229DB6E5B008EF134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 055EBB78C6BEF41C0C5F42CF /* Pods-Calorico.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +775,6 @@
 				INFOPLIST_FILE = Calorico/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,6 +792,7 @@
 		};
 		DBAA03A429DB6E5B008EF134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0144CE81DC4ADDFEE0E13C7F /* Pods-CaloricoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +813,7 @@
 		};
 		DBAA03A529DB6E5B008EF134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D1F7625F96B02647577D3D /* Pods-CaloricoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +834,7 @@
 		};
 		DBAA03A729DB6E5B008EF134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6DE88E34DE5978452DE440 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +853,7 @@
 		};
 		DBAA03A829DB6E5B008EF134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B322F23347456F53872D3F3 /* Pods-Calorico-CaloricoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
