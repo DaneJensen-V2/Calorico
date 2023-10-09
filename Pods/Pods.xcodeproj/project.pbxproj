@@ -1,0 +1,1576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0005307377066EC46EA91823415301C6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A3784E4A7FD372E716C34045447F /* UIView+Extensions.swift */; };
+		041B655D7F5932F03A65C154BC02BDAA /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD6C52A6CB194D59F44883F905E1AA /* IQInvocation.swift */; };
+		04B0884964D9592302CA654E0B67E80E /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210C69A9E7250BFF75892ED310B49B2 /* IQUIView+Hierarchy.swift */; };
+		08B185E08278AE7EC55F8BBB19693AC5 /* IQKeyboardManager+OrientationNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A179A7034AB2B5DE21624D9E9B98AAC /* IQKeyboardManager+OrientationNotification.swift */; };
+		0F94B2449CA1ADA76AE79C0BF6A08549 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADACD26863E48E5FB546E98B7C54360 /* IQKeyboardManagerConstantsInternal.swift */; };
+		12576FA40395138A8369CE1927AC95CE /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A535487922730E53A7BF9EC433107 /* TorchMode.swift */; };
+		1740CBB33D469AEDD5D7291A9268FA97 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17BAB770E4E34E29998926E74F8BB3 /* IQToolbar.swift */; };
+		1A9B9579E46EFBA63C5F57A6B17B5ECA /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84DE757F60E05B7CE295318F421A71 /* IQKeyboardManagerSwift-dummy.m */; };
+		1D4EA5348A563650778B6547BC381579 /* Pods-Calorico-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */; };
+		1D8031C86A94D32E00ED55B80428A0F3 /* IQKeyboardManager+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8A7667A4D9DC9AA6A436BD0E51708 /* IQKeyboardManager+Toolbar.swift */; };
+		20616A47873318F80BFFEABAC9730122 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B1BFA4C2CD29751C5360E62AEBFB4 /* IQTitleBarButtonItem.swift */; };
+		24EC44FF102C2635A476CEF7567F89DA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD9A87E3262F4A2F6EFCAC15C2F9634 /* IQPreviousNextView.swift */; };
+		262CBFB84815CDE8C006B8E72B5ED13F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ACC74C6F96E215A9236F4ECB00C091 /* UIViewController+Extensions.swift */; };
+		2945C207F6B20B24A61A0DFF4FF8DBF3 /* Pods-Calorico-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5E4C199A23C9680E308C9A60BFC451 /* Pods-Calorico-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29872BD5684D9B93082A02B26684AB39 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A09A49D79F81007A67394173A1490E4 /* AVFoundation.framework */; };
+		2CA0B3B43A972DF3AD79F58092E3403E /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB1FF5066A279B129AEECB6794E019 /* IQKeyboardManager+Internal.swift */; };
+		2E5138271A6C79BDA3C0835F2596219B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */; };
+		2EC96162DD6740ECE67FF38B8400A7C5 /* IQKeyboardManager+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A94B12A0CA7920809D10F0AFF06F3 /* IQKeyboardManager+Debug.swift */; };
+		34C39BDBFE7A2CC585787F5AFCA39FDE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE2ACE1F9C9B554C01F6E3636899AD /* IQUIView+IQKeyboardToolbar.swift */; };
+		3755448ECF8EE78693A364B8990D9F53 /* BarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F013674A4116581EE42B4CC17B09211A /* BarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CC18473BBA8E4EFA39E28C3009B5F67 /* Pods-CaloricoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF596A7E45CAFB6B4E896E4553C25DEF /* Pods-CaloricoTests-dummy.m */; };
+		3F01EED6380B596E1D0C1497CBCF9B95 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E788B4FA1088877F917C7EB77EF6AC1 /* IQUITextFieldView+Additions.swift */; };
+		41CD40F5713CD71AD5AB1471E81C97E1 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC813B9805E268B4AD5D206263A46B /* IQBarButtonItem.swift */; };
+		4AEC9BCF7384FD789A5D0BAB2F77991F /* BarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A6B5DAD175C3870A0448EE27460BAB /* BarcodeScanner-dummy.m */; };
+		52DE893724562B1353663D381D2FF158 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3E1812E2C0F578C4E636CC0811AE /* Localizable.strings */; };
+		60C6606FF8176EE5A38870CFD9F649C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		62396599427887660856823951B5C361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		6C33077F6BBEEFA137313CA1525A18DE /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD3DB17363D41FDF169E3FA7EB2D62 /* BarcodeScannerViewController.swift */; };
+		6CCC68077295A821AC9C1E7CC2BC35BC /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3CE85EB926BC18C07620CA4C431B5 /* NSLayoutConstraint+Extensions.swift */; };
+		700C48768FCAEF0F35A4C9B252B20A0C /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419F4403C1666B31CFD0346FF1B2C64 /* AVMetadataObject+Extensions.swift */; };
+		7249598DF1E11ECA3718E37BDE1BE917 /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2255B4103624FF75ACFC05011740458 /* flashOn@3x.png */; };
+		7AC995F567A776FC1A80A9FA0733F3D1 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7E8AFA2261205112ABDA4EC037D251 /* IQNSArray+Sort.swift */; };
+		7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */; };
+		85F13B069B06ADF2B6DCA622E4645110 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B13F99FA8F7572BA72A7190BC43CF /* IQKeyboardManagerConstants.swift */; };
+		86A03DE9366D1BE94EB99AA387EACD1F /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D71474891B9F8B4254018988EEFB8 /* IQKeyboardManager.swift */; };
+		8D100AF17E7FB178FF428DE211ED597E /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C34AD2032D8032D361B6104F21CA /* HeaderViewController.swift */; };
+		96D3C21E658373A9AB0B67435005F1A3 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543507DB544175425ABB95F85EA54161 /* info@3x.png */; };
+		9E6A283BED0305AE222A5774C0240657 /* flashOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C80B154535307ECD1F18655A802334E /* flashOff@3x.png */; };
+		9F8D1E5122DD6F004EFEFC4B62A8AD5A /* Pods-Calorico-CaloricoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB39BDFECC611AB491F6F5F701ED3D44 /* Pods-Calorico-CaloricoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0CE10B2AB5F96D28540B30454BF6E62 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B21A82EBC5326717A9F79D7AB3E35A /* CameraViewController.swift */; };
+		A2BD61FF3E647B9B2563784D378A9DE6 /* cameraRotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD8B8DE6C05CB578876175FBFECB302 /* cameraRotate@3x.png */; };
+		A4BAEE317BFF650DCC888FC67BFBF7EF /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1BA07ECB222F8D18790A1530FE18EA /* IQKeyboardManager+UIKeyboardNotification.swift */; };
+		A7A08DF1BA49F6624E50BEE40CE523DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		AD1351D411B092E4F3FB8898AB71823E /* Pods-CaloricoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEE7CE3120E5E8A22264E1591DC33CA /* Pods-CaloricoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADE02B44B0F6B14EDF45330E5C28ADF6 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */; };
+		B1B6A2491AC437909DABE20C71BECDBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F82C590D36C4FCD968B7B3D5F32D788 /* CoreGraphics.framework */; };
+		B447CB1C46B8F0DD2AAAB486883CE1CB /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5C23450F26B51068DB207B7DE9007 /* FocusViewType.swift */; };
+		B6B43B1B78EC0E52CC08F82841A22A31 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CEA5025E7C12CC3AA9285B66F1A3715 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6EC6D40823E66D5B389ACEAC9FD7AAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF697C0D4B15AE813001B288584A40FA /* QuartzCore.framework */; };
+		BCAC0A787298A2CEE154B652C15ABC45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		C3AA8B4CFA5BE1FF5F4B5BB1DD8053A0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F927D75A0B010EB32B469B4277AFAE0 /* MessageViewController.swift */; };
+		C81CB3B5D25BDBCB6D3A3632BE408229 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2041DE8A5FAEBBB0C0D248CE877EF9 /* IQKeyboardReturnKeyHandler.swift */; };
+		C93AF790D67555D90C3738BAC1FA56C7 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE119CAE3C5F9E952BF4B13B87249EDA /* VideoPermissionService.swift */; };
+		D31356D54A39420DB91C892502CFFD57 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92D667876EDA21C6DB873247B2E2C2 /* IQUIViewController+Additions.swift */; };
+		D6516B5451008BF1ABA150E6482F6325 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7967CAF8A68BF51467C6AB42F650BF /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		DE48FF6F1159E55422298DCAA72897BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */; };
+		DF33C3DE068D6116B3F551B0453ACD23 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377A14B2E72F18E266F53A0BED73058 /* IQUIScrollView+Additions.swift */; };
+		E72E1BDDFF31003BD089544FC112FAAC /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1C842AF7BF575CF917917B07EF108 /* IQTextView.swift */; };
+		EE5A01E096A12A0DD4822EE9CD5ABD6F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740BDB8215B49D4AB0EB7FDC6939D76 /* Functions.swift */; };
+		F1F108FA6504E0405201AD7FB5F6B74F /* Pods-Calorico-CaloricoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1531C2B2F745B5242F9F2D58ECA4E2 /* Pods-Calorico-CaloricoUITests-dummy.m */; };
+		F2B1C1D70C629AE19C0D5121B1BBA891 /* IQKeyboardManager+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F04DE3081DF4EB4F9262E4D3BD43CE /* IQKeyboardManager+Position.swift */; };
+		FB79E22B68033224D3D1621A408C68B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		FF20513A9C5371CB65C56402A850B36F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CA690EB86A98FF3A42120A069853 /* State.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		381E6BC1E2A8A1EBC9D148F72F7248C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E136446D8E897681981873306A783A;
+			remoteInfo = "BarcodeScanner-BarcodeScanner";
+		};
+		55473A8DFEDBEE143CBB8B38571983A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2598A00DF974C904143778EDC46CC0E5;
+			remoteInfo = "BarcodeScanner-Localization";
+		};
+		55B9C4E269D0C6ED6F58C6E455FFFC4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		65A3025B8E55127D5B77E573C2B9CF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D656AC88E303625E9AA42D19C21D75;
+			remoteInfo = BarcodeScanner;
+		};
+		C6EE7131E7540759054AD63D3C788860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		D9D4C1727E9222C60F206925E6DE25C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1828800876D793C300C2DE9E490B6FA4;
+			remoteInfo = "Pods-Calorico";
+		};
+		DAEB65FD7B4DCD57BEEB3B84AC7AC1E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D656AC88E303625E9AA42D19C21D75;
+			remoteInfo = BarcodeScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051A535487922730E53A7BF9EC433107 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
+		05E92FD32D549C7ACE41601C31319C01 /* Pods-CaloricoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaloricoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07C12B7A1EDB4615D859BAF9FD39C3B3 /* Pods-CaloricoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaloricoTests-Info.plist"; sourceTree = "<group>"; };
+		0A09A49D79F81007A67394173A1490E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		0A179A7034AB2B5DE21624D9E9B98AAC /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+OrientationNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
+		0B673C277439810D9DC335FAE1D16924 /* Pods-CaloricoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaloricoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D8F2BB36FEA6B599F034DA781205380 /* Pods-Calorico-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calorico-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F2041DE8A5FAEBBB0C0D248CE877EF9 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		1210C69A9E7250BFF75892ED310B49B2 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.release.xcconfig; sourceTree = "<group>"; };
+		1CEA5025E7C12CC3AA9285B66F1A3715 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		1D2D6A15BC2711435910DA75D779EA0D /* BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
+		1F82C590D36C4FCD968B7B3D5F32D788 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		213C51809F4B65A22B34EB8CA39CBD5E /* Pods-Calorico-CaloricoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-CaloricoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D5E4C199A23C9680E308C9A60BFC451 /* Pods-Calorico-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calorico-umbrella.h"; sourceTree = "<group>"; };
+		2EAC813B9805E268B4AD5D206263A46B /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		2F927D75A0B010EB32B469B4277AFAE0 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
+		3B0A6123BAA941DADECFAC19454EA27A /* Pods-CaloricoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaloricoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B92D667876EDA21C6DB873247B2E2C2 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		3E788B4FA1088877F917C7EB77EF6AC1 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		49A9C34AD2032D8032D361B6104F21CA /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
+		4ADACD26863E48E5FB546E98B7C54360 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		4CA76E66027BBB6846C6EC9E5806C56F /* Pods-Calorico-CaloricoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-CaloricoUITests-Info.plist"; sourceTree = "<group>"; };
+		4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D13D943F5730361B6362FA2FED22E83 /* Pods-Calorico.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calorico.modulemap"; sourceTree = "<group>"; };
+		4DA1C842AF7BF575CF917917B07EF108 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		50A6B5DAD175C3870A0448EE27460BAB /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
+		534B13F99FA8F7572BA72A7190BC43CF /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		5377A14B2E72F18E266F53A0BED73058 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		543507DB544175425ABB95F85EA54161 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
+		58F45EB5D1DAF89D12F7B79D8ECA5BD8 /* Pods-CaloricoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CaloricoTests.modulemap"; sourceTree = "<group>"; };
+		5CC20A8305DB46EF0DDE3994982AFC44 /* Pods-Calorico-CaloricoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico-CaloricoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E7967CAF8A68BF51467C6AB42F650BF /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+UITextFieldViewNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
+		62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.debug.xcconfig; sourceTree = "<group>"; };
+		6365A3784E4A7FD372E716C34045447F /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6AC38E799F7B3BBFECCDA875B708679B /* Pods-Calorico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico.release.xcconfig"; sourceTree = "<group>"; };
+		6B4142DEAAAF163D748DBD28F884D7EC /* Pods-Calorico-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calorico-frameworks.sh"; sourceTree = "<group>"; };
+		74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Localization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		772C57C40F15206BFA0B9C0860257836 /* Pods-Calorico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico.debug.xcconfig"; sourceTree = "<group>"; };
+		81CE2ACE1F9C9B554C01F6E3636899AD /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		828EBBAD9FEFC8D91F06C00F8FBE465A /* Pods-Calorico */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Calorico"; path = Pods_Calorico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835D772AB4452D4463A91930640A051C /* BarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarcodeScanner.modulemap; sourceTree = "<group>"; };
+		85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8796C9FD90CA1DF425A75732F2C46C80 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
+		89FD6C52A6CB194D59F44883F905E1AA /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		8AE47D84A748D199C928FD0BCF4C573E /* Pods-Calorico-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C80B154535307ECD1F18655A802334E /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
+		8E17BAB770E4E34E29998926E74F8BB3 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		8E7B1BFA4C2CD29751C5360E62AEBFB4 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		8E7D71474891B9F8B4254018988EEFB8 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		8F8A94B12A0CA7920809D10F0AFF06F3 /* IQKeyboardManager+Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Debug.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Debug.swift"; sourceTree = "<group>"; };
+		9089FC0D595B3F9474EA53444EA8E685 /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		92ACC74C6F96E215A9236F4ECB00C091 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Sources/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		9419F4403C1666B31CFD0346FF1B2C64 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
+		9AD9A87E3262F4A2F6EFCAC15C2F9634 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		9D8E7C22D5D5C516459C78E59BBE7E0B /* Pods-Calorico-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E323D48CA6B132DF04290E97B778BC8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9EA1A201756FFF1B71F8E46F031B2D1F /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
+		9FDE7BA126E60C64A93E500B3938811B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A1E44B0FC1D74454F3AAD3474CB558A8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScanner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C5C23450F26B51068DB207B7DE9007 /* FocusViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusViewType.swift; path = Sources/DataStructures/FocusViewType.swift; sourceTree = "<group>"; };
+		A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calorico-dummy.m"; sourceTree = "<group>"; };
+		A8E1FB351525B9E17FE512E0C87A323C /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E1E7BD33E7E248D43AEFD5DCACBC90 /* Pods-CaloricoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaloricoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE8EED1F803893EFEA935F9B7A72C7E3 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		B2255B4103624FF75ACFC05011740458 /* flashOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOn@3x.png"; path = "Images/flashOn@3x.png"; sourceTree = "<group>"; };
+		B3D7CA690EB86A98FF3A42120A069853 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
+		B541E886287283F66F355D73916006B4 /* Pods-Calorico-CaloricoUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Calorico-CaloricoUITests"; path = Pods_Calorico_CaloricoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB39BDFECC611AB491F6F5F701ED3D44 /* Pods-Calorico-CaloricoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calorico-CaloricoUITests-umbrella.h"; sourceTree = "<group>"; };
+		BB84DE757F60E05B7CE295318F421A71 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		BC1BA07ECB222F8D18790A1530FE18EA /* IQKeyboardManager+UIKeyboardNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+UIKeyboardNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+UIKeyboardNotification.swift"; sourceTree = "<group>"; };
+		BDDB1FF5066A279B129AEECB6794E019 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Internal.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
+		BE119CAE3C5F9E952BF4B13B87249EDA /* VideoPermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPermissionService.swift; path = Sources/Helpers/VideoPermissionService.swift; sourceTree = "<group>"; };
+		BE7E8AFA2261205112ABDA4EC037D251 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		BF697C0D4B15AE813001B288584A40FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C1E8A7667A4D9DC9AA6A436BD0E51708 /* IQKeyboardManager+Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Toolbar.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Toolbar.swift"; sourceTree = "<group>"; };
+		C3F04DE3081DF4EB4F9262E4D3BD43CE /* IQKeyboardManager+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Position.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Position.swift"; sourceTree = "<group>"; };
+		C740BDB8215B49D4AB0EB7FDC6939D76 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
+		C825C6B6232DD544C1FFDBA21CE5951E /* Pods-Calorico-CaloricoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calorico-CaloricoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CAD3CE85EB926BC18C07620CA4C431B5 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "Sources/Extensions/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		CD9B577FDCAD418AAB83A48EA1C17DA2 /* Pods-Calorico-CaloricoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calorico-CaloricoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D005F4302745C09841556E57FD78DAFF /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D3B21A82EBC5326717A9F79D7AB3E35A /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
+		DBD0161B21CA85175345224B5467AFC2 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico-CaloricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E13634E81DDD4B909CBBB4416872AA89 /* Pods-Calorico-CaloricoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calorico-CaloricoUITests.modulemap"; sourceTree = "<group>"; };
+		E9BC0EE97151561BF535FA69327A6FE4 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAEE7CE3120E5E8A22264E1591DC33CA /* Pods-CaloricoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CaloricoTests-umbrella.h"; sourceTree = "<group>"; };
+		EAF820DAF1495E1E39550BC3A2023A60 /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		EB77ED89BAEB4AB2424E440E55CFD400 /* BarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
+		EDD8B8DE6C05CB578876175FBFECB302 /* cameraRotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraRotate@3x.png"; path = "Images/cameraRotate@3x.png"; sourceTree = "<group>"; };
+		EF596A7E45CAFB6B4E896E4553C25DEF /* Pods-CaloricoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaloricoTests-dummy.m"; sourceTree = "<group>"; };
+		F013674A4116581EE42B4CC17B09211A /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
+		F209F4F5AD424DE895E845D558A15536 /* Pods-CaloricoTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CaloricoTests"; path = Pods_CaloricoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F246759162D0E902E1F397574F286E8E /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		F888B84D6CA691B213669BFBED5FB922 /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
+		FAAD3DB17363D41FDF169E3FA7EB2D62 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		FD1531C2B2F745B5242F9F2D58ECA4E2 /* Pods-Calorico-CaloricoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calorico-CaloricoUITests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AB4162F82C26E07ACE164DF65810436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAC0A787298A2CEE154B652C15ABC45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EDE2130521A89A7AD3D64D86EBFB05A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29872BD5684D9B93082A02B26684AB39 /* AVFoundation.framework in Frameworks */,
+				FB79E22B68033224D3D1621A408C68B9 /* Foundation.framework in Frameworks */,
+				DE48FF6F1159E55422298DCAA72897BA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FBFFC55395046ED9AE5C768B4D30150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A72B0F9FAEF24212A128323B20E3FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A08DF1BA49F6624E50BEE40CE523DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B77577C54970218F8F8340516D00F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B6A2491AC437909DABE20C71BECDBC /* CoreGraphics.framework in Frameworks */,
+				60C6606FF8176EE5A38870CFD9F649C8 /* Foundation.framework in Frameworks */,
+				B6EC6D40823E66D5B389ACEAC9FD7AAE /* QuartzCore.framework in Frameworks */,
+				2E5138271A6C79BDA3C0835F2596219B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8AF35DF993C52CAEBF01578DEF173BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62396599427887660856823951B5C361 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC00B8C40D83B6C941BF89084E65E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056DEFCA109CF0B3B7AEE00F47F1CB52 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				9419F4403C1666B31CFD0346FF1B2C64 /* AVMetadataObject+Extensions.swift */,
+				FAAD3DB17363D41FDF169E3FA7EB2D62 /* BarcodeScannerViewController.swift */,
+				D3B21A82EBC5326717A9F79D7AB3E35A /* CameraViewController.swift */,
+				A3C5C23450F26B51068DB207B7DE9007 /* FocusViewType.swift */,
+				C740BDB8215B49D4AB0EB7FDC6939D76 /* Functions.swift */,
+				49A9C34AD2032D8032D361B6104F21CA /* HeaderViewController.swift */,
+				2F927D75A0B010EB32B469B4277AFAE0 /* MessageViewController.swift */,
+				CAD3CE85EB926BC18C07620CA4C431B5 /* NSLayoutConstraint+Extensions.swift */,
+				B3D7CA690EB86A98FF3A42120A069853 /* State.swift */,
+				051A535487922730E53A7BF9EC433107 /* TorchMode.swift */,
+				6365A3784E4A7FD372E716C34045447F /* UIView+Extensions.swift */,
+				92ACC74C6F96E215A9236F4ECB00C091 /* UIViewController+Extensions.swift */,
+				BE119CAE3C5F9E952BF4B13B87249EDA /* VideoPermissionService.swift */,
+				A9BB3D7FBE2F1A7472211D89810B7A9A /* Resources */,
+				921328365E716097466E720B45DB9203 /* Support Files */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		0A967BCE98B37CC75664B9BD45707EF9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97FE816A18E2B4E087E08128E98911E5 /* Pods-Calorico */,
+				29DF93E4E78D41954B8BEFFF2A47FC53 /* Pods-Calorico-CaloricoUITests */,
+				7010BABD825B72191540CEC22BBC1360 /* Pods-CaloricoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		29DF93E4E78D41954B8BEFFF2A47FC53 /* Pods-Calorico-CaloricoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E13634E81DDD4B909CBBB4416872AA89 /* Pods-Calorico-CaloricoUITests.modulemap */,
+				CD9B577FDCAD418AAB83A48EA1C17DA2 /* Pods-Calorico-CaloricoUITests-acknowledgements.markdown */,
+				213C51809F4B65A22B34EB8CA39CBD5E /* Pods-Calorico-CaloricoUITests-acknowledgements.plist */,
+				FD1531C2B2F745B5242F9F2D58ECA4E2 /* Pods-Calorico-CaloricoUITests-dummy.m */,
+				C825C6B6232DD544C1FFDBA21CE5951E /* Pods-Calorico-CaloricoUITests-frameworks.sh */,
+				4CA76E66027BBB6846C6EC9E5806C56F /* Pods-Calorico-CaloricoUITests-Info.plist */,
+				BB39BDFECC611AB491F6F5F701ED3D44 /* Pods-Calorico-CaloricoUITests-umbrella.h */,
+				DBD0161B21CA85175345224B5467AFC2 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */,
+				5CC20A8305DB46EF0DDE3994982AFC44 /* Pods-Calorico-CaloricoUITests.release.xcconfig */,
+			);
+			name = "Pods-Calorico-CaloricoUITests";
+			path = "Target Support Files/Pods-Calorico-CaloricoUITests";
+			sourceTree = "<group>";
+		};
+		2FB71E7AE681B7AC739AC76EDF614EE1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0A09A49D79F81007A67394173A1490E4 /* AVFoundation.framework */,
+				1F82C590D36C4FCD968B7B3D5F32D788 /* CoreGraphics.framework */,
+				85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */,
+				BF697C0D4B15AE813001B288584A40FA /* QuartzCore.framework */,
+				4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3988D0529191B807753FC403E34173C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */,
+				A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */,
+				74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */,
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				828EBBAD9FEFC8D91F06C00F8FBE465A /* Pods-Calorico */,
+				B541E886287283F66F355D73916006B4 /* Pods-Calorico-CaloricoUITests */,
+				F209F4F5AD424DE895E845D558A15536 /* Pods-CaloricoTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7010BABD825B72191540CEC22BBC1360 /* Pods-CaloricoTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F45EB5D1DAF89D12F7B79D8ECA5BD8 /* Pods-CaloricoTests.modulemap */,
+				05E92FD32D549C7ACE41601C31319C01 /* Pods-CaloricoTests-acknowledgements.markdown */,
+				3B0A6123BAA941DADECFAC19454EA27A /* Pods-CaloricoTests-acknowledgements.plist */,
+				EF596A7E45CAFB6B4E896E4553C25DEF /* Pods-CaloricoTests-dummy.m */,
+				07C12B7A1EDB4615D859BAF9FD39C3B3 /* Pods-CaloricoTests-Info.plist */,
+				EAEE7CE3120E5E8A22264E1591DC33CA /* Pods-CaloricoTests-umbrella.h */,
+				0B673C277439810D9DC335FAE1D16924 /* Pods-CaloricoTests.debug.xcconfig */,
+				A9E1E7BD33E7E248D43AEFD5DCACBC90 /* Pods-CaloricoTests.release.xcconfig */,
+			);
+			name = "Pods-CaloricoTests";
+			path = "Target Support Files/Pods-CaloricoTests";
+			sourceTree = "<group>";
+		};
+		921328365E716097466E720B45DB9203 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				835D772AB4452D4463A91930640A051C /* BarcodeScanner.modulemap */,
+				50A6B5DAD175C3870A0448EE27460BAB /* BarcodeScanner-dummy.m */,
+				1D2D6A15BC2711435910DA75D779EA0D /* BarcodeScanner-Info.plist */,
+				EB77ED89BAEB4AB2424E440E55CFD400 /* BarcodeScanner-prefix.pch */,
+				F013674A4116581EE42B4CC17B09211A /* BarcodeScanner-umbrella.h */,
+				62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */,
+				16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */,
+				9EA1A201756FFF1B71F8E46F031B2D1F /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */,
+				8796C9FD90CA1DF425A75732F2C46C80 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BarcodeScanner";
+			sourceTree = "<group>";
+		};
+		948CE8DE2028EF7782854D70521FE8E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE8EED1F803893EFEA935F9B7A72C7E3 /* IQKeyboardManagerSwift.modulemap */,
+				BB84DE757F60E05B7CE295318F421A71 /* IQKeyboardManagerSwift-dummy.m */,
+				EAF820DAF1495E1E39550BC3A2023A60 /* IQKeyboardManagerSwift-Info.plist */,
+				F246759162D0E902E1F397574F286E8E /* IQKeyboardManagerSwift-prefix.pch */,
+				1CEA5025E7C12CC3AA9285B66F1A3715 /* IQKeyboardManagerSwift-umbrella.h */,
+				9089FC0D595B3F9474EA53444EA8E685 /* IQKeyboardManagerSwift.debug.xcconfig */,
+				F888B84D6CA691B213669BFBED5FB922 /* IQKeyboardManagerSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		97FE816A18E2B4E087E08128E98911E5 /* Pods-Calorico */ = {
+			isa = PBXGroup;
+			children = (
+				4D13D943F5730361B6362FA2FED22E83 /* Pods-Calorico.modulemap */,
+				0D8F2BB36FEA6B599F034DA781205380 /* Pods-Calorico-acknowledgements.markdown */,
+				8AE47D84A748D199C928FD0BCF4C573E /* Pods-Calorico-acknowledgements.plist */,
+				A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */,
+				6B4142DEAAAF163D748DBD28F884D7EC /* Pods-Calorico-frameworks.sh */,
+				9D8E7C22D5D5C516459C78E59BBE7E0B /* Pods-Calorico-Info.plist */,
+				2D5E4C199A23C9680E308C9A60BFC451 /* Pods-Calorico-umbrella.h */,
+				772C57C40F15206BFA0B9C0860257836 /* Pods-Calorico.debug.xcconfig */,
+				6AC38E799F7B3BBFECCDA875B708679B /* Pods-Calorico.release.xcconfig */,
+			);
+			name = "Pods-Calorico";
+			path = "Target Support Files/Pods-Calorico";
+			sourceTree = "<group>";
+		};
+		A9BB3D7FBE2F1A7472211D89810B7A9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDD8B8DE6C05CB578876175FBFECB302 /* cameraRotate@3x.png */,
+				8C80B154535307ECD1F18655A802334E /* flashOff@3x.png */,
+				B2255B4103624FF75ACFC05011740458 /* flashOn@3x.png */,
+				543507DB544175425ABB95F85EA54161 /* info@3x.png */,
+				AD1B3E1812E2C0F578C4E636CC0811AE /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB71E7AE681B7AC739AC76EDF614EE1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				D71376DB6AF32C0A822D7895493F2031 /* Pods */,
+				3988D0529191B807753FC403E34173C5 /* Products */,
+				0A967BCE98B37CC75664B9BD45707EF9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4B0E565B98B9BDB045F5012EBD6F7AE /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2EAC813B9805E268B4AD5D206263A46B /* IQBarButtonItem.swift */,
+				89FD6C52A6CB194D59F44883F905E1AA /* IQInvocation.swift */,
+				8E7D71474891B9F8B4254018988EEFB8 /* IQKeyboardManager.swift */,
+				8F8A94B12A0CA7920809D10F0AFF06F3 /* IQKeyboardManager+Debug.swift */,
+				BDDB1FF5066A279B129AEECB6794E019 /* IQKeyboardManager+Internal.swift */,
+				0A179A7034AB2B5DE21624D9E9B98AAC /* IQKeyboardManager+OrientationNotification.swift */,
+				C3F04DE3081DF4EB4F9262E4D3BD43CE /* IQKeyboardManager+Position.swift */,
+				C1E8A7667A4D9DC9AA6A436BD0E51708 /* IQKeyboardManager+Toolbar.swift */,
+				BC1BA07ECB222F8D18790A1530FE18EA /* IQKeyboardManager+UIKeyboardNotification.swift */,
+				5E7967CAF8A68BF51467C6AB42F650BF /* IQKeyboardManager+UITextFieldViewNotification.swift */,
+				534B13F99FA8F7572BA72A7190BC43CF /* IQKeyboardManagerConstants.swift */,
+				4ADACD26863E48E5FB546E98B7C54360 /* IQKeyboardManagerConstantsInternal.swift */,
+				0F2041DE8A5FAEBBB0C0D248CE877EF9 /* IQKeyboardReturnKeyHandler.swift */,
+				BE7E8AFA2261205112ABDA4EC037D251 /* IQNSArray+Sort.swift */,
+				9AD9A87E3262F4A2F6EFCAC15C2F9634 /* IQPreviousNextView.swift */,
+				4DA1C842AF7BF575CF917917B07EF108 /* IQTextView.swift */,
+				8E7B1BFA4C2CD29751C5360E62AEBFB4 /* IQTitleBarButtonItem.swift */,
+				8E17BAB770E4E34E29998926E74F8BB3 /* IQToolbar.swift */,
+				5377A14B2E72F18E266F53A0BED73058 /* IQUIScrollView+Additions.swift */,
+				3E788B4FA1088877F917C7EB77EF6AC1 /* IQUITextFieldView+Additions.swift */,
+				1210C69A9E7250BFF75892ED310B49B2 /* IQUIView+Hierarchy.swift */,
+				81CE2ACE1F9C9B554C01F6E3636899AD /* IQUIView+IQKeyboardToolbar.swift */,
+				3B92D667876EDA21C6DB873247B2E2C2 /* IQUIViewController+Additions.swift */,
+				948CE8DE2028EF7782854D70521FE8E7 /* Support Files */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		D71376DB6AF32C0A822D7895493F2031 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056DEFCA109CF0B3B7AEE00F47F1CB52 /* BarcodeScanner */,
+				D4B0E565B98B9BDB045F5012EBD6F7AE /* IQKeyboardManagerSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A70C5D87E799A30599AE4EBF6943720 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2945C207F6B20B24A61A0DFF4FF8DBF3 /* Pods-Calorico-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577F5F023949EE5882AEC7EC9AA2D4F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3755448ECF8EE78693A364B8990D9F53 /* BarcodeScanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7FA2785659379963BD4E455D555464 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1351D411B092E4F3FB8898AB71823E /* Pods-CaloricoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8D475D79AEF2713DCC14069B967419 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8D1E5122DD6F004EFEFC4B62A8AD5A /* Pods-Calorico-CaloricoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEEFAA8C63580C9CB8978EDA9312BDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B43B1B78EC0E52CC08F82841A22A31 /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB78C8134DB20F1F62967804B9AF6A2 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */;
+			buildPhases = (
+				A1881252655E0DAA59CFD0F1685ABEDD /* Sources */,
+				BBC00B8C40D83B6C941BF89084E65E78 /* Frameworks */,
+				BF6B8371302E930FECEC46DBBE8DC358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BarcodeScanner-BarcodeScanner";
+			productName = BarcodeScanner;
+			productReference = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C83FF7A0920B90DA0CD23E781ECC30AD /* Build configuration list for PBXNativeTarget "Pods-Calorico" */;
+			buildPhases = (
+				1A70C5D87E799A30599AE4EBF6943720 /* Headers */,
+				C4F59CB1114B4393831FF29F9FCA8EB9 /* Sources */,
+				1AB4162F82C26E07ACE164DF65810436 /* Frameworks */,
+				110BB8A9E8A7C75FB530A224BE135146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				995593DB3D20FC88F0B30143849DD828 /* PBXTargetDependency */,
+				9775270F75979CA546281E8BC1FBC332 /* PBXTargetDependency */,
+			);
+			name = "Pods-Calorico";
+			productName = Pods_Calorico;
+			productReference = 828EBBAD9FEFC8D91F06C00F8FBE465A /* Pods-Calorico */;
+			productType = "com.apple.product-type.framework";
+		};
+		2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82BF77C4902E629D98C6F968C5DFF9EA /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */;
+			buildPhases = (
+				1BF2C2714504353A1DAC5A0D4A6DE5A1 /* Sources */,
+				4FBFFC55395046ED9AE5C768B4D30150 /* Frameworks */,
+				D3ADA00D3610339042F3B5F59E5AF1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BarcodeScanner-Localization";
+			productName = Localization;
+			productReference = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31F3C26C1861487BCAEABE846D8D148 /* Build configuration list for PBXNativeTarget "BarcodeScanner" */;
+			buildPhases = (
+				577F5F023949EE5882AEC7EC9AA2D4F0 /* Headers */,
+				A7E9D8FE917CC27E1F55A5D8A3708FD2 /* Sources */,
+				1EDE2130521A89A7AD3D64D86EBFB05A /* Frameworks */,
+				EC4DF372C1F7E1F3730B4EE94D7F069A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BF42D5649C66C0A1781FBE4B0A27EB2 /* PBXTargetDependency */,
+				2444D0F355C954966F7AC1409A0A7CD1 /* PBXTargetDependency */,
+			);
+			name = BarcodeScanner;
+			productName = BarcodeScanner;
+			productReference = CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		807E8AB65431A0C6BD8D86944F4B3556 /* Pods-Calorico-CaloricoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245684D9CDE02626E265CBE88DC95992 /* Build configuration list for PBXNativeTarget "Pods-Calorico-CaloricoUITests" */;
+			buildPhases = (
+				CB8D475D79AEF2713DCC14069B967419 /* Headers */,
+				40328CA10B93762D2286EF3D45A134C6 /* Sources */,
+				5A72B0F9FAEF24212A128323B20E3FA8 /* Frameworks */,
+				8A28A20304CC55232E30DFBAE9F5B0E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E74E50DCDFA55392EDAFAF795019ADF4 /* PBXTargetDependency */,
+				BA9A815615B6CAD4EC878D8AA6257140 /* PBXTargetDependency */,
+			);
+			name = "Pods-Calorico-CaloricoUITests";
+			productName = Pods_Calorico_CaloricoUITests;
+			productReference = B541E886287283F66F355D73916006B4 /* Pods-Calorico-CaloricoUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		87CE2FC556FC4A19B61FB40C6A945980 /* Pods-CaloricoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0942C274ED265E0190AE1FB41F96B199 /* Build configuration list for PBXNativeTarget "Pods-CaloricoTests" */;
+			buildPhases = (
+				CA7FA2785659379963BD4E455D555464 /* Headers */,
+				9298D94E6C609E5302135C5F58876CC9 /* Sources */,
+				A8AF35DF993C52CAEBF01578DEF173BD /* Frameworks */,
+				1153D29706E9930F89238C2EE4B7EA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837FE29A054F97BE9CA399005F932E66 /* PBXTargetDependency */,
+			);
+			name = "Pods-CaloricoTests";
+			productName = Pods_CaloricoTests;
+			productReference = F209F4F5AD424DE895E845D558A15536 /* Pods-CaloricoTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F76AA8E84D32E2DED70BBA35321CB1 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				CCEEFAA8C63580C9CB8978EDA9312BDF /* Headers */,
+				AC7850B8AD058752CD0E80D5A5B07A42 /* Sources */,
+				A3B77577C54970218F8F8340516D00F2 /* Frameworks */,
+				DAEA1F953296419744C852BAA2739BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				fr,
+				ja,
+				"pl-PL",
+				tr,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3988D0529191B807753FC403E34173C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */,
+				02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */,
+				2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */,
+				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
+				1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */,
+				807E8AB65431A0C6BD8D86944F4B3556 /* Pods-Calorico-CaloricoUITests */,
+				87CE2FC556FC4A19B61FB40C6A945980 /* Pods-CaloricoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		110BB8A9E8A7C75FB530A224BE135146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1153D29706E9930F89238C2EE4B7EA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A28A20304CC55232E30DFBAE9F5B0E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B8371302E930FECEC46DBBE8DC358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BD61FF3E647B9B2563784D378A9DE6 /* cameraRotate@3x.png in Resources */,
+				9E6A283BED0305AE222A5774C0240657 /* flashOff@3x.png in Resources */,
+				7249598DF1E11ECA3718E37BDE1BE917 /* flashOn@3x.png in Resources */,
+				96D3C21E658373A9AB0B67435005F1A3 /* info@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ADA00D3610339042F3B5F59E5AF1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DE893724562B1353663D381D2FF158 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAEA1F953296419744C852BAA2739BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4DF372C1F7E1F3730B4EE94D7F069A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner.bundle in Resources */,
+				ADE02B44B0F6B14EDF45330E5C28ADF6 /* Localization.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BF2C2714504353A1DAC5A0D4A6DE5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40328CA10B93762D2286EF3D45A134C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F108FA6504E0405201AD7FB5F6B74F /* Pods-Calorico-CaloricoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9298D94E6C609E5302135C5F58876CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC18473BBA8E4EFA39E28C3009B5F67 /* Pods-CaloricoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1881252655E0DAA59CFD0F1685ABEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E9D8FE917CC27E1F55A5D8A3708FD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700C48768FCAEF0F35A4C9B252B20A0C /* AVMetadataObject+Extensions.swift in Sources */,
+				4AEC9BCF7384FD789A5D0BAB2F77991F /* BarcodeScanner-dummy.m in Sources */,
+				6C33077F6BBEEFA137313CA1525A18DE /* BarcodeScannerViewController.swift in Sources */,
+				A0CE10B2AB5F96D28540B30454BF6E62 /* CameraViewController.swift in Sources */,
+				B447CB1C46B8F0DD2AAAB486883CE1CB /* FocusViewType.swift in Sources */,
+				EE5A01E096A12A0DD4822EE9CD5ABD6F /* Functions.swift in Sources */,
+				8D100AF17E7FB178FF428DE211ED597E /* HeaderViewController.swift in Sources */,
+				C3AA8B4CFA5BE1FF5F4B5BB1DD8053A0 /* MessageViewController.swift in Sources */,
+				6CCC68077295A821AC9C1E7CC2BC35BC /* NSLayoutConstraint+Extensions.swift in Sources */,
+				FF20513A9C5371CB65C56402A850B36F /* State.swift in Sources */,
+				12576FA40395138A8369CE1927AC95CE /* TorchMode.swift in Sources */,
+				0005307377066EC46EA91823415301C6 /* UIView+Extensions.swift in Sources */,
+				262CBFB84815CDE8C006B8E72B5ED13F /* UIViewController+Extensions.swift in Sources */,
+				C93AF790D67555D90C3738BAC1FA56C7 /* VideoPermissionService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7850B8AD058752CD0E80D5A5B07A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41CD40F5713CD71AD5AB1471E81C97E1 /* IQBarButtonItem.swift in Sources */,
+				041B655D7F5932F03A65C154BC02BDAA /* IQInvocation.swift in Sources */,
+				86A03DE9366D1BE94EB99AA387EACD1F /* IQKeyboardManager.swift in Sources */,
+				2EC96162DD6740ECE67FF38B8400A7C5 /* IQKeyboardManager+Debug.swift in Sources */,
+				2CA0B3B43A972DF3AD79F58092E3403E /* IQKeyboardManager+Internal.swift in Sources */,
+				08B185E08278AE7EC55F8BBB19693AC5 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
+				F2B1C1D70C629AE19C0D5121B1BBA891 /* IQKeyboardManager+Position.swift in Sources */,
+				1D8031C86A94D32E00ED55B80428A0F3 /* IQKeyboardManager+Toolbar.swift in Sources */,
+				A4BAEE317BFF650DCC888FC67BFBF7EF /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
+				D6516B5451008BF1ABA150E6482F6325 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
+				85F13B069B06ADF2B6DCA622E4645110 /* IQKeyboardManagerConstants.swift in Sources */,
+				0F94B2449CA1ADA76AE79C0BF6A08549 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				1A9B9579E46EFBA63C5F57A6B17B5ECA /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				C81CB3B5D25BDBCB6D3A3632BE408229 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				7AC995F567A776FC1A80A9FA0733F3D1 /* IQNSArray+Sort.swift in Sources */,
+				24EC44FF102C2635A476CEF7567F89DA /* IQPreviousNextView.swift in Sources */,
+				E72E1BDDFF31003BD089544FC112FAAC /* IQTextView.swift in Sources */,
+				20616A47873318F80BFFEABAC9730122 /* IQTitleBarButtonItem.swift in Sources */,
+				1740CBB33D469AEDD5D7291A9268FA97 /* IQToolbar.swift in Sources */,
+				DF33C3DE068D6116B3F551B0453ACD23 /* IQUIScrollView+Additions.swift in Sources */,
+				3F01EED6380B596E1D0C1497CBCF9B95 /* IQUITextFieldView+Additions.swift in Sources */,
+				04B0884964D9592302CA654E0B67E80E /* IQUIView+Hierarchy.swift in Sources */,
+				34C39BDBFE7A2CC585787F5AFCA39FDE /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				D31356D54A39420DB91C892502CFFD57 /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F59CB1114B4393831FF29F9FCA8EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4EA5348A563650778B6547BC381579 /* Pods-Calorico-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2444D0F355C954966F7AC1409A0A7CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BarcodeScanner-Localization";
+			target = 2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */;
+			targetProxy = 55473A8DFEDBEE143CBB8B38571983A3 /* PBXContainerItemProxy */;
+		};
+		7BF42D5649C66C0A1781FBE4B0A27EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BarcodeScanner-BarcodeScanner";
+			target = 02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */;
+			targetProxy = 381E6BC1E2A8A1EBC9D148F72F7248C3 /* PBXContainerItemProxy */;
+		};
+		837FE29A054F97BE9CA399005F932E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Calorico";
+			target = 1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */;
+			targetProxy = D9D4C1727E9222C60F206925E6DE25C2 /* PBXContainerItemProxy */;
+		};
+		9775270F75979CA546281E8BC1FBC332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = C6EE7131E7540759054AD63D3C788860 /* PBXContainerItemProxy */;
+		};
+		995593DB3D20FC88F0B30143849DD828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BarcodeScanner;
+			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
+			targetProxy = DAEB65FD7B4DCD57BEEB3B84AC7AC1E2 /* PBXContainerItemProxy */;
+		};
+		BA9A815615B6CAD4EC878D8AA6257140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = 55B9C4E269D0C6ED6F58C6E455FFFC4D /* PBXContainerItemProxy */;
+		};
+		E74E50DCDFA55392EDAFAF795019ADF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BarcodeScanner;
+			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
+			targetProxy = 65A3025B8E55127D5B77E573C2B9CF03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD1B3E1812E2C0F578C4E636CC0811AE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9BC0EE97151561BF535FA69327A6FE4 /* Localizable.strings */,
+				9E323D48CA6B132DF04290E97B778BC8 /* Localizable.strings */,
+				A1E44B0FC1D74454F3AAD3474CB558A8 /* Localizable.strings */,
+				A8E1FB351525B9E17FE512E0C87A323C /* Localizable.strings */,
+				D005F4302745C09841556E57FD78DAFF /* Localizable.strings */,
+				9FDE7BA126E60C64A93E500B3938811B /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		580CE06D89138761ECC79548B4466363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772C57C40F15206BFA0B9C0860257836 /* Pods-Calorico.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		748C7417728DB5217F94865B40B1E686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9089FC0D595B3F9474EA53444EA8E685 /* IQKeyboardManagerSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.8;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76775DBA40530D1624AEBB698A3C7EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC20A8305DB46EF0DDE3994982AFC44 /* Pods-Calorico-CaloricoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9F85E3C75C2A29889B63B68181CB91F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Localization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A7BEF09AFD2E921AE8F08B5922742358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BarcodeScanner/BarcodeScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner.modulemap";
+				PRODUCT_MODULE_NAME = BarcodeScanner;
+				PRODUCT_NAME = BarcodeScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A81104B13B5DCFB8FD09E2A13886F5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BarcodeScanner/BarcodeScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner.modulemap";
+				PRODUCT_MODULE_NAME = BarcodeScanner;
+				PRODUCT_NAME = BarcodeScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B63C20073CD9E0B152D0C92BA15278F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B673C277439810D9DC335FAE1D16924 /* Pods-CaloricoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CaloricoTests/Pods-CaloricoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaloricoTests/Pods-CaloricoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7F70A29FA14EDD40A8AB38B3B8922A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Localization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C76AA726FD1DC2DDCE57161BF4818A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F888B84D6CA691B213669BFBED5FB922 /* IQKeyboardManagerSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.8;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C81F8F87F4449CB0D932D49D0BE4135A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BarcodeScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DD9B01C97E7FD630600BB2285D642928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC38E799F7B3BBFECCDA875B708679B /* Pods-Calorico.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E09BB7A73262FCBC051BBDECBC755EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E1E7BD33E7E248D43AEFD5DCACBC90 /* Pods-CaloricoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CaloricoTests/Pods-CaloricoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaloricoTests/Pods-CaloricoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7DEAF537CF8B863428469BC9BC0F923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BarcodeScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EA82D2300FE12DA6F312C0075B8AB40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD0161B21CA85175345224B5467AFC2 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0942C274ED265E0190AE1FB41F96B199 /* Build configuration list for PBXNativeTarget "Pods-CaloricoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63C20073CD9E0B152D0C92BA15278F7 /* Debug */,
+				E09BB7A73262FCBC051BBDECBC755EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245684D9CDE02626E265CBE88DC95992 /* Build configuration list for PBXNativeTarget "Pods-Calorico-CaloricoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA82D2300FE12DA6F312C0075B8AB40E /* Debug */,
+				76775DBA40530D1624AEBB698A3C7EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB78C8134DB20F1F62967804B9AF6A2 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7DEAF537CF8B863428469BC9BC0F923 /* Debug */,
+				C81F8F87F4449CB0D932D49D0BE4135A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F76AA8E84D32E2DED70BBA35321CB1 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748C7417728DB5217F94865B40B1E686 /* Debug */,
+				C76AA726FD1DC2DDCE57161BF4818A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82BF77C4902E629D98C6F968C5DFF9EA /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F85E3C75C2A29889B63B68181CB91F7 /* Debug */,
+				B7F70A29FA14EDD40A8AB38B3B8922A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C83FF7A0920B90DA0CD23E781ECC30AD /* Build configuration list for PBXNativeTarget "Pods-Calorico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580CE06D89138761ECC79548B4466363 /* Debug */,
+				DD9B01C97E7FD630600BB2285D642928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F31F3C26C1861487BCAEABE846D8D148 /* Build configuration list for PBXNativeTarget "BarcodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7BEF09AFD2E921AE8F08B5922742358 /* Debug */,
+				A81104B13B5DCFB8FD09E2A13886F5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

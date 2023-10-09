@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class MacroView: UIView {
     
@@ -18,7 +19,7 @@ class MacroView: UIView {
 
     public private(set) var FoodType: foodType
     public private(set) var maxValue: Double
-    public private(set) var currentValue: Double
+    public private(set)  var currentValue: Double
 
 
     let circleView = UIView()
@@ -29,6 +30,7 @@ class MacroView: UIView {
     let screenBounds = UIScreen.main.bounds
     var percentLabel = UILabel()
     var checkImage = UIImageView()
+    var amountLabel = UILabel()
     
      init(FoodType : foodType, maxValue: Double, currentValue : Double) {
        
@@ -38,12 +40,21 @@ class MacroView: UIView {
         self.currentValue = currentValue
         
          super.init(frame: .zero)
-
-        setupView()
+         //setupView()
         
     }
     
-
+    func updateValues(newMax : Double, newValue : Double) {
+        
+        self.maxValue = newMax
+        
+        self.currentValue = newValue
+        
+        setupView()
+        
+        
+        
+    }
 
 
        required init?(coder: NSCoder) {
@@ -67,7 +78,7 @@ class MacroView: UIView {
     
     func setupProgress(){
         
-        progressMeter.backgroundColor = .lightGray
+        progressMeter.backgroundColor = colors.lightGray
         
         
         progressMeter.frame = CGRect(x: 0, y: 0, width: getPosition(value: currentValue), height: 100)
@@ -130,9 +141,9 @@ class MacroView: UIView {
            
            addSubview(container)
            container.translatesAutoresizingMaskIntoConstraints = false
-           container.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
+           container.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10).isActive = true
            container.trailingAnchor.constraint(equalTo: circleView.leadingAnchor, constant: -30).isActive = true
-           container.heightAnchor.constraint(equalToConstant: 80).isActive = true
+           container.heightAnchor.constraint(equalToConstant: 85).isActive = true
            container.centerYAnchor.constraint(equalTo: circleView.centerYAnchor).isActive = true
            
            let foodImage = getImage()
@@ -152,7 +163,7 @@ class MacroView: UIView {
            typeLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 13).isActive = true
            typeLabel.leftAnchor.constraint(equalTo: foodImageView.rightAnchor, constant: 10).isActive = true
            
-           let amountLabel = MainLabel(labelText: "\(Int(currentValue))/\(Int(maxValue)) grams", labelType: .subheading, labelColor: .lightGray)
+            amountLabel = MainLabel(labelText: "\(Int(currentValue))/\(Int(maxValue)) grams", labelType: .subheading, labelColor: .lightGray)
            container.addSubview(amountLabel)
            amountLabel.translatesAutoresizingMaskIntoConstraints = false
            amountLabel.topAnchor.constraint(equalTo: typeLabel.bottomAnchor, constant: 1).isActive = true
@@ -162,13 +173,14 @@ class MacroView: UIView {
     
     func animateProgress(to new : Double) {
         
+        print(new)
+            
+        
         UIView.animate(withDuration: 1, animations: {
             self.progressMeter.frame.size.width = self.getPosition(value: new)
                 
             })
         
-        
-
         
         var min = Int((self.currentValue/self.maxValue * 100).rounded())
         let max = Int((new/self.maxValue * 100).rounded())
@@ -177,12 +189,17 @@ class MacroView: UIView {
         Timer.scheduledTimer(withTimeInterval: 1.0/Double(total), repeats: true) { timer in
                 min = min + 1
                 self.percentLabel.text = "\(min)%"
-                 if min == max {
+                
+                 if min >= max {
                      timer.invalidate()
                  }
+            if min >= 100 {
+                self.meterFull()
+            }
              }
         
-       
+        self.currentValue = new
+
     }
     
     func getPosition(value : Double) -> Double{
@@ -222,3 +239,15 @@ class MacroView: UIView {
     }
 
 }
+
+struct MacroView_Previews: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            // Return whatever controller you want to preview
+            let vc  = MacroView(FoodType: .fat, maxValue: 100, currentValue: 25)
+            vc.setupView()
+            return vc
+        }
+    }
+}
+

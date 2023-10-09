@@ -19,6 +19,13 @@ struct Constants {
 struct Colors {
     let darkBlueBG = UIColor(named: "MainBG")
     let lightGreen = UIColor(named: "lightGreen")
+    let mainOrange = UIColor.orange
+    let CalorieOrange = UIColor(named: "CalorieOrange")
+    let FatGreen = UIColor(named: "FatGreen")
+    let CarbsBrown = UIColor(named: "CarbsBrown")
+    let ProteinRed = UIColor(named: "ProteinRed")
+    let lightGray = UIColor(named: "lightGray")
+
 }
 
 struct Images {

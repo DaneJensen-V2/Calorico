@@ -12,17 +12,36 @@
 		DB2AE91529DCA24400741673 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE91429DCA24400741673 /* FoodItem.swift */; };
 		DB2AE91729DCA37B00741673 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE91629DCA37B00741673 /* NetworkManager.swift */; };
 		DB2AE91929DCFF6400741673 /* MacroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AE91829DCFF6400741673 /* MacroView.swift */; };
+		DB3712672AC637300080E5F9 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3712662AC637300080E5F9 /* SearchResults.swift */; };
+		DB37126A2AC8C7E30080E5F9 /* SearchResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3712682AC8C7E30080E5F9 /* SearchResultsCell.swift */; };
+		DB37126B2AC8C7E30080E5F9 /* SearchResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB3712692AC8C7E30080E5F9 /* SearchResultsCell.xib */; };
+		DB3CB45D2AAD400E00EBED4E /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB3CB45C2AAD400E00EBED4E /* CryptoSwift */; };
+		DB3CB45F2AB02EA400EBED4E /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CB45E2AB02EA400EBED4E /* Barcode.swift */; };
+		DB4128A12AAD348F00024EED /* FatSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A02AAD348F00024EED /* FatSecret.swift */; };
+		DB4128A32AAD387200024EED /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = DB4128A22AAD387200024EED /* Extensions */; };
+		DB4128A92AAD391A00024EED /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A42AAD391A00024EED /* Food.swift */; };
+		DB4128AA2AAD391A00024EED /* SearchedFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A52AAD391A00024EED /* SearchedFood.swift */; };
+		DB4128AB2AAD391A00024EED /* Serving.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A62AAD391A00024EED /* Serving.swift */; };
+		DB4128AC2AAD391A00024EED /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A72AAD391A00024EED /* Search.swift */; };
+		DB4128AD2AAD391A00024EED /* FatSecretError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A82AAD391A00024EED /* FatSecretError.swift */; };
+		DB4128B02AAD393400024EED /* FatSecretParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128AE2AAD393400024EED /* FatSecretParams.swift */; };
+		DB4128B12AAD393400024EED /* FatSecretCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128AF2AAD393400024EED /* FatSecretCredentials.swift */; };
+		DB4128F62AAD3E1B00024EED /* URLComponents+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128F22AAD3E1B00024EED /* URLComponents+Utils.swift */; };
+		DB4128F72AAD3E1B00024EED /* CharacterSet+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128F52AAD3E1B00024EED /* CharacterSet+Utils.swift */; };
+		DB4128F82AAD3E1B00024EED /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128F42AAD3E1B00024EED /* String+Utils.swift */; };
+		DB4128F92AAD3E1B00024EED /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128F32AAD3E1B00024EED /* Array+Utils.swift */; };
+		DB58EBF72A37A03E00237AC7 /* NutritionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB58EBF62A37A03E00237AC7 /* NutritionCounter.swift */; };
+		DB7945D22AB2308F0064A5FA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7945D02AB2308F0064A5FA /* SearchViewController.swift */; };
+		DB7945D72AB247C00064A5FA /* Autocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7945D62AB247C00064A5FA /* Autocomplete.swift */; };
 		DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037629DB6E5A008EF134 /* AppDelegate.swift */; };
 		DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */; };
 		DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */; };
 		DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */; };
 		DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038229DB6E5B008EF134 /* Assets.xcassets */; };
-		DBAA038629DB6E5B008EF134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */; };
 		DBAA039129DB6E5B008EF134 /* CaloricoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */; };
 		DBAA039B29DB6E5B008EF134 /* CaloricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */; };
 		DBAA039D29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */; };
 		DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03A929DB6EA4008EF134 /* Constants.swift */; };
-		DBAA03AC29DB6F2D008EF134 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03AB29DB6F2D008EF134 /* NetworkLayer.swift */; };
 		DBAA03B029DB8640008EF134 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03AF29DB8640008EF134 /* CircleButton.swift */; };
 		DBAA03B329DC0665008EF134 /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03B229DC0665008EF134 /* MainLabel.swift */; };
 		DBCD2DCE29E207F700513FEC /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2DCD29E207F700513FEC /* CalorieView.swift */; };
@@ -47,6 +66,7 @@
 		DBDF01E729DC0B2700DD4C21 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D529DC0B2700DD4C21 /* Poppins-Thin.ttf */; };
 		DBDF01E829DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D629DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf */; };
 		DBDF01E929DC0B2700DD4C21 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01D729DC0B2700DD4C21 /* Poppins-Light.ttf */; };
+		DBFF6E912A342BD8006EA328 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFF6E902A342BD8006EA328 /* Launch Screen.storyboard */; };
 		DE9035BC58CA81E330D38D0A /* Pods_Calorico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F34A79438FCDB986F7A99F /* Pods_Calorico.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,13 +99,32 @@
 		DB2AE91429DCA24400741673 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		DB2AE91629DCA37B00741673 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DB2AE91829DCFF6400741673 /* MacroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroView.swift; sourceTree = "<group>"; };
+		DB3712662AC637300080E5F9 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		DB3712682AC8C7E30080E5F9 /* SearchResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCell.swift; sourceTree = "<group>"; };
+		DB3712692AC8C7E30080E5F9 /* SearchResultsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsCell.xib; sourceTree = "<group>"; };
+		DB3CB45E2AB02EA400EBED4E /* Barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
+		DB4128A02AAD348F00024EED /* FatSecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatSecret.swift; sourceTree = "<group>"; };
+		DB4128A22AAD387200024EED /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		DB4128A42AAD391A00024EED /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DB4128A52AAD391A00024EED /* SearchedFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchedFood.swift; sourceTree = "<group>"; };
+		DB4128A62AAD391A00024EED /* Serving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serving.swift; sourceTree = "<group>"; };
+		DB4128A72AAD391A00024EED /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		DB4128A82AAD391A00024EED /* FatSecretError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatSecretError.swift; sourceTree = "<group>"; };
+		DB4128AE2AAD393400024EED /* FatSecretParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatSecretParams.swift; sourceTree = "<group>"; };
+		DB4128AF2AAD393400024EED /* FatSecretCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatSecretCredentials.swift; sourceTree = "<group>"; };
+		DB4128F22AAD3E1B00024EED /* URLComponents+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Utils.swift"; sourceTree = "<group>"; };
+		DB4128F32AAD3E1B00024EED /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
+		DB4128F42AAD3E1B00024EED /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		DB4128F52AAD3E1B00024EED /* CharacterSet+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Utils.swift"; sourceTree = "<group>"; };
+		DB58EBF62A37A03E00237AC7 /* NutritionCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCounter.swift; sourceTree = "<group>"; };
+		DB7945D02AB2308F0064A5FA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DB7945D62AB247C00064A5FA /* Autocomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autocomplete.swift; sourceTree = "<group>"; };
 		DBAA037329DB6E5A008EF134 /* Calorico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAA037629DB6E5A008EF134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		DBAA038029DB6E5A008EF134 /* Calorico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calorico.xcdatamodel; sourceTree = "<group>"; };
 		DBAA038229DB6E5B008EF134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBAA038529DB6E5B008EF134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBAA038729DB6E5B008EF134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBAA038C29DB6E5B008EF134 /* CaloricoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaloricoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoTests.swift; sourceTree = "<group>"; };
@@ -93,7 +132,6 @@
 		DBAA039A29DB6E5B008EF134 /* CaloricoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoUITests.swift; sourceTree = "<group>"; };
 		DBAA039C29DB6E5B008EF134 /* CaloricoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloricoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DBAA03A929DB6EA4008EF134 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		DBAA03AB29DB6F2D008EF134 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		DBAA03AF29DB8640008EF134 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		DBAA03B229DC0665008EF134 /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
 		DBCD2DCD29E207F700513FEC /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
@@ -118,6 +156,7 @@
 		DBDF01D529DC0B2700DD4C21 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		DBDF01D629DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		DBDF01D729DC0B2700DD4C21 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		DBFF6E902A342BD8006EA328 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E6F34A79438FCDB986F7A99F /* Pods_Calorico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calorico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9035BC58CA81E330D38D0A /* Pods_Calorico.framework in Frameworks */,
+				DB3CB45D2AAD400E00EBED4E /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +202,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB4128B22AAD3A4200024EED /* FatSecret */ = {
+			isa = PBXGroup;
+			children = (
+				DB4128F32AAD3E1B00024EED /* Array+Utils.swift */,
+				DB4128F52AAD3E1B00024EED /* CharacterSet+Utils.swift */,
+				DB4128F42AAD3E1B00024EED /* String+Utils.swift */,
+				DB4128F22AAD3E1B00024EED /* URLComponents+Utils.swift */,
+				DB4128AF2AAD393400024EED /* FatSecretCredentials.swift */,
+				DB4128AE2AAD393400024EED /* FatSecretParams.swift */,
+				DB4128A82AAD391A00024EED /* FatSecretError.swift */,
+				DB4128A42AAD391A00024EED /* Food.swift */,
+				DB4128A72AAD391A00024EED /* Search.swift */,
+				DB7945D62AB247C00064A5FA /* Autocomplete.swift */,
+				DB4128A52AAD391A00024EED /* SearchedFood.swift */,
+				DB3712662AC637300080E5F9 /* SearchResults.swift */,
+				DB3CB45E2AB02EA400EBED4E /* Barcode.swift */,
+				DB4128A62AAD391A00024EED /* Serving.swift */,
+				DB4128A02AAD348F00024EED /* FatSecret.swift */,
+			);
+			path = FatSecret;
+			sourceTree = "<group>";
+		};
 		DBAA036A29DB6E5A008EF134 = {
 			isa = PBXGroup;
 			children = (
@@ -194,9 +256,9 @@
 				DBCD2DD229E5151900513FEC /* View */,
 				DBCD2DD329E5151F00513FEC /* Controller */,
 				DBAA038229DB6E5B008EF134 /* Assets.xcassets */,
-				DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */,
 				DBAA038729DB6E5B008EF134 /* Info.plist */,
 				DBDF01C529DC0B1600DD4C21 /* Fonts */,
+				DBFF6E902A342BD8006EA328 /* Launch Screen.storyboard */,
 			);
 			path = Calorico;
 			sourceTree = "<group>";
@@ -224,6 +286,7 @@
 				DBAA03AF29DB8640008EF134 /* CircleButton.swift */,
 				DBAA03B229DC0665008EF134 /* MainLabel.swift */,
 				DB2AE91829DCFF6400741673 /* MacroView.swift */,
+				DB58EBF62A37A03E00237AC7 /* NutritionCounter.swift */,
 				DBCD2DCD29E207F700513FEC /* CalorieView.swift */,
 			);
 			path = UIComponents;
@@ -232,8 +295,9 @@
 		DBCD2DD129E5151200513FEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB4128A22AAD387200024EED /* Extensions */,
+				DB4128B22AAD3A4200024EED /* FatSecret */,
 				DBAA03A929DB6EA4008EF134 /* Constants.swift */,
-				DBAA03AB29DB6F2D008EF134 /* NetworkLayer.swift */,
 				DB2AE91629DCA37B00741673 /* NetworkManager.swift */,
 				DB2AE91429DCA24400741673 /* FoodItem.swift */,
 				DBCD2E1B29E646D100513FEC /* UserModel.swift */,
@@ -247,6 +311,9 @@
 				DBAA03B129DB8644008EF134 /* UIComponents */,
 				DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */,
 				DBCD2DCF29E5150A00513FEC /* AddFood.swift */,
+				DB7945D02AB2308F0064A5FA /* SearchViewController.swift */,
+				DB3712682AC8C7E30080E5F9 /* SearchResultsCell.swift */,
+				DB3712692AC8C7E30080E5F9 /* SearchResultsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +387,9 @@
 			dependencies = (
 			);
 			name = Calorico;
+			packageProductDependencies = (
+				DB3CB45C2AAD400E00EBED4E /* CryptoSwift */,
+			);
 			productName = Calorico;
 			productReference = DBAA037329DB6E5A008EF134 /* Calorico.app */;
 			productType = "com.apple.product-type.application";
@@ -395,6 +465,9 @@
 				Base,
 			);
 			mainGroup = DBAA036A29DB6E5A008EF134;
+			packageReferences = (
+				DB3CB45B2AAD400E00EBED4E /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = DBAA037429DB6E5A008EF134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,11 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBDF01DB29DC0B2700DD4C21 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				DB37126B2AC8C7E30080E5F9 /* SearchResultsCell.xib in Resources */,
 				DBDF01E629DC0B2700DD4C21 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				DBDF01E829DC0B2700DD4C21 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				DBDF01E129DC0B2700DD4C21 /* Poppins-Italic.ttf in Resources */,
 				DBDF01E429DC0B2700DD4C21 /* Poppins-BlackItalic.ttf in Resources */,
-				DBAA038629DB6E5B008EF134 /* LaunchScreen.storyboard in Resources */,
 				DBDF01DD29DC0B2700DD4C21 /* Poppins-Black.ttf in Resources */,
 				DBDF01E929DC0B2700DD4C21 /* Poppins-Light.ttf in Resources */,
 				DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */,
@@ -424,12 +497,14 @@
 				DBDF01C429DC0B0C00DD4C21 /* Poppins-Bold.ttf in Resources */,
 				DBDF01D929DC0B2700DD4C21 /* Poppins-ExtraBold.ttf in Resources */,
 				DBDF01E229DC0B2700DD4C21 /* Poppins-Medium.ttf in Resources */,
+				DB4128A32AAD387200024EED /* Extensions in Resources */,
 				DBDF01DC29DC0B2700DD4C21 /* Poppins-MediumItalic.ttf in Resources */,
 				DBDF01E529DC0B2700DD4C21 /* Poppins-ExtraLight.ttf in Resources */,
 				DBDF01DF29DC0B2700DD4C21 /* Poppins-SemiBold.ttf in Resources */,
 				DBDF01E029DC0B2700DD4C21 /* Poppins-ThinItalic.ttf in Resources */,
 				DBDF01D829DC0B2700DD4C21 /* Poppins-Regular.ttf in Resources */,
 				DBDF01DE29DC0B2700DD4C21 /* Poppins-LightItalic.ttf in Resources */,
+				DBFF6E912A342BD8006EA328 /* Launch Screen.storyboard in Resources */,
 				DBDF01E329DC0B2700DD4C21 /* Poppins-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,19 +635,36 @@
 			files = (
 				DBCD2E1F29E670B500513FEC /* CoreDataStack.swift in Sources */,
 				DBAA03B029DB8640008EF134 /* CircleButton.swift in Sources */,
-				DBAA03AC29DB6F2D008EF134 /* NetworkLayer.swift in Sources */,
+				DB4128A12AAD348F00024EED /* FatSecret.swift in Sources */,
+				DB4128B02AAD393400024EED /* FatSecretParams.swift in Sources */,
+				DB3CB45F2AB02EA400EBED4E /* Barcode.swift in Sources */,
 				DBCD2DD029E5150A00513FEC /* AddFood.swift in Sources */,
+				DB4128A92AAD391A00024EED /* Food.swift in Sources */,
+				DB4128AC2AAD391A00024EED /* Search.swift in Sources */,
+				DB4128AB2AAD391A00024EED /* Serving.swift in Sources */,
 				DBCD2DCE29E207F700513FEC /* CalorieView.swift in Sources */,
 				DB2AE91729DCA37B00741673 /* NetworkManager.swift in Sources */,
 				DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */,
+				DB4128B12AAD393400024EED /* FatSecretCredentials.swift in Sources */,
 				DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */,
+				DB4128F82AAD3E1B00024EED /* String+Utils.swift in Sources */,
+				DB4128AD2AAD391A00024EED /* FatSecretError.swift in Sources */,
+				DB4128F62AAD3E1B00024EED /* URLComponents+Utils.swift in Sources */,
+				DB37126A2AC8C7E30080E5F9 /* SearchResultsCell.swift in Sources */,
 				DB2AE91529DCA24400741673 /* FoodItem.swift in Sources */,
+				DB4128AA2AAD391A00024EED /* SearchedFood.swift in Sources */,
+				DB7945D72AB247C00064A5FA /* Autocomplete.swift in Sources */,
+				DB4128F92AAD3E1B00024EED /* Array+Utils.swift in Sources */,
 				DBCD2E1C29E646D100513FEC /* UserModel.swift in Sources */,
 				DB2AE91929DCFF6400741673 /* MacroView.swift in Sources */,
 				DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */,
 				DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */,
+				DB58EBF72A37A03E00237AC7 /* NutritionCounter.swift in Sources */,
 				DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */,
+				DB4128F72AAD3E1B00024EED /* CharacterSet+Utils.swift in Sources */,
+				DB3712672AC637300080E5F9 /* SearchResults.swift in Sources */,
 				DBAA03B329DC0665008EF134 /* MainLabel.swift in Sources */,
+				DB7945D22AB2308F0064A5FA /* SearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,17 +699,6 @@
 			targetProxy = DBAA039729DB6E5B008EF134 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DBAA038429DB6E5B008EF134 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBAA038529DB6E5B008EF134 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DBAA039E29DB6E5B008EF134 /* Debug */ = {
@@ -670,7 +751,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -724,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -745,6 +827,7 @@
 				DEVELOPMENT_TEAM = KN446JPPP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calorico/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to scan barcodes in order to retrieve nutritional information.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -773,6 +856,7 @@
 				DEVELOPMENT_TEAM = KN446JPPP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calorico/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to scan barcodes in order to retrieve nutritional information.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -910,6 +994,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB3CB45B2AAD400E00EBED4E /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB3CB45C2AAD400E00EBED4E /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB3CB45B2AAD400E00EBED4E /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */ = {

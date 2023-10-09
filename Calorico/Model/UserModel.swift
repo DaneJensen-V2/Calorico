@@ -10,20 +10,20 @@ import UIKit
 
 var currentUser : User? = nil
 
-struct User {
+struct User : Codable{
     
-    enum gender {
+    enum gender : Codable {
         case male
         case female
     }
-    enum exerciseLevel {
+    enum exerciseLevel : Codable  {
         case sedentary
         case light
         case moderate
         case heavy
         case athlete
     }
-    enum dietModel : Int {
+    enum dietModel : Int, Codable {
         case cutting = -500
         case maintaining = 0
         case bulking = 500
@@ -75,10 +75,50 @@ struct User {
     }
     
   
+    mutating func updateProgess() {
+        var totalCalories = 0
+        var totalProtein = 0
+        var totalFat = 0
+        var totalCarbs = 0
+        
+        for item in dailyFood {
+           totalCalories += item.macros.calories
+            totalProtein += item.macros.protein
+            totalFat += item.macros.fat
+            totalCarbs += item.macros.carbs
+        }
+        
+        if currentValues == nil {
+            currentValues = userMacros(fat: 0, protein: 0, carbs: 0, calories: 0)
+        }
+        
+        currentValues?.calories = totalCalories
+        currentValues?.protein = totalProtein
+        currentValues?.fat = totalFat
+        currentValues?.carbs = totalCarbs
+
+    }
+    
     mutating func updateGoals(){
         goals = calculateGoals()
     }
     
+    func saveToCoreData() {
+        do {
+            // Create JSON Encoder
+            let encoder = JSONEncoder()
+
+            // Encode Note
+            let data = try encoder.encode(self)
+
+            UserDefaults.standard.set(data, forKey: "UserData")
+            
+            print("Saved User to Defaults")
+
+        } catch {
+            print("Unable to Encode User (\(error))")
+        }
+    }
     
     func calculateGoals() -> userMacros{
         let TDEE = calculateTDEE()
@@ -106,16 +146,16 @@ struct User {
 }
 
 
-struct userMacros {
+struct userMacros : Codable {
     var fat : Int
     var protein :  Int
     var carbs : Int
     var calories : Int
 }
 
-struct food {
+struct food : Codable {
     let name : String
-    let image : String?
-    let id = UUID()
+    var id = UUID()
+    var date = Date()
     let macros : userMacros
 }

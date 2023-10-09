@@ -1,0 +1,6 @@
+framework module Pods_CaloricoTests {
+  umbrella header "Pods-CaloricoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

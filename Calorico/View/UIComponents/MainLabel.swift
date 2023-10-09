@@ -16,6 +16,11 @@ class MainLabel: UILabel {
         case percent
         case subheading
         case calorieHeading
+        case subheadingSmall
+        case subheadingLarge
+        case nutritionLabel
+        case calorieLabel
+        case caloriesLeft
     }
     
     enum colorStyle {
@@ -70,8 +75,18 @@ class MainLabel: UILabel {
             self.font = UIFont(name: "Poppins-Bold", size: 12)
         case .subheading:
             self.font = UIFont(name: "Poppins-Regular", size: 14)
+        case .caloriesLeft:
+            self.font = UIFont(name: "Poppins-Regular", size: 18)
         case .calorieHeading:
             self.font = UIFont(name: "Poppins-SemiBold", size: 52)
+        case .subheadingSmall:
+            self.font = UIFont(name: "Poppins-SemiBold", size: 20)
+        case .subheadingLarge:
+            self.font = UIFont(name: "Poppins-SemiBold", size: 28)
+        case .nutritionLabel:
+            self.font = UIFont(name: "Poppins-SemiBold", size: 17)
+        case .calorieLabel:
+            self.font = UIFont(name: "Poppins-SemiBold", size: 54)
         }
         
     }

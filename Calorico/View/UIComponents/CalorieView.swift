@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import SwiftUI
 
 class CalorieView: UIView {
 
     
 
 
-    public private(set) var totalValue: Double
-    public private(set) var currentValue: Double
+    public private(set) var totalValue: Int
+    public private(set) var currentValue: Int
 
 
     let circleView = UIView()
@@ -24,15 +25,16 @@ class CalorieView: UIView {
     let screenBounds = UIScreen.main.bounds
     var percentLabel = UILabel()
     var checkImage = UIImageView()
-    
-    init(totalValue : Double, currentValue : Double) {
+    var calorieLabel = UILabel()
+    var amountLeft = UILabel()
+
+    init(totalValue : Int, currentValue : Int) {
       
        self.totalValue = totalValue
        self.currentValue = currentValue
        
         super.init(frame: .zero)
 
-       setupView()
        
    }
    
@@ -68,8 +70,8 @@ class CalorieView: UIView {
 
         
         NSLayoutConstraint.activate([
-            containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
-            containerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15),
+            containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            containerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             containerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
 
@@ -77,7 +79,38 @@ class CalorieView: UIView {
         ])
         addComponents()
     }
+    func animateProgress(to new : Int) {
+        
+        print(new)
+        
+        let increment = new - currentValue
+                
+       var newCalorie = currentValue
+    
+        Timer.scheduledTimer(withTimeInterval: 0.8/Double(increment), repeats: true) { timer in
+                newCalorie = newCalorie + 1
+                
+            self.calorieLabel.text = String(Int(newCalorie))
+            
+                 if newCalorie >= new {
+                     timer.invalidate()
+                 }
+             }
+        
+        self.currentValue = new
 
+    }
+    func updateValues(newMax : Int, newValue : Int) {
+        
+        self.totalValue = newMax
+        
+        self.currentValue = newValue
+        
+        setupView()
+        
+        
+        
+    }
     func addComponents() {
         let stack = UIStackView()
         
@@ -95,7 +128,7 @@ class CalorieView: UIView {
         
         stack.axis = .vertical
         stack.alignment = .center
-        stack.distribution = .equalSpacing
+        stack.distribution = .fillProportionally
      
         let titleStack = UIStackView()
         titleStack.axis = .horizontal
@@ -122,7 +155,7 @@ class CalorieView: UIView {
         calorieStack.alignment = .center
         calorieStack.spacing = -5
         
-        let calorieLabel = MainLabel(labelText: String(Int(currentValue)), labelType: .calorieHeading, labelColor: .white)
+         calorieLabel = MainLabel(labelText: String(Int(currentValue)), labelType: .calorieLabel, labelColor: .white)
         NSLayoutConstraint.activate([
             calorieLabel.heightAnchor.constraint(equalToConstant: 55),
 
@@ -130,32 +163,41 @@ class CalorieView: UIView {
         calorieStack.addArrangedSubview(calorieLabel)
        
         let amountString = String(Int(totalValue - currentValue)) + " left"
-        let amountLeft = MainLabel(labelText: amountString, labelType: .subheading, labelColor: .lightGray)
+        amountLeft = MainLabel(labelText: amountString, labelType: .caloriesLeft, labelColor: .lightGray)
         calorieStack.addArrangedSubview(amountLeft)
 
         stack.addArrangedSubview(calorieStack)
-        let progessView = UIView()
-        progessView.backgroundColor = .white
-        progessView.layer.cornerRadius = 15
-        progessView.clipsToBounds = true
-        
-        stack.addArrangedSubview(progessView)
-
-        
-        progessView.translatesAutoresizingMaskIntoConstraints = false
-
-        
-        NSLayoutConstraint.activate([
-            progessView.heightAnchor.constraint(equalToConstant: 35),
-            progessView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
-            progessView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-
-
-
-        ])
+       
         
     }
    
-    
 
 }
+struct UIViewPreview<View: UIView>: UIViewRepresentable {
+    let view: View
+    
+    init(_ builder: @escaping () -> View) {
+        view = builder()
+    }
+    
+    // MARK: UIViewRepresentable
+    func makeUIView(context: Context) -> UIView {
+        return view
+    }
+    
+    func updateUIView(_ view: UIView, context: Context) {
+        view.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        view.setContentHuggingPriority(.defaultHigh, for: .vertical)
+    }
+}
+struct BestInClassPreviews_Previews: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            // Return whatever controller you want to preview
+            let vc = CalorieView(totalValue: 2000, currentValue: 0)
+            vc.setupView()
+            return vc
+        }
+    }
+}
+

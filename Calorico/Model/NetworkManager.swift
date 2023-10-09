@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import CryptoKit
 
 public class NetworkManager {
+    
+    let fatSecretClient = FatSecret()
     
     enum fetchError: Error {
         case notFound
@@ -16,133 +19,143 @@ public class NetworkManager {
     
     let constants = Constants()
  
-    func getFoodInfo(from barcode : String, completion: @escaping (Result<finalFoodItem, Error>) -> Void){
-            
-        checkUSDA(from: barcode, completion: { USDAresult in
-            switch USDAresult {
-            case .failure(let error):
-                print(error)
-                self.checkOpenFoodFacts(from: barcode, completion: { OFFresult in
-                    switch OFFresult {
-                    case .failure(let error):
-                        completion(.failure(error))
-                    case .success(let food):
-                        completion(.success(self.formatOpenFoodFacts(food: food)))
-                    }
-                })
-                
-            case .success(let food):
-                completion(.success(self.formatUSDA(food: food)))
-              }
-            })
-            
-          
-    }
     
-    func formatUSDA(food : USDAFoodObject) -> finalFoodItem{
-        let protein = food.foods[0].foodNutrients[0].value
-        let carbs = food.foods[0].foodNutrients[2].value
-        let fats = food.foods[0].foodNutrients[1].value
-        let calories = food.foods[0].foodNutrients[3].value
-        let servingSize = food.foods[0].servingSize
-        let name = food.foods[0].description
-        
-        let formattedName = name.lowercased().capitalized
-        return finalFoodItem(serving: servingSize, protein: protein, fats: fats, carbs: carbs, calories: calories, name: formattedName)
-        
-    }
     
-    func formatOpenFoodFacts(food : OpenFoodFactsObject) -> finalFoodItem{
-        let protein = food.product.nutriments.proteins
-        let carbs =  food.product.nutriments.carbohydrates
-        let fats =  food.product.nutriments.fat
-        let calories =  food.product.nutriments.calories
-        let servingSize : Double?
-        if let quantity = food.product.serving_quantity{
-            servingSize = Double(quantity)
-        }
-        else {
-            servingSize = nil
-        }
+    func getFoodFromBarcode(ID : String, completion: @escaping (Result<finalFoodItem, Error>) -> Void) {
         
-        let name = food.product.product_name
-        
-        let formattedName = name.lowercased().capitalized
-        return finalFoodItem(serving: servingSize, protein: protein, fats: fats, carbs: carbs, calories: calories, name: formattedName)
-        
-        
-    }
-    
-    func checkUSDA(from ID : String, completion: @escaping (Result<USDAFoodObject, Error>) -> Void) {
+        fatSecretClient.getFoodFromBarcode(barcode: ID) { result in
+            switch result {
+            case .success(let barcode):
+                print(barcode.food_id.value)
+                if barcode.food_id.value == "0"{
+                    let error = NSError(domain: "", code: 400, userInfo: [ NSLocalizedDescriptionKey: "Food not Found"])
 
-        
-        guard let url = URL(string: "https://api.nal.usda.gov/fdc/v1/foods/search?query=\(ID)&api_key=\(constants.USDA_API_KEY)") else{
-            print("URL creation error")
-            return
-        }
-        let urlRequest = URLRequest(url: url)
-        
-        let dataTask = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                print("Unknown error", error)
-                return
-            }
-            
-            guard response != nil, let data = data else {
-                return
-            }
-            
-            if let responseObject = try? JSONDecoder().decode(USDAFoodObject.self, from: data) {
-                
-                if responseObject.foods.isEmpty {
-                    let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "No Food Found."])
                     completion(.failure(error))
-
+                    break
                 }
-                else {
-                    completion(.success(responseObject))
+                self.fatSecretClient.getFood(id: barcode.food_id.value) { food in
+                    print(food)
+                    if let formattedFood = self.formatFoodItem(food: food){
+                        completion(.success(formattedFood))
+
+                    }
+                    else {
+                        let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "Could not format result"])
+
+                        completion(.failure(error))
+                    }
+                  
+                }
+                
+                break
+            case.failure(let error):
+                print(error)
+                completion(.failure(error))
+
+            }
+        }
+    }
+    
+    func getFoodFromSearch(searchTerm : String, page : Int, completion: @escaping (Result<[finalFoodItem], Error>) -> Void) {
+        let dispatchGroup = DispatchGroup()
+        let dispatchQueue = DispatchQueue(label: "any-label-name")
+        let dispatchSemaphore = DispatchSemaphore(value: 0)
+        
+        fatSecretClient.searchFood(name: searchTerm, page:  page) { result in
+            
+            switch result {
+            case .success(let foodList):
+                var formattedFoods : [finalFoodItem] = []
+                dispatchQueue.async {
+                    
+                    for food in foodList {
+                        dispatchGroup.enter()
+
+                        formattedFoods.append(self.formatFoodItem(food: food)!) //Fix force unwrap
+                        dispatchSemaphore.signal()
+                        dispatchGroup.leave()
+                    }
+                    dispatchSemaphore.wait()
 
                 }
                 
-            } else {
-                let error = NSError(domain: "", code: 404, userInfo: [ NSLocalizedDescriptionKey: "Failed."])
+                dispatchGroup.notify(queue: dispatchQueue) {
+                    
+                    DispatchQueue.main.async {
+                        
+                        completion(.success(formattedFoods))
+                    }
+                }
+                
+                break
+            case.failure(let error):
+                print(error)
                 completion(.failure(error))
+
             }
         }
-        
-        dataTask.resume()
     }
     
-    func checkOpenFoodFacts(from ID : String, completion: @escaping (Result<OpenFoodFactsObject, Error>) -> Void) {
-        
-        guard let url = URL(string: "https://world.openfoodfacts.org/api/v2/product/\(ID)") else{
-            print("URL creation error")
-            return
-        }
-        
-        let urlRequest = URLRequest(url: url)
-        
-        let dataTask = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                print("Unknown error", error)
-                return
-            }
+    
+    func getSearchAutoComplete(searchTerm : String, completion: @escaping (Result<[String], Error>) -> Void) {
+        fatSecretClient.searchAutoComplete(term: searchTerm) { result in
             
-            guard response != nil, let data = data else {
-                return
+            if(!result.isEmpty){
+        //        print(result)
+                completion(.success(result))
+
             }
-            
-            if let responseObject = try? JSONDecoder().decode(OpenFoodFactsObject.self, from: data) {
-                completion(.success(responseObject))
-            } else {
-                let error = NSError(domain: "com.AryamanSharda", code: 200, userInfo: [NSLocalizedDescriptionKey: "Failed"])
+            else {
+                let error = NSError(domain: "search", code: 601, userInfo: [ NSLocalizedDescriptionKey: "Search yielded no results"])
+
                 completion(.failure(error))
             }
         }
-        
-        dataTask.resume()
     }
+    
+    func formatFoodItem(food : Food) -> finalFoodItem?{
+        if let servings = food.servings?[0]{
+            
+            let protein = Double(servings.protein ?? "0")!
+            let carbs =   Double(servings.carbohydrate ?? "0")!
+            let fats =   Double(servings.fat ?? "0")!
+            let calories =   Double(servings.calories ?? "0")!
+            let servingSize : Double?
+            let servingUnit = servings.servingUnit ?? "Item"
+            if let quantity = servings.servingAmount{
+                servingSize = Double(quantity)
+            }
+            else {
+                servingSize = nil
+            }
+            let description = servings.servingDescription ?? "1 serving"
+            let name = food.name
+            
+            var type : foodType
+            var brand = ""
+
+            switch food.type {
+            case "Brand":
+                type = .brand
+                brand = food.brand ?? "None"
+            case "Generic":
+                type = .generic
+            default:
+                type = .generic
+            }
+            
+            let formattedName = name.lowercased().capitalized
+            return finalFoodItem(serving: servingSize, protein: protein, fats: fats, carbs: carbs, calories: calories, name: formattedName, servingAmount: servingSize ?? 1, servingUnit: servingUnit, foodType: type, brandName: brand, servingDescription: description )
+            
+        }
+        
+        else {
+            return nil
+        }
+      
+        
+    }
+    
+    
 }
 

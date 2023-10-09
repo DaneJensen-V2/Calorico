@@ -21,8 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         let nav = UINavigationController()
         let homeScreen = HomeScreen()
-        let addScreen =  AddFood()
-        nav.viewControllers = [ addScreen, homeScreen]
+        let addScreen =  AddFoodViewController()
+        let searchScreen = SearchViewController()
+        nav.viewControllers = [homeScreen]
         nav.setNavigationBarHidden(true, animated: false)
         window?.windowScene = windowScene
         window?.rootViewController = nav
@@ -57,7 +58,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        currentUser?.saveToCoreData()
     }
 
 

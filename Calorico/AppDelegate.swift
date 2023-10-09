@@ -7,11 +7,16 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    lazy var coreDataStack: CoreDataStack = .init(modelName: "User")
+    enum Constants {
+            static let apiKey = "8a70cd32aae046aab880e1a206bfe312"
+            static let apiSecret = "ca559d5e668d4d89968df047a92fe58a"
+        }
+    
+    lazy var coreDataStack: CoreDataStack = .init(modelName: "UserData")
 
     static let sharedAppDelegate: AppDelegate = {
         guard let delegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -23,9 +28,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.\
+        FatSecretCredentials.setConsumerKey(Constants.apiKey)
+        FatSecretCredentials.setSharedSecret(Constants.apiSecret)
         
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+
         if(defaults.bool(forKey: "HasLaunchedOnce")) {
             print("Loading Data")
+            let lastDate = (defaults.object(forKey: "lastLaunchedDate")) as! Date
+            print("Last Opened: \(lastDate)")
+//            let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: lastDate)
+        
+            let lastDay = Calendar.current.dateComponents([.day], from: lastDate)
+            let currentDay = Calendar.current.dateComponents([.day], from: Date.now)
+
+            
+            print(lastDay.day!)
+            print(currentDay.day!)
+
+            let currentDate = Date.now
+            print("Current Date: \(currentDate)")
+            defaults.set(Date.now, forKey: "lastLaunchedDate")
+
+            if lastDay != currentDay
+            {
+                
+                print("It is a different day.")
+                
+                //currentUser?.dailyFood = []
+                newDay = true
+            }
 
         } else {
           // This is the first launch ever
@@ -36,6 +70,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.set(0, forKey: "protein")
             defaults.set(0, forKey: "carbs")
             defaults.set(0, forKey: "fat")
+            
+            defaults.set(Date.now, forKey: "lastLaunchedDate")
         }
         
         return true
