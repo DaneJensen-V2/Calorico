@@ -10,6 +10,7 @@ import BarcodeScanner
 import SwiftUI
 
 var newDay = false
+var foodHistory : [food] =  []
 
 class HomeScreen: UIViewController, UINavigationControllerDelegate{
 
@@ -54,7 +55,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate{
                     currentUser?.dailyFood = []
                 }
                 
-                print(currentUser)
+                print(currentUser ?? "No User")
                 currentUser?.updateGoals()
                 currentUser?.updateProgess()
                 
@@ -101,7 +102,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate{
        
         if((currentUser) != nil){
             currentUser?.updateGoals()
-            print(currentUser?.goals)
+            print(currentUser?.goals ?? "No Goals")
 
         }
         

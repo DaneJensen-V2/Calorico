@@ -10,14 +10,17 @@ import UIKit
 var selectedTerm = ""
 var showRecents = true
 var recentSearches : [String] = []
+var showHistory = true
 
 class autoCompleteVC : UIViewController, UITableViewDataSource, UITableViewDelegate {
     let colors = Colors()
     let autoCompleteTable = UITableView()
-    var data = [""]
+    var data : [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(foodHistory)
         
         data = recentSearches
         
@@ -44,6 +47,7 @@ class autoCompleteVC : UIViewController, UITableViewDataSource, UITableViewDeleg
             upperView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0),
             upperView.heightAnchor.constraint(equalToConstant: 140)
         ])
+        
         view.addSubview(autoCompleteTable)
         autoCompleteTable.backgroundColor = .white
         autoCompleteTable.translatesAutoresizingMaskIntoConstraints = false
@@ -79,12 +83,6 @@ class autoCompleteVC : UIViewController, UITableViewDataSource, UITableViewDeleg
     
 }
 
-
-
-
-
-
-
 class SearchViewController: UIViewController , UISearchResultsUpdating, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
  
     
@@ -92,6 +90,7 @@ class SearchViewController: UIViewController , UISearchResultsUpdating, UISearch
     var searchResults : [finalFoodItem] = []
     let searchResultsTable = UITableView(frame: CGRect.zero, style: .grouped)
 
+    
     let colors = Colors()
     let networkManager = NetworkManager()
     let searchController = UISearchController(searchResultsController: autoCompleteVC())
@@ -102,6 +101,7 @@ class SearchViewController: UIViewController , UISearchResultsUpdating, UISearch
         super.viewDidLoad()
         recentSearches = (defaults.array(forKey: "recentSearches")) as? [String] ?? [""]
         addNoResults()
+        showHistory = true
 
         NotificationCenter.default.addObserver(self, selector: #selector(self.searchFood), name: Notification.Name("SearchFood"), object: nil)
 
@@ -253,16 +253,18 @@ class SearchViewController: UIViewController , UISearchResultsUpdating, UISearch
         let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
                
                let label = UILabel()
-               label.frame = CGRect.init(x: 20, y: 0, width: headerView.frame.width-10, height: headerView.frame.height-10)
-        label.text = "Recently Added"
+               label.frame = CGRect.init(x: 20, y: 10, width: headerView.frame.width-10, height: headerView.frame.height-10)
+        label.text = showHistory ? "History" : "Results"
         label.font =  UIFont(name: "Poppins-SemiBold", size: 20)
-
         label.textColor = .black
         
-               headerView.addSubview(label)
-               
-               return headerView
-        
+        headerView.addSubview(label)
+       
+        return headerView
+      
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -287,20 +289,26 @@ class SearchViewController: UIViewController , UISearchResultsUpdating, UISearch
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.searchResultsTable.dequeueReusableCell(withIdentifier: "ResultsCell") as! SearchResultsCell
+        
         cell.food = searchResults[indexPath.row]
         cell.updateView()
         return cell
+        
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
     
     func fetchFoodFromTerm(term : String){
+        
         DispatchQueue.main.async { [self] in
             searchResultsTable.isHidden = false
             spinner.isHidden = false
+            showHistory = false
+            searchResultsTable.reloadData()
         }
-
+        
         recentSearch(term: term)
         searchResults = []
 
@@ -325,6 +333,7 @@ class SearchViewController: UIViewController , UISearchResultsUpdating, UISearch
     }
     
     func searchBarSearchButtonClicked(_ searchBar : UISearchBar){
+        
         guard let text = searchController.searchBar.text else {
             return
         }
@@ -334,6 +343,7 @@ class SearchViewController: UIViewController , UISearchResultsUpdating, UISearch
     }
     
     func recentSearch(term : String) {
+        
         if recentSearches.count == 5 {
             recentSearches.removeLast()
             recentSearches.insert(term, at: 0)

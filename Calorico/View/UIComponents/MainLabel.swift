@@ -84,7 +84,7 @@ class MainLabel: UILabel {
         case .subheadingLarge:
             self.font = UIFont(name: "Poppins-SemiBold", size: 28)
         case .nutritionLabel:
-            self.font = UIFont(name: "Poppins-SemiBold", size: 17)
+            self.font = UIFont(name: "Poppins-SemiBold", size: 20)
         case .calorieLabel:
             self.font = UIFont(name: "Poppins-SemiBold", size: 54)
         }

@@ -21,8 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         let nav = UINavigationController()
         let homeScreen = HomeScreen()
-        let addScreen =  AddFoodViewController()
-        let searchScreen = SearchViewController()
         nav.viewControllers = [homeScreen]
         nav.setNavigationBarHidden(true, animated: false)
         window?.windowScene = windowScene

@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
             let lastDay = Calendar.current.dateComponents([.day], from: lastDate)
             let currentDay = Calendar.current.dateComponents([.day], from: Date.now)
-
+          
             
             print(lastDay.day!)
             print(currentDay.day!)
@@ -52,6 +52,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Current Date: \(currentDate)")
             defaults.set(Date.now, forKey: "lastLaunchedDate")
 
+            
+            if let data = UserDefaults.standard.data(forKey: "foodHistory") {
+                do {
+                    // Create JSON Decoder
+                    let decoder = JSONDecoder()
+
+                    // Decode Note
+                    let history = try decoder.decode([food].self, from: data)
+                    foodHistory = history
+                } catch {
+                    print("Unable to Decode Notes (\(error))")
+                }
+            }
+            
             if lastDay != currentDay
             {
                 
@@ -60,6 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 //currentUser?.dailyFood = []
                 newDay = true
             }
+            
 
         } else {
           // This is the first launch ever

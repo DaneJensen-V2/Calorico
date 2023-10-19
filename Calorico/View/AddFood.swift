@@ -148,9 +148,30 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         currentUser?.dailyFood.append(newFood)
         currentUser?.updateProgess()
         
+        foodHistory.insert(newFood, at: 0)
+        
+        if (foodHistory.count == 20) {
+            foodHistory.remove(at: foodHistory.count - 1)
+        }
+        do {
+            // Create JSON Encoder
+            let encoder = JSONEncoder()
+
+            // Encode Note
+            let data = try encoder.encode(foodHistory)
+
+            // Write/Set Data
+            UserDefaults.standard.set(data, forKey: "foodHistory")
+
+        } catch {
+            print("Unable to Encode Array of Notes (\(error))")
+        }
+
+        
+        
         NotificationCenter.default.post(name: Notification.Name("FoodAdded"), object: nil)
         
-        print(currentUser?.dailyFood)
+        print(currentUser?.dailyFood ?? "No Daily Food")
         
         self.dismiss(animated: true)
         
@@ -336,7 +357,7 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             vStack.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15),
             vStack.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -15),
             vStack.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -15),
-            vStack.topAnchor.constraint(equalTo: nLabel.bottomAnchor, constant: 10)
+            vStack.topAnchor.constraint(equalTo: nLabel.bottomAnchor, constant: 20)
             
         ])
         

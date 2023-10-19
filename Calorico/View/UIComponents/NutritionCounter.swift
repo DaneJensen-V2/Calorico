@@ -190,10 +190,14 @@ class NutritionCounter: UIView {
         textField.textAlignment = .right
         textField.returnKeyType = UIReturnKeyType.next
         textField.autocorrectionType = UITextAutocorrectionType.no
-        textField.font = UIFont(name: "Poppins-Regular", size: 24)
+        textField.font = UIFont(name: "Poppins-Regular", size: 22)
         textField.borderStyle = UITextField.BorderStyle.none
         textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         textField.textColor = .white
+        textField.backgroundColor = colors.lightGray!.withAlphaComponent(0.2)
+        textField.layer.cornerRadius = 10
+        textField.setLeftPaddingPoints(2)
+        textField.setRightPaddingPoints(2)
 
         
         let bar = UIToolbar(frame:CGRect(x:0, y:0, width:100, height:100))
@@ -212,7 +216,7 @@ class NutritionCounter: UIView {
         NSLayoutConstraint.activate([
             textField.bottomAnchor.constraint(equalTo: mySlider.topAnchor, constant: 2),
             textField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -17),
-            textField.widthAnchor.constraint(equalToConstant: 60),
+            textField.widthAnchor.constraint(equalToConstant: 65),
             textField.heightAnchor.constraint(equalToConstant: 30)
         ])
         

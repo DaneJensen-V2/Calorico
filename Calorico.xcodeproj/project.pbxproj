@@ -17,8 +17,8 @@
 		DB37126B2AC8C7E30080E5F9 /* SearchResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB3712692AC8C7E30080E5F9 /* SearchResultsCell.xib */; };
 		DB3CB45D2AAD400E00EBED4E /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB3CB45C2AAD400E00EBED4E /* CryptoSwift */; };
 		DB3CB45F2AB02EA400EBED4E /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CB45E2AB02EA400EBED4E /* Barcode.swift */; };
+		DB3F24702ADB076800BFAE45 /* textFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3F246F2ADB076800BFAE45 /* textFieldExt.swift */; };
 		DB4128A12AAD348F00024EED /* FatSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A02AAD348F00024EED /* FatSecret.swift */; };
-		DB4128A32AAD387200024EED /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = DB4128A22AAD387200024EED /* Extensions */; };
 		DB4128A92AAD391A00024EED /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A42AAD391A00024EED /* Food.swift */; };
 		DB4128AA2AAD391A00024EED /* SearchedFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A52AAD391A00024EED /* SearchedFood.swift */; };
 		DB4128AB2AAD391A00024EED /* Serving.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4128A62AAD391A00024EED /* Serving.swift */; };
@@ -103,8 +103,8 @@
 		DB3712682AC8C7E30080E5F9 /* SearchResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCell.swift; sourceTree = "<group>"; };
 		DB3712692AC8C7E30080E5F9 /* SearchResultsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsCell.xib; sourceTree = "<group>"; };
 		DB3CB45E2AB02EA400EBED4E /* Barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
+		DB3F246F2ADB076800BFAE45 /* textFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldExt.swift; sourceTree = "<group>"; };
 		DB4128A02AAD348F00024EED /* FatSecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatSecret.swift; sourceTree = "<group>"; };
-		DB4128A22AAD387200024EED /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
 		DB4128A42AAD391A00024EED /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		DB4128A52AAD391A00024EED /* SearchedFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchedFood.swift; sourceTree = "<group>"; };
 		DB4128A62AAD391A00024EED /* Serving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serving.swift; sourceTree = "<group>"; };
@@ -202,6 +202,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DB3F246E2ADB075A00BFAE45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB3F246F2ADB076800BFAE45 /* textFieldExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DB4128B22AAD3A4200024EED /* FatSecret */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,7 +303,7 @@
 		DBCD2DD129E5151200513FEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DB4128A22AAD387200024EED /* Extensions */,
+				DB3F246E2ADB075A00BFAE45 /* Extensions */,
 				DB4128B22AAD3A4200024EED /* FatSecret */,
 				DBAA03A929DB6EA4008EF134 /* Constants.swift */,
 				DB2AE91629DCA37B00741673 /* NetworkManager.swift */,
@@ -497,7 +505,6 @@
 				DBDF01C429DC0B0C00DD4C21 /* Poppins-Bold.ttf in Resources */,
 				DBDF01D929DC0B2700DD4C21 /* Poppins-ExtraBold.ttf in Resources */,
 				DBDF01E229DC0B2700DD4C21 /* Poppins-Medium.ttf in Resources */,
-				DB4128A32AAD387200024EED /* Extensions in Resources */,
 				DBDF01DC29DC0B2700DD4C21 /* Poppins-MediumItalic.ttf in Resources */,
 				DBDF01E529DC0B2700DD4C21 /* Poppins-ExtraLight.ttf in Resources */,
 				DBDF01DF29DC0B2700DD4C21 /* Poppins-SemiBold.ttf in Resources */,
@@ -647,6 +654,7 @@
 				DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */,
 				DB4128B12AAD393400024EED /* FatSecretCredentials.swift in Sources */,
 				DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */,
+				DB3F24702ADB076800BFAE45 /* textFieldExt.swift in Sources */,
 				DB4128F82AAD3E1B00024EED /* String+Utils.swift in Sources */,
 				DB4128AD2AAD391A00024EED /* FatSecretError.swift in Sources */,
 				DB4128F62AAD3E1B00024EED /* URLComponents+Utils.swift in Sources */,
@@ -827,6 +835,7 @@
 				DEVELOPMENT_TEAM = KN446JPPP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calorico/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to scan barcodes in order to retrieve nutritional information.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -856,6 +865,7 @@
 				DEVELOPMENT_TEAM = KN446JPPP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calorico/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used to scan barcodes in order to retrieve nutritional information.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
