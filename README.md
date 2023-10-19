@@ -1,4 +1,5 @@
-<img src="Screenshots/Icon.png" width="50" height ="50"> # Calorico
+
+#Calorico <img src="Screenshots/Icon.png" width="100" height ="100">  
 ## _Easy and Intuitive Nutrition Tracking App_
 
 
