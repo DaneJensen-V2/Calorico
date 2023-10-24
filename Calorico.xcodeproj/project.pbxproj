@@ -35,7 +35,7 @@
 		DB7945D72AB247C00064A5FA /* Autocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7945D62AB247C00064A5FA /* Autocomplete.swift */; };
 		DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037629DB6E5A008EF134 /* AppDelegate.swift */; };
 		DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */; };
-		DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */; };
+		DBAA037B29DB6E5A008EF134 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* HomeScreenVC.swift */; };
 		DBAA038129DB6E5A008EF134 /* Calorico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037F29DB6E5A008EF134 /* Calorico.xcdatamodeld */; };
 		DBAA038329DB6E5B008EF134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAA038229DB6E5B008EF134 /* Assets.xcassets */; };
 		DBAA039129DB6E5B008EF134 /* CaloricoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA039029DB6E5B008EF134 /* CaloricoTests.swift */; };
@@ -45,7 +45,7 @@
 		DBAA03B029DB8640008EF134 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03AF29DB8640008EF134 /* CircleButton.swift */; };
 		DBAA03B329DC0665008EF134 /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA03B229DC0665008EF134 /* MainLabel.swift */; };
 		DBCD2DCE29E207F700513FEC /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2DCD29E207F700513FEC /* CalorieView.swift */; };
-		DBCD2DD029E5150A00513FEC /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2DCF29E5150A00513FEC /* AddFood.swift */; };
+		DBCD2DD029E5150A00513FEC /* AddFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2DCF29E5150A00513FEC /* AddFoodVC.swift */; };
 		DBCD2E1C29E646D100513FEC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2E1B29E646D100513FEC /* UserModel.swift */; };
 		DBCD2E1F29E670B500513FEC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD2E1E29E670B500513FEC /* CoreDataStack.swift */; };
 		DBDF01C429DC0B0C00DD4C21 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBDF01C329DC0B0C00DD4C21 /* Poppins-Bold.ttf */; };
@@ -122,7 +122,7 @@
 		DBAA037329DB6E5A008EF134 /* Calorico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAA037629DB6E5A008EF134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		DBAA037A29DB6E5A008EF134 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		DBAA038029DB6E5A008EF134 /* Calorico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calorico.xcdatamodel; sourceTree = "<group>"; };
 		DBAA038229DB6E5B008EF134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAA038729DB6E5B008EF134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		DBAA03AF29DB8640008EF134 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		DBAA03B229DC0665008EF134 /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
 		DBCD2DCD29E207F700513FEC /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
-		DBCD2DCF29E5150A00513FEC /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
+		DBCD2DCF29E5150A00513FEC /* AddFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodVC.swift; sourceTree = "<group>"; };
 		DBCD2E1B29E646D100513FEC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DBCD2E1E29E670B500513FEC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DBDF01C329DC0B0C00DD4C21 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -205,6 +205,10 @@
 		DB3F246E2ADB075A00BFAE45 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DB4128F32AAD3E1B00024EED /* Array+Utils.swift */,
+				DB4128F52AAD3E1B00024EED /* CharacterSet+Utils.swift */,
+				DB4128F42AAD3E1B00024EED /* String+Utils.swift */,
+				DB4128F22AAD3E1B00024EED /* URLComponents+Utils.swift */,
 				DB3F246F2ADB076800BFAE45 /* textFieldExt.swift */,
 			);
 			path = Extensions;
@@ -213,10 +217,6 @@
 		DB4128B22AAD3A4200024EED /* FatSecret */ = {
 			isa = PBXGroup;
 			children = (
-				DB4128F32AAD3E1B00024EED /* Array+Utils.swift */,
-				DB4128F52AAD3E1B00024EED /* CharacterSet+Utils.swift */,
-				DB4128F42AAD3E1B00024EED /* String+Utils.swift */,
-				DB4128F22AAD3E1B00024EED /* URLComponents+Utils.swift */,
 				DB4128AF2AAD393400024EED /* FatSecretCredentials.swift */,
 				DB4128AE2AAD393400024EED /* FatSecretParams.swift */,
 				DB4128A82AAD391A00024EED /* FatSecretError.swift */,
@@ -317,9 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				DBAA03B129DB8644008EF134 /* UIComponents */,
-				DBAA037A29DB6E5A008EF134 /* HomeScreen.swift */,
-				DBCD2DCF29E5150A00513FEC /* AddFood.swift */,
-				DB7945D02AB2308F0064A5FA /* SearchViewController.swift */,
 				DB3712682AC8C7E30080E5F9 /* SearchResultsCell.swift */,
 				DB3712692AC8C7E30080E5F9 /* SearchResultsCell.xib */,
 			);
@@ -329,6 +326,9 @@
 		DBCD2DD329E5151F00513FEC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBAA037A29DB6E5A008EF134 /* HomeScreenVC.swift */,
+				DBCD2DCF29E5150A00513FEC /* AddFoodVC.swift */,
+				DB7945D02AB2308F0064A5FA /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,6 +389,7 @@
 				DBAA037029DB6E5A008EF134 /* Frameworks */,
 				DBAA037129DB6E5A008EF134 /* Resources */,
 				904E90E4BCB70E981EFCA78C /* [CP] Embed Pods Frameworks */,
+				DB957EF72AE848E7006A9D94 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -449,7 +450,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DBAA037229DB6E5A008EF134 = {
 						CreatedOnToolsVersion = 14.2;
@@ -633,6 +634,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB957EF72AE848E7006A9D94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -645,7 +663,7 @@
 				DB4128A12AAD348F00024EED /* FatSecret.swift in Sources */,
 				DB4128B02AAD393400024EED /* FatSecretParams.swift in Sources */,
 				DB3CB45F2AB02EA400EBED4E /* Barcode.swift in Sources */,
-				DBCD2DD029E5150A00513FEC /* AddFood.swift in Sources */,
+				DBCD2DD029E5150A00513FEC /* AddFoodVC.swift in Sources */,
 				DB4128A92AAD391A00024EED /* Food.swift in Sources */,
 				DB4128AC2AAD391A00024EED /* Search.swift in Sources */,
 				DB4128AB2AAD391A00024EED /* Serving.swift in Sources */,
@@ -653,7 +671,7 @@
 				DB2AE91729DCA37B00741673 /* NetworkManager.swift in Sources */,
 				DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */,
 				DB4128B12AAD393400024EED /* FatSecretCredentials.swift in Sources */,
-				DBAA037B29DB6E5A008EF134 /* HomeScreen.swift in Sources */,
+				DBAA037B29DB6E5A008EF134 /* HomeScreenVC.swift in Sources */,
 				DB3F24702ADB076800BFAE45 /* textFieldExt.swift in Sources */,
 				DB4128F82AAD3E1B00024EED /* String+Utils.swift in Sources */,
 				DB4128AD2AAD391A00024EED /* FatSecretError.swift in Sources */,
@@ -745,6 +763,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -806,6 +825,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

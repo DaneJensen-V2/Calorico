@@ -8,6 +8,7 @@ target 'Calorico' do
   # Pods for Calorico
 pod 'BarcodeScanner'
 pod 'IQKeyboardManagerSwift'
+pod 'SwiftLint'
 
   target 'CaloricoTests' do
     inherit! :search_paths

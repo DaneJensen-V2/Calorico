@@ -6,116 +6,143 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		0005307377066EC46EA91823415301C6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A3784E4A7FD372E716C34045447F /* UIView+Extensions.swift */; };
-		041B655D7F5932F03A65C154BC02BDAA /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD6C52A6CB194D59F44883F905E1AA /* IQInvocation.swift */; };
-		04B0884964D9592302CA654E0B67E80E /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210C69A9E7250BFF75892ED310B49B2 /* IQUIView+Hierarchy.swift */; };
-		08B185E08278AE7EC55F8BBB19693AC5 /* IQKeyboardManager+OrientationNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A179A7034AB2B5DE21624D9E9B98AAC /* IQKeyboardManager+OrientationNotification.swift */; };
-		0F94B2449CA1ADA76AE79C0BF6A08549 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADACD26863E48E5FB546E98B7C54360 /* IQKeyboardManagerConstantsInternal.swift */; };
-		12576FA40395138A8369CE1927AC95CE /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A535487922730E53A7BF9EC433107 /* TorchMode.swift */; };
-		1740CBB33D469AEDD5D7291A9268FA97 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17BAB770E4E34E29998926E74F8BB3 /* IQToolbar.swift */; };
-		1A9B9579E46EFBA63C5F57A6B17B5ECA /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84DE757F60E05B7CE295318F421A71 /* IQKeyboardManagerSwift-dummy.m */; };
-		1D4EA5348A563650778B6547BC381579 /* Pods-Calorico-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */; };
-		1D8031C86A94D32E00ED55B80428A0F3 /* IQKeyboardManager+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8A7667A4D9DC9AA6A436BD0E51708 /* IQKeyboardManager+Toolbar.swift */; };
-		20616A47873318F80BFFEABAC9730122 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B1BFA4C2CD29751C5360E62AEBFB4 /* IQTitleBarButtonItem.swift */; };
-		24EC44FF102C2635A476CEF7567F89DA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD9A87E3262F4A2F6EFCAC15C2F9634 /* IQPreviousNextView.swift */; };
-		262CBFB84815CDE8C006B8E72B5ED13F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ACC74C6F96E215A9236F4ECB00C091 /* UIViewController+Extensions.swift */; };
-		2945C207F6B20B24A61A0DFF4FF8DBF3 /* Pods-Calorico-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5E4C199A23C9680E308C9A60BFC451 /* Pods-Calorico-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0005307377066EC46EA91823415301C6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7BAD4BE74835DE60763ED75F24CC67 /* UIView+Extensions.swift */; };
+		041B655D7F5932F03A65C154BC02BDAA /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE87A7B519AEFD05835F0BC06995AE0 /* IQInvocation.swift */; };
+		04B0884964D9592302CA654E0B67E80E /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807AAE3000BAFD98D602D60032A8AFE7 /* IQUIView+Hierarchy.swift */; };
+		08B185E08278AE7EC55F8BBB19693AC5 /* IQKeyboardManager+OrientationNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456A7030ED29ED1501DB5BFC02FE40E /* IQKeyboardManager+OrientationNotification.swift */; };
+		0AF4CB27825E762520455C6568A3ECE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B5AFDA928E6A4B4C82CDD19FD5734CB /* Localizable.strings */; };
+		0F94B2449CA1ADA76AE79C0BF6A08549 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1817918B4BD746008B624A592EFED /* IQKeyboardManagerConstantsInternal.swift */; };
+		0FF00830B54C2303218B5B9699EC13B6 /* Pods-Calorico-CaloricoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB39BDFECC611AB491F6F5F701ED3D44 /* Pods-Calorico-CaloricoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12576FA40395138A8369CE1927AC95CE /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7629E00DA3DFE47761215ED2AB912D62 /* TorchMode.swift */; };
+		1740CBB33D469AEDD5D7291A9268FA97 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD2FFE09C75AFC90908380F4C21797 /* IQToolbar.swift */; };
+		1A9B9579E46EFBA63C5F57A6B17B5ECA /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB2DED1C49AEBA1DE95D68B904DB769 /* IQKeyboardManagerSwift-dummy.m */; };
+		1D8031C86A94D32E00ED55B80428A0F3 /* IQKeyboardManager+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13E6E97B52EA84FB05E539B55E4F15 /* IQKeyboardManager+Toolbar.swift */; };
+		20616A47873318F80BFFEABAC9730122 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBDE2BA39E0BF9CBE817148067DC41 /* IQTitleBarButtonItem.swift */; };
+		24EC44FF102C2635A476CEF7567F89DA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD949F09D2B2A3C0436037FE3F2C3922 /* IQPreviousNextView.swift */; };
+		262CBFB84815CDE8C006B8E72B5ED13F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA8F7A50D360B00E8CBD046ACAAF6B /* UIViewController+Extensions.swift */; };
+		284F86F3E1889FA74361B88ABC757C1E /* Pods-Calorico-CaloricoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1531C2B2F745B5242F9F2D58ECA4E2 /* Pods-Calorico-CaloricoUITests-dummy.m */; };
 		29872BD5684D9B93082A02B26684AB39 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A09A49D79F81007A67394173A1490E4 /* AVFoundation.framework */; };
-		2CA0B3B43A972DF3AD79F58092E3403E /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB1FF5066A279B129AEECB6794E019 /* IQKeyboardManager+Internal.swift */; };
+		2CA0B3B43A972DF3AD79F58092E3403E /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094BF995C2E2F5F96BA4AE771622D1E /* IQKeyboardManager+Internal.swift */; };
 		2E5138271A6C79BDA3C0835F2596219B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */; };
-		2EC96162DD6740ECE67FF38B8400A7C5 /* IQKeyboardManager+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A94B12A0CA7920809D10F0AFF06F3 /* IQKeyboardManager+Debug.swift */; };
-		34C39BDBFE7A2CC585787F5AFCA39FDE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE2ACE1F9C9B554C01F6E3636899AD /* IQUIView+IQKeyboardToolbar.swift */; };
-		3755448ECF8EE78693A364B8990D9F53 /* BarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F013674A4116581EE42B4CC17B09211A /* BarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EC96162DD6740ECE67FF38B8400A7C5 /* IQKeyboardManager+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7A5689EACC3A38013903C2B7A5ACCD /* IQKeyboardManager+Debug.swift */; };
+		321CA0B89302D4992513524A19E6CC4B /* Pods-Calorico-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */; };
+		34C39BDBFE7A2CC585787F5AFCA39FDE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FE078DC6F0DD7BFD554BA36DE5F5D /* IQUIView+IQKeyboardToolbar.swift */; };
+		35F32388F86BB66D5BF9E5C8EE646A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		3755448ECF8EE78693A364B8990D9F53 /* BarcodeScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F6E7E72A14CF4D8CC95C0D939277F4 /* BarcodeScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CC18473BBA8E4EFA39E28C3009B5F67 /* Pods-CaloricoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF596A7E45CAFB6B4E896E4553C25DEF /* Pods-CaloricoTests-dummy.m */; };
-		3F01EED6380B596E1D0C1497CBCF9B95 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E788B4FA1088877F917C7EB77EF6AC1 /* IQUITextFieldView+Additions.swift */; };
-		41CD40F5713CD71AD5AB1471E81C97E1 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC813B9805E268B4AD5D206263A46B /* IQBarButtonItem.swift */; };
-		4AEC9BCF7384FD789A5D0BAB2F77991F /* BarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A6B5DAD175C3870A0448EE27460BAB /* BarcodeScanner-dummy.m */; };
-		52DE893724562B1353663D381D2FF158 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3E1812E2C0F578C4E636CC0811AE /* Localizable.strings */; };
+		3F01EED6380B596E1D0C1497CBCF9B95 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70DFA3DA45775DBAFC39CE10BF0E744 /* IQUITextFieldView+Additions.swift */; };
+		41CD40F5713CD71AD5AB1471E81C97E1 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F58BE169BEA106B044E2F85D4109FCD /* IQBarButtonItem.swift */; };
+		4AEC9BCF7384FD789A5D0BAB2F77991F /* BarcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1473B15588F1640898575D24F6FADBF1 /* BarcodeScanner-dummy.m */; };
+		50AFA055903C25A0D356D1D2C2E851BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
 		60C6606FF8176EE5A38870CFD9F649C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
 		62396599427887660856823951B5C361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
-		6C33077F6BBEEFA137313CA1525A18DE /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD3DB17363D41FDF169E3FA7EB2D62 /* BarcodeScannerViewController.swift */; };
-		6CCC68077295A821AC9C1E7CC2BC35BC /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3CE85EB926BC18C07620CA4C431B5 /* NSLayoutConstraint+Extensions.swift */; };
-		700C48768FCAEF0F35A4C9B252B20A0C /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419F4403C1666B31CFD0346FF1B2C64 /* AVMetadataObject+Extensions.swift */; };
-		7249598DF1E11ECA3718E37BDE1BE917 /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2255B4103624FF75ACFC05011740458 /* flashOn@3x.png */; };
-		7AC995F567A776FC1A80A9FA0733F3D1 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7E8AFA2261205112ABDA4EC037D251 /* IQNSArray+Sort.swift */; };
+		6C33077F6BBEEFA137313CA1525A18DE /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B8FFF1C7B9A56162137B56982857F /* BarcodeScannerViewController.swift */; };
+		6CCC68077295A821AC9C1E7CC2BC35BC /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FB04E0DE79E391E15634474996602 /* NSLayoutConstraint+Extensions.swift */; };
+		700C48768FCAEF0F35A4C9B252B20A0C /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391660E86DEDC4F59266FD4DE904176 /* AVMetadataObject+Extensions.swift */; };
+		7AC995F567A776FC1A80A9FA0733F3D1 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1321BA26616989BC6EDE93CF8A56101 /* IQNSArray+Sort.swift */; };
 		7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */; };
-		85F13B069B06ADF2B6DCA622E4645110 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B13F99FA8F7572BA72A7190BC43CF /* IQKeyboardManagerConstants.swift */; };
-		86A03DE9366D1BE94EB99AA387EACD1F /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D71474891B9F8B4254018988EEFB8 /* IQKeyboardManager.swift */; };
-		8D100AF17E7FB178FF428DE211ED597E /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9C34AD2032D8032D361B6104F21CA /* HeaderViewController.swift */; };
-		96D3C21E658373A9AB0B67435005F1A3 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543507DB544175425ABB95F85EA54161 /* info@3x.png */; };
-		9E6A283BED0305AE222A5774C0240657 /* flashOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C80B154535307ECD1F18655A802334E /* flashOff@3x.png */; };
-		9F8D1E5122DD6F004EFEFC4B62A8AD5A /* Pods-Calorico-CaloricoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB39BDFECC611AB491F6F5F701ED3D44 /* Pods-Calorico-CaloricoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0CE10B2AB5F96D28540B30454BF6E62 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B21A82EBC5326717A9F79D7AB3E35A /* CameraViewController.swift */; };
-		A2BD61FF3E647B9B2563784D378A9DE6 /* cameraRotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD8B8DE6C05CB578876175FBFECB302 /* cameraRotate@3x.png */; };
-		A4BAEE317BFF650DCC888FC67BFBF7EF /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1BA07ECB222F8D18790A1530FE18EA /* IQKeyboardManager+UIKeyboardNotification.swift */; };
-		A7A08DF1BA49F6624E50BEE40CE523DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
+		801A17DFCCFFFC4BD24DC357E0349F4E /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B935140501110D19A36B1A5EFE9F343 /* flashOn@3x.png */; };
+		85F13B069B06ADF2B6DCA622E4645110 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C2A0A32F8754CC77C8FA345812D3B /* IQKeyboardManagerConstants.swift */; };
+		86A03DE9366D1BE94EB99AA387EACD1F /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E816EEC30F608A1261D0A0775DFCA02 /* IQKeyboardManager.swift */; };
+		8D100AF17E7FB178FF428DE211ED597E /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B92436C3FE27FA8B9BDEAE1E69653 /* HeaderViewController.swift */; };
+		A0CE10B2AB5F96D28540B30454BF6E62 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A84E4AE9C5130CEA74DAC0E29109EC /* CameraViewController.swift */; };
+		A4BAEE317BFF650DCC888FC67BFBF7EF /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A849A25DE6500F0C047BD2D7230FDE1 /* IQKeyboardManager+UIKeyboardNotification.swift */; };
 		AD1351D411B092E4F3FB8898AB71823E /* Pods-CaloricoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEE7CE3120E5E8A22264E1591DC33CA /* Pods-CaloricoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADE02B44B0F6B14EDF45330E5C28ADF6 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */; };
 		B1B6A2491AC437909DABE20C71BECDBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F82C590D36C4FCD968B7B3D5F32D788 /* CoreGraphics.framework */; };
-		B447CB1C46B8F0DD2AAAB486883CE1CB /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5C23450F26B51068DB207B7DE9007 /* FocusViewType.swift */; };
-		B6B43B1B78EC0E52CC08F82841A22A31 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CEA5025E7C12CC3AA9285B66F1A3715 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B447CB1C46B8F0DD2AAAB486883CE1CB /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6804DFB5DE1E1E5273B3576A317B9663 /* FocusViewType.swift */; };
+		B6B43B1B78EC0E52CC08F82841A22A31 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA949334D77465D5289449D9AFD7B7A /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6EC6D40823E66D5B389ACEAC9FD7AAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF697C0D4B15AE813001B288584A40FA /* QuartzCore.framework */; };
-		BCAC0A787298A2CEE154B652C15ABC45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
-		C3AA8B4CFA5BE1FF5F4B5BB1DD8053A0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F927D75A0B010EB32B469B4277AFAE0 /* MessageViewController.swift */; };
-		C81CB3B5D25BDBCB6D3A3632BE408229 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2041DE8A5FAEBBB0C0D248CE877EF9 /* IQKeyboardReturnKeyHandler.swift */; };
-		C93AF790D67555D90C3738BAC1FA56C7 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE119CAE3C5F9E952BF4B13B87249EDA /* VideoPermissionService.swift */; };
-		D31356D54A39420DB91C892502CFFD57 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92D667876EDA21C6DB873247B2E2C2 /* IQUIViewController+Additions.swift */; };
-		D6516B5451008BF1ABA150E6482F6325 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7967CAF8A68BF51467C6AB42F650BF /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		C3AA8B4CFA5BE1FF5F4B5BB1DD8053A0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3B058BC9A53E5CAF32BADE5CCFCAB6 /* MessageViewController.swift */; };
+		C81CB3B5D25BDBCB6D3A3632BE408229 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9278C604A7C65111941CC728B43C46 /* IQKeyboardReturnKeyHandler.swift */; };
+		C93AF790D67555D90C3738BAC1FA56C7 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C2DAAAB0BFDF4DCFBF3C612481EE8 /* VideoPermissionService.swift */; };
+		D31356D54A39420DB91C892502CFFD57 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A930643C17B27CB9B20E7CA293106 /* IQUIViewController+Additions.swift */; };
+		D6516B5451008BF1ABA150E6482F6325 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DE4F2BF6BAFDDBB10BFC0362AFAEC /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		DABAA647731A60D50ACBA181326CC5E4 /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F0BA23931C9D2524A7395787E96E25 /* info@3x.png */; };
 		DE48FF6F1159E55422298DCAA72897BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */; };
-		DF33C3DE068D6116B3F551B0453ACD23 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377A14B2E72F18E266F53A0BED73058 /* IQUIScrollView+Additions.swift */; };
-		E72E1BDDFF31003BD089544FC112FAAC /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1C842AF7BF575CF917917B07EF108 /* IQTextView.swift */; };
-		EE5A01E096A12A0DD4822EE9CD5ABD6F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740BDB8215B49D4AB0EB7FDC6939D76 /* Functions.swift */; };
-		F1F108FA6504E0405201AD7FB5F6B74F /* Pods-Calorico-CaloricoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1531C2B2F745B5242F9F2D58ECA4E2 /* Pods-Calorico-CaloricoUITests-dummy.m */; };
-		F2B1C1D70C629AE19C0D5121B1BBA891 /* IQKeyboardManager+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F04DE3081DF4EB4F9262E4D3BD43CE /* IQKeyboardManager+Position.swift */; };
+		DF33C3DE068D6116B3F551B0453ACD23 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A7B3893E9DE698E9EF028FDF30FD0 /* IQUIScrollView+Additions.swift */; };
+		E72E1BDDFF31003BD089544FC112FAAC /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7E605788350322F4F6B915547ABFBE /* IQTextView.swift */; };
+		EE5A01E096A12A0DD4822EE9CD5ABD6F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2D73F15571DB55B888300B34064D2 /* Functions.swift */; };
+		EF757A26D90F6937FBDC92EF3EE3B556 /* Pods-Calorico-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5E4C199A23C9680E308C9A60BFC451 /* Pods-Calorico-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B1C1D70C629AE19C0D5121B1BBA891 /* IQKeyboardManager+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193E1B085D8D0213C222E65B9E635BB0 /* IQKeyboardManager+Position.swift */; };
+		F81A89AE83064A4F986705DC88FFD3A3 /* cameraRotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EF6A7C97A7FCDE77B1924785ED0749 /* cameraRotate@3x.png */; };
+		FA7B4A1BEB333FD55CE118EA7F04A628 /* flashOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EC8E0B366305321601F657981C773 /* flashOff@3x.png */; };
 		FB79E22B68033224D3D1621A408C68B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */; };
-		FF20513A9C5371CB65C56402A850B36F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D7CA690EB86A98FF3A42120A069853 /* State.swift */; };
+		FF20513A9C5371CB65C56402A850B36F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8BB80E298438A955909FA70F68755A /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		381E6BC1E2A8A1EBC9D148F72F7248C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02E136446D8E897681981873306A783A;
-			remoteInfo = "BarcodeScanner-BarcodeScanner";
-		};
-		55473A8DFEDBEE143CBB8B38571983A3 /* PBXContainerItemProxy */ = {
+		038A8C517F2A4ACF8570B91023776F41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2598A00DF974C904143778EDC46CC0E5;
 			remoteInfo = "BarcodeScanner-Localization";
 		};
-		55B9C4E269D0C6ED6F58C6E455FFFC4D /* PBXContainerItemProxy */ = {
+		48DE3A9466660AC326DDC0C466A126FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
-			remoteInfo = IQKeyboardManagerSwift;
+			remoteGlobalIDString = 02E136446D8E897681981873306A783A;
+			remoteInfo = "BarcodeScanner-BarcodeScanner";
 		};
-		65A3025B8E55127D5B77E573C2B9CF03 /* PBXContainerItemProxy */ = {
+		4F3A1D690F05617CA50653F4D0B9D0DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 39D656AC88E303625E9AA42D19C21D75;
 			remoteInfo = BarcodeScanner;
 		};
-		C6EE7131E7540759054AD63D3C788860 /* PBXContainerItemProxy */ = {
+		518D319D60DDEE79A256D70B47E1E714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		83C58363CF7EE8CC7F3A89045261FE26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
 			remoteInfo = IQKeyboardManagerSwift;
 		};
-		D9D4C1727E9222C60F206925E6DE25C2 /* PBXContainerItemProxy */ = {
+		9C85888AF986BE2AC6560F450135732F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1828800876D793C300C2DE9E490B6FA4;
 			remoteInfo = "Pods-Calorico";
 		};
-		DAEB65FD7B4DCD57BEEB3B84AC7AC1E2 /* PBXContainerItemProxy */ = {
+		B09CB5AE269A88EE6FF005B7537C2F9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		D93660555543B03C2C5984DAC641DEFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		DCA4A11FB802C33469872A206BB61CE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -125,118 +152,112 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		051A535487922730E53A7BF9EC433107 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
+		0094BF995C2E2F5F96BA4AE771622D1E /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Internal.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
 		05E92FD32D549C7ACE41601C31319C01 /* Pods-CaloricoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaloricoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		07C12B7A1EDB4615D859BAF9FD39C3B3 /* Pods-CaloricoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaloricoTests-Info.plist"; sourceTree = "<group>"; };
+		07E2D73F15571DB55B888300B34064D2 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
+		095DE4F2BF6BAFDDBB10BFC0362AFAEC /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+UITextFieldViewNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
 		0A09A49D79F81007A67394173A1490E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		0A179A7034AB2B5DE21624D9E9B98AAC /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+OrientationNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
 		0B673C277439810D9DC335FAE1D16924 /* Pods-CaloricoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaloricoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D8F2BB36FEA6B599F034DA781205380 /* Pods-Calorico-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calorico-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F2041DE8A5FAEBBB0C0D248CE877EF9 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
-		1210C69A9E7250BFF75892ED310B49B2 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.release.xcconfig; sourceTree = "<group>"; };
-		1CEA5025E7C12CC3AA9285B66F1A3715 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
-		1D2D6A15BC2711435910DA75D779EA0D /* BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
+		0E4190A2C5FA756645E4BEA6E0A0B8B3 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0E7BAD4BE74835DE60763ED75F24CC67 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		10EF6A7C97A7FCDE77B1924785ED0749 /* cameraRotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraRotate@3x.png"; path = "Images/cameraRotate@3x.png"; sourceTree = "<group>"; };
+		1473B15588F1640898575D24F6FADBF1 /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
+		193E1B085D8D0213C222E65B9E635BB0 /* IQKeyboardManager+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Position.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Position.swift"; sourceTree = "<group>"; };
+		19BBDE2BA39E0BF9CBE817148067DC41 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		1B935140501110D19A36B1A5EFE9F343 /* flashOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOn@3x.png"; path = "Images/flashOn@3x.png"; sourceTree = "<group>"; };
+		1E816EEC30F608A1261D0A0775DFCA02 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
 		1F82C590D36C4FCD968B7B3D5F32D788 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		213C51809F4B65A22B34EB8CA39CBD5E /* Pods-Calorico-CaloricoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-CaloricoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A849A25DE6500F0C047BD2D7230FDE1 /* IQKeyboardManager+UIKeyboardNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+UIKeyboardNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+UIKeyboardNotification.swift"; sourceTree = "<group>"; };
+		2D4194EC85A3EFDDEC01236A276A30DA /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		2D5E4C199A23C9680E308C9A60BFC451 /* Pods-Calorico-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calorico-umbrella.h"; sourceTree = "<group>"; };
-		2EAC813B9805E268B4AD5D206263A46B /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
-		2F927D75A0B010EB32B469B4277AFAE0 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
+		32F6E7E72A14CF4D8CC95C0D939277F4 /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
 		3B0A6123BAA941DADECFAC19454EA27A /* Pods-CaloricoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaloricoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3B92D667876EDA21C6DB873247B2E2C2 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
-		3E788B4FA1088877F917C7EB77EF6AC1 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		49A9C34AD2032D8032D361B6104F21CA /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
-		4ADACD26863E48E5FB546E98B7C54360 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
 		4CA76E66027BBB6846C6EC9E5806C56F /* Pods-Calorico-CaloricoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-CaloricoUITests-Info.plist"; sourceTree = "<group>"; };
 		4CE2EC405CA6330FAAE018274FB44B3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4D13D943F5730361B6362FA2FED22E83 /* Pods-Calorico.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calorico.modulemap"; sourceTree = "<group>"; };
-		4DA1C842AF7BF575CF917917B07EF108 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
-		50A6B5DAD175C3870A0448EE27460BAB /* BarcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarcodeScanner-dummy.m"; sourceTree = "<group>"; };
-		534B13F99FA8F7572BA72A7190BC43CF /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
-		5377A14B2E72F18E266F53A0BED73058 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
-		543507DB544175425ABB95F85EA54161 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
+		50A84E4AE9C5130CEA74DAC0E29109EC /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
+		54C8DDFAF121BD322FAE01423E4E99EE /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58EA8F7A50D360B00E8CBD046ACAAF6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Sources/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		58F45EB5D1DAF89D12F7B79D8ECA5BD8 /* Pods-CaloricoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CaloricoTests.modulemap"; sourceTree = "<group>"; };
 		5CC20A8305DB46EF0DDE3994982AFC44 /* Pods-Calorico-CaloricoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico-CaloricoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5E7967CAF8A68BF51467C6AB42F650BF /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+UITextFieldViewNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
-		62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.debug.xcconfig; sourceTree = "<group>"; };
-		6365A3784E4A7FD372E716C34045447F /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5F58BE169BEA106B044E2F85D4109FCD /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		6456A7030ED29ED1501DB5BFC02FE40E /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+OrientationNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
+		6804DFB5DE1E1E5273B3576A317B9663 /* FocusViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusViewType.swift; path = Sources/DataStructures/FocusViewType.swift; sourceTree = "<group>"; };
+		687B7868FEB73C4D3B3BA7945E7F9BDD /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
 		6AC38E799F7B3BBFECCDA875B708679B /* Pods-Calorico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico.release.xcconfig"; sourceTree = "<group>"; };
+		6B2F12369679E12E9A1A6E7EE455117D /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6B4142DEAAAF163D748DBD28F884D7EC /* Pods-Calorico-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calorico-frameworks.sh"; sourceTree = "<group>"; };
+		6E1C2A0A32F8754CC77C8FA345812D3B /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		7391660E86DEDC4F59266FD4DE904176 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
 		74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Localization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7629E00DA3DFE47761215ED2AB912D62 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
 		772C57C40F15206BFA0B9C0860257836 /* Pods-Calorico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico.debug.xcconfig"; sourceTree = "<group>"; };
-		81CE2ACE1F9C9B554C01F6E3636899AD /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		776B0A0DCC5995A45ACAB83D3D5ABBD4 /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		800F7553F1A0E62749AE8D365644BB96 /* BarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
+		807AAE3000BAFD98D602D60032A8AFE7 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		808DB48159747199F07DF565C5CE2FB1 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		822475E5E6F6C4375A2DB845645B05E8 /* BarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarcodeScanner.modulemap; sourceTree = "<group>"; };
 		828EBBAD9FEFC8D91F06C00F8FBE465A /* Pods-Calorico */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Calorico"; path = Pods_Calorico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		835D772AB4452D4463A91930640A051C /* BarcodeScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarcodeScanner.modulemap; sourceTree = "<group>"; };
+		859FB04E0DE79E391E15634474996602 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "Sources/Extensions/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 		85B0255D4AB0166853F0F87911805B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8796C9FD90CA1DF425A75732F2C46C80 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
-		89FD6C52A6CB194D59F44883F905E1AA /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		880EC8E0B366305321601F657981C773 /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
 		8AE47D84A748D199C928FD0BCF4C573E /* Pods-Calorico-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-acknowledgements.plist"; sourceTree = "<group>"; };
-		8C80B154535307ECD1F18655A802334E /* flashOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOff@3x.png"; path = "Images/flashOff@3x.png"; sourceTree = "<group>"; };
-		8E17BAB770E4E34E29998926E74F8BB3 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
-		8E7B1BFA4C2CD29751C5360E62AEBFB4 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
-		8E7D71474891B9F8B4254018988EEFB8 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		8F8A94B12A0CA7920809D10F0AFF06F3 /* IQKeyboardManager+Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Debug.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Debug.swift"; sourceTree = "<group>"; };
-		9089FC0D595B3F9474EA53444EA8E685 /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
-		92ACC74C6F96E215A9236F4ECB00C091 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Sources/Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		9419F4403C1666B31CFD0346FF1B2C64 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
-		9AD9A87E3262F4A2F6EFCAC15C2F9634 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		8C655C97B0E14A593ADDC573BABCACD5 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Localization-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
+		8E8BB80E298438A955909FA70F68755A /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
+		99E3134A50F7E86CA725985FF5A2B63F /* BarcodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.release.xcconfig; sourceTree = "<group>"; };
 		9D8E7C22D5D5C516459C78E59BBE7E0B /* Pods-Calorico-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-Info.plist"; sourceTree = "<group>"; };
+		9D9278C604A7C65111941CC728B43C46 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E323D48CA6B132DF04290E97B778BC8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9EA1A201756FFF1B71F8E46F031B2D1F /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
-		9FDE7BA126E60C64A93E500B3938811B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A1E44B0FC1D74454F3AAD3474CB558A8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E7E605788350322F4F6B915547ABFBE /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
 		A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScanner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3C5C23450F26B51068DB207B7DE9007 /* FocusViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusViewType.swift; path = Sources/DataStructures/FocusViewType.swift; sourceTree = "<group>"; };
 		A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calorico-dummy.m"; sourceTree = "<group>"; };
-		A8E1FB351525B9E17FE512E0C87A323C /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70DFA3DA45775DBAFC39CE10BF0E744 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		A78DC27B6965408ECD5E3279A12336BD /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		A7D2B9236D179849506DC579EC6C3320 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E1E7BD33E7E248D43AEFD5DCACBC90 /* Pods-CaloricoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaloricoTests.release.xcconfig"; sourceTree = "<group>"; };
-		AE8EED1F803893EFEA935F9B7A72C7E3 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
-		B2255B4103624FF75ACFC05011740458 /* flashOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashOn@3x.png"; path = "Images/flashOn@3x.png"; sourceTree = "<group>"; };
-		B3D7CA690EB86A98FF3A42120A069853 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/DataStructures/State.swift; sourceTree = "<group>"; };
+		AC13E6E97B52EA84FB05E539B55E4F15 /* IQKeyboardManager+Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Toolbar.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Toolbar.swift"; sourceTree = "<group>"; };
+		ACE87A7B519AEFD05835F0BC06995AE0 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		AE2A930643C17B27CB9B20E7CA293106 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		B264812DDC49B67C9B72CC253136B935 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		B541E886287283F66F355D73916006B4 /* Pods-Calorico-CaloricoUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Calorico-CaloricoUITests"; path = Pods_Calorico_CaloricoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7A5689EACC3A38013903C2B7A5ACCD /* IQKeyboardManager+Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Debug.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Debug.swift"; sourceTree = "<group>"; };
 		BB39BDFECC611AB491F6F5F701ED3D44 /* Pods-Calorico-CaloricoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calorico-CaloricoUITests-umbrella.h"; sourceTree = "<group>"; };
-		BB84DE757F60E05B7CE295318F421A71 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
-		BC1BA07ECB222F8D18790A1530FE18EA /* IQKeyboardManager+UIKeyboardNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+UIKeyboardNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+UIKeyboardNotification.swift"; sourceTree = "<group>"; };
-		BDDB1FF5066A279B129AEECB6794E019 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Internal.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
-		BE119CAE3C5F9E952BF4B13B87249EDA /* VideoPermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPermissionService.swift; path = Sources/Helpers/VideoPermissionService.swift; sourceTree = "<group>"; };
-		BE7E8AFA2261205112ABDA4EC037D251 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		BD949F09D2B2A3C0436037FE3F2C3922 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
 		BF697C0D4B15AE813001B288584A40FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		C1E8A7667A4D9DC9AA6A436BD0E51708 /* IQKeyboardManager+Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Toolbar.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Toolbar.swift"; sourceTree = "<group>"; };
-		C3F04DE3081DF4EB4F9262E4D3BD43CE /* IQKeyboardManager+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Position.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Position.swift"; sourceTree = "<group>"; };
-		C740BDB8215B49D4AB0EB7FDC6939D76 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Helpers/Functions.swift; sourceTree = "<group>"; };
+		C00C2DAAAB0BFDF4DCFBF3C612481EE8 /* VideoPermissionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPermissionService.swift; path = Sources/Helpers/VideoPermissionService.swift; sourceTree = "<group>"; };
+		C50B8FFF1C7B9A56162137B56982857F /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		C825C6B6232DD544C1FFDBA21CE5951E /* Pods-Calorico-CaloricoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calorico-CaloricoUITests-frameworks.sh"; sourceTree = "<group>"; };
-		CAD3CE85EB926BC18C07620CA4C431B5 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "Sources/Extensions/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 		CD9B577FDCAD418AAB83A48EA1C17DA2 /* Pods-Calorico-CaloricoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calorico-CaloricoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D005F4302745C09841556E57FD78DAFF /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		D3B21A82EBC5326717A9F79D7AB3E35A /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Sources/Controllers/CameraViewController.swift; sourceTree = "<group>"; };
+		CFA949334D77465D5289449D9AFD7B7A /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		CFB2DED1C49AEBA1DE95D68B904DB769 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		D27A7B3893E9DE698E9EF028FDF30FD0 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		D39FE078DC6F0DD7BFD554BA36DE5F5D /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		D50E220825C71B83739D891C9D8B040E /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		D7F1CE89BA5AEDF7CA8245E521F8B84A /* BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
 		DBD0161B21CA85175345224B5467AFC2 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico-CaloricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC7B92436C3FE27FA8B9BDEAE1E69653 /* HeaderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderViewController.swift; path = Sources/Controllers/HeaderViewController.swift; sourceTree = "<group>"; };
+		DD0DEE9CA5F6D0E38B0CCC97A3ADB568 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DE0B7D18B01699A830F370CF20E3BD6D /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist"; sourceTree = "<group>"; };
+		DE9DD0B266BE13BEFE161CEB0ABD22AD /* BarcodeScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.debug.xcconfig; sourceTree = "<group>"; };
 		E13634E81DDD4B909CBBB4416872AA89 /* Pods-Calorico-CaloricoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calorico-CaloricoUITests.modulemap"; sourceTree = "<group>"; };
-		E9BC0EE97151561BF535FA69327A6FE4 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E3DD2FFE09C75AFC90908380F4C21797 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		E5F0BA23931C9D2524A7395787E96E25 /* info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "info@3x.png"; path = "Images/info@3x.png"; sourceTree = "<group>"; };
 		EAEE7CE3120E5E8A22264E1591DC33CA /* Pods-CaloricoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CaloricoTests-umbrella.h"; sourceTree = "<group>"; };
-		EAF820DAF1495E1E39550BC3A2023A60 /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
-		EB77ED89BAEB4AB2424E440E55CFD400 /* BarcodeScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-prefix.pch"; sourceTree = "<group>"; };
-		EDD8B8DE6C05CB578876175FBFECB302 /* cameraRotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraRotate@3x.png"; path = "Images/cameraRotate@3x.png"; sourceTree = "<group>"; };
+		EE3B058BC9A53E5CAF32BADE5CCFCAB6 /* MessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Sources/Controllers/MessageViewController.swift; sourceTree = "<group>"; };
+		EEC1817918B4BD746008B624A592EFED /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
 		EF596A7E45CAFB6B4E896E4553C25DEF /* Pods-CaloricoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaloricoTests-dummy.m"; sourceTree = "<group>"; };
-		F013674A4116581EE42B4CC17B09211A /* BarcodeScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarcodeScanner-umbrella.h"; sourceTree = "<group>"; };
+		F1321BA26616989BC6EDE93CF8A56101 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		F209F4F5AD424DE895E845D558A15536 /* Pods-CaloricoTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CaloricoTests"; path = Pods_CaloricoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F246759162D0E902E1F397574F286E8E /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
-		F888B84D6CA691B213669BFBED5FB922 /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
-		FAAD3DB17363D41FDF169E3FA7EB2D62 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		F51E80B2BAE1D9AFCDC783D450A37772 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FD1531C2B2F745B5242F9F2D58ECA4E2 /* Pods-Calorico-CaloricoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calorico-CaloricoUITests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AB4162F82C26E07ACE164DF65810436 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCAC0A787298A2CEE154B652C15ABC45 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1EDE2130521A89A7AD3D64D86EBFB05A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,18 +268,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FBFFC55395046ED9AE5C768B4D30150 /* Frameworks */ = {
+		651ED15DFCB082FA98E2AF14A710AB3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5A72B0F9FAEF24212A128323B20E3FA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7A08DF1BA49F6624E50BEE40CE523DC /* Foundation.framework in Frameworks */,
+				35F32388F86BB66D5BF9E5C8EE646A86 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +295,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBC00B8C40D83B6C941BF89084E65E78 /* Frameworks */ = {
+		CFAF514840715060143023C7DA6B0A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AFA055903C25A0D356D1D2C2E851BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20BD9A6F48467F15D7EED2726AC3918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E798EBB0A86E0B8F58D8CFDCB5000EE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,28 +320,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		056DEFCA109CF0B3B7AEE00F47F1CB52 /* BarcodeScanner */ = {
-			isa = PBXGroup;
-			children = (
-				9419F4403C1666B31CFD0346FF1B2C64 /* AVMetadataObject+Extensions.swift */,
-				FAAD3DB17363D41FDF169E3FA7EB2D62 /* BarcodeScannerViewController.swift */,
-				D3B21A82EBC5326717A9F79D7AB3E35A /* CameraViewController.swift */,
-				A3C5C23450F26B51068DB207B7DE9007 /* FocusViewType.swift */,
-				C740BDB8215B49D4AB0EB7FDC6939D76 /* Functions.swift */,
-				49A9C34AD2032D8032D361B6104F21CA /* HeaderViewController.swift */,
-				2F927D75A0B010EB32B469B4277AFAE0 /* MessageViewController.swift */,
-				CAD3CE85EB926BC18C07620CA4C431B5 /* NSLayoutConstraint+Extensions.swift */,
-				B3D7CA690EB86A98FF3A42120A069853 /* State.swift */,
-				051A535487922730E53A7BF9EC433107 /* TorchMode.swift */,
-				6365A3784E4A7FD372E716C34045447F /* UIView+Extensions.swift */,
-				92ACC74C6F96E215A9236F4ECB00C091 /* UIViewController+Extensions.swift */,
-				BE119CAE3C5F9E952BF4B13B87249EDA /* VideoPermissionService.swift */,
-				A9BB3D7FBE2F1A7472211D89810B7A9A /* Resources */,
-				921328365E716097466E720B45DB9203 /* Support Files */,
-			);
-			path = BarcodeScanner;
-			sourceTree = "<group>";
-		};
 		0A967BCE98B37CC75664B9BD45707EF9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,7 +365,7 @@
 				CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */,
 				A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */,
 				74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */,
-				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */,
 				828EBBAD9FEFC8D91F06C00F8FBE465A /* Pods-Calorico */,
 				B541E886287283F66F355D73916006B4 /* Pods-Calorico-CaloricoUITests */,
 				F209F4F5AD424DE895E845D558A15536 /* Pods-CaloricoTests */,
@@ -382,36 +389,67 @@
 			path = "Target Support Files/Pods-CaloricoTests";
 			sourceTree = "<group>";
 		};
-		921328365E716097466E720B45DB9203 /* Support Files */ = {
+		81D05193888CA2BBD33768C5C27B110B /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				835D772AB4452D4463A91930640A051C /* BarcodeScanner.modulemap */,
-				50A6B5DAD175C3870A0448EE27460BAB /* BarcodeScanner-dummy.m */,
-				1D2D6A15BC2711435910DA75D779EA0D /* BarcodeScanner-Info.plist */,
-				EB77ED89BAEB4AB2424E440E55CFD400 /* BarcodeScanner-prefix.pch */,
-				F013674A4116581EE42B4CC17B09211A /* BarcodeScanner-umbrella.h */,
-				62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */,
-				16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */,
-				9EA1A201756FFF1B71F8E46F031B2D1F /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */,
-				8796C9FD90CA1DF425A75732F2C46C80 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */,
+				5F58BE169BEA106B044E2F85D4109FCD /* IQBarButtonItem.swift */,
+				ACE87A7B519AEFD05835F0BC06995AE0 /* IQInvocation.swift */,
+				1E816EEC30F608A1261D0A0775DFCA02 /* IQKeyboardManager.swift */,
+				BA7A5689EACC3A38013903C2B7A5ACCD /* IQKeyboardManager+Debug.swift */,
+				0094BF995C2E2F5F96BA4AE771622D1E /* IQKeyboardManager+Internal.swift */,
+				6456A7030ED29ED1501DB5BFC02FE40E /* IQKeyboardManager+OrientationNotification.swift */,
+				193E1B085D8D0213C222E65B9E635BB0 /* IQKeyboardManager+Position.swift */,
+				AC13E6E97B52EA84FB05E539B55E4F15 /* IQKeyboardManager+Toolbar.swift */,
+				2A849A25DE6500F0C047BD2D7230FDE1 /* IQKeyboardManager+UIKeyboardNotification.swift */,
+				095DE4F2BF6BAFDDBB10BFC0362AFAEC /* IQKeyboardManager+UITextFieldViewNotification.swift */,
+				6E1C2A0A32F8754CC77C8FA345812D3B /* IQKeyboardManagerConstants.swift */,
+				EEC1817918B4BD746008B624A592EFED /* IQKeyboardManagerConstantsInternal.swift */,
+				9D9278C604A7C65111941CC728B43C46 /* IQKeyboardReturnKeyHandler.swift */,
+				F1321BA26616989BC6EDE93CF8A56101 /* IQNSArray+Sort.swift */,
+				BD949F09D2B2A3C0436037FE3F2C3922 /* IQPreviousNextView.swift */,
+				9E7E605788350322F4F6B915547ABFBE /* IQTextView.swift */,
+				19BBDE2BA39E0BF9CBE817148067DC41 /* IQTitleBarButtonItem.swift */,
+				E3DD2FFE09C75AFC90908380F4C21797 /* IQToolbar.swift */,
+				D27A7B3893E9DE698E9EF028FDF30FD0 /* IQUIScrollView+Additions.swift */,
+				A70DFA3DA45775DBAFC39CE10BF0E744 /* IQUITextFieldView+Additions.swift */,
+				807AAE3000BAFD98D602D60032A8AFE7 /* IQUIView+Hierarchy.swift */,
+				D39FE078DC6F0DD7BFD554BA36DE5F5D /* IQUIView+IQKeyboardToolbar.swift */,
+				AE2A930643C17B27CB9B20E7CA293106 /* IQUIViewController+Additions.swift */,
+				948A586E54283DA970A8A727E03A7F8D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BarcodeScanner";
+			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
-		948CE8DE2028EF7782854D70521FE8E7 /* Support Files */ = {
+		948A586E54283DA970A8A727E03A7F8D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE8EED1F803893EFEA935F9B7A72C7E3 /* IQKeyboardManagerSwift.modulemap */,
-				BB84DE757F60E05B7CE295318F421A71 /* IQKeyboardManagerSwift-dummy.m */,
-				EAF820DAF1495E1E39550BC3A2023A60 /* IQKeyboardManagerSwift-Info.plist */,
-				F246759162D0E902E1F397574F286E8E /* IQKeyboardManagerSwift-prefix.pch */,
-				1CEA5025E7C12CC3AA9285B66F1A3715 /* IQKeyboardManagerSwift-umbrella.h */,
-				9089FC0D595B3F9474EA53444EA8E685 /* IQKeyboardManagerSwift.debug.xcconfig */,
-				F888B84D6CA691B213669BFBED5FB922 /* IQKeyboardManagerSwift.release.xcconfig */,
+				A7D2B9236D179849506DC579EC6C3320 /* IQKeyboardManagerSwift.modulemap */,
+				CFB2DED1C49AEBA1DE95D68B904DB769 /* IQKeyboardManagerSwift-dummy.m */,
+				A78DC27B6965408ECD5E3279A12336BD /* IQKeyboardManagerSwift-Info.plist */,
+				D50E220825C71B83739D891C9D8B040E /* IQKeyboardManagerSwift-prefix.pch */,
+				CFA949334D77465D5289449D9AFD7B7A /* IQKeyboardManagerSwift-umbrella.h */,
+				776B0A0DCC5995A45ACAB83D3D5ABBD4 /* IQKeyboardManagerSwift.debug.xcconfig */,
+				687B7868FEB73C4D3B3BA7945E7F9BDD /* IQKeyboardManagerSwift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		94BEDE2486BF89A2CA911DD22BF74B4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				822475E5E6F6C4375A2DB845645B05E8 /* BarcodeScanner.modulemap */,
+				1473B15588F1640898575D24F6FADBF1 /* BarcodeScanner-dummy.m */,
+				D7F1CE89BA5AEDF7CA8245E521F8B84A /* BarcodeScanner-Info.plist */,
+				800F7553F1A0E62749AE8D365644BB96 /* BarcodeScanner-prefix.pch */,
+				32F6E7E72A14CF4D8CC95C0D939277F4 /* BarcodeScanner-umbrella.h */,
+				DE9DD0B266BE13BEFE161CEB0ABD22AD /* BarcodeScanner.debug.xcconfig */,
+				99E3134A50F7E86CA725985FF5A2B63F /* BarcodeScanner.release.xcconfig */,
+				DE0B7D18B01699A830F370CF20E3BD6D /* ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist */,
+				8C655C97B0E14A593ADDC573BABCACD5 /* ResourceBundle-Localization-BarcodeScanner-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BarcodeScanner";
 			sourceTree = "<group>";
 		};
 		97FE816A18E2B4E087E08128E98911E5 /* Pods-Calorico */ = {
@@ -431,16 +469,14 @@
 			path = "Target Support Files/Pods-Calorico";
 			sourceTree = "<group>";
 		};
-		A9BB3D7FBE2F1A7472211D89810B7A9A /* Resources */ = {
+		B0FE935471781940A1D993EFBF8C8C06 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EDD8B8DE6C05CB578876175FBFECB302 /* cameraRotate@3x.png */,
-				8C80B154535307ECD1F18655A802334E /* flashOff@3x.png */,
-				B2255B4103624FF75ACFC05011740458 /* flashOn@3x.png */,
-				543507DB544175425ABB95F85EA54161 /* info@3x.png */,
-				AD1B3E1812E2C0F578C4E636CC0811AE /* Localizable.strings */,
+				EFA0114B17381CE4697AFCAB52182CAE /* BarcodeScanner */,
+				81D05193888CA2BBD33768C5C27B110B /* IQKeyboardManagerSwift */,
+				E0F16EA145D2192EDF280A718735FCE1 /* SwiftLint */,
 			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
@@ -451,68 +487,72 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA01E9429BFF03DFEA93FEE8E13F12BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10EF6A7C97A7FCDE77B1924785ED0749 /* cameraRotate@3x.png */,
+				880EC8E0B366305321601F657981C773 /* flashOff@3x.png */,
+				1B935140501110D19A36B1A5EFE9F343 /* flashOn@3x.png */,
+				E5F0BA23931C9D2524A7395787E96E25 /* info@3x.png */,
+				5B5AFDA928E6A4B4C82CDD19FD5734CB /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
-				D71376DB6AF32C0A822D7895493F2031 /* Pods */,
+				B0FE935471781940A1D993EFBF8C8C06 /* Pods */,
 				3988D0529191B807753FC403E34173C5 /* Products */,
 				0A967BCE98B37CC75664B9BD45707EF9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D4B0E565B98B9BDB045F5012EBD6F7AE /* IQKeyboardManagerSwift */ = {
+		E0F16EA145D2192EDF280A718735FCE1 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				2EAC813B9805E268B4AD5D206263A46B /* IQBarButtonItem.swift */,
-				89FD6C52A6CB194D59F44883F905E1AA /* IQInvocation.swift */,
-				8E7D71474891B9F8B4254018988EEFB8 /* IQKeyboardManager.swift */,
-				8F8A94B12A0CA7920809D10F0AFF06F3 /* IQKeyboardManager+Debug.swift */,
-				BDDB1FF5066A279B129AEECB6794E019 /* IQKeyboardManager+Internal.swift */,
-				0A179A7034AB2B5DE21624D9E9B98AAC /* IQKeyboardManager+OrientationNotification.swift */,
-				C3F04DE3081DF4EB4F9262E4D3BD43CE /* IQKeyboardManager+Position.swift */,
-				C1E8A7667A4D9DC9AA6A436BD0E51708 /* IQKeyboardManager+Toolbar.swift */,
-				BC1BA07ECB222F8D18790A1530FE18EA /* IQKeyboardManager+UIKeyboardNotification.swift */,
-				5E7967CAF8A68BF51467C6AB42F650BF /* IQKeyboardManager+UITextFieldViewNotification.swift */,
-				534B13F99FA8F7572BA72A7190BC43CF /* IQKeyboardManagerConstants.swift */,
-				4ADACD26863E48E5FB546E98B7C54360 /* IQKeyboardManagerConstantsInternal.swift */,
-				0F2041DE8A5FAEBBB0C0D248CE877EF9 /* IQKeyboardReturnKeyHandler.swift */,
-				BE7E8AFA2261205112ABDA4EC037D251 /* IQNSArray+Sort.swift */,
-				9AD9A87E3262F4A2F6EFCAC15C2F9634 /* IQPreviousNextView.swift */,
-				4DA1C842AF7BF575CF917917B07EF108 /* IQTextView.swift */,
-				8E7B1BFA4C2CD29751C5360E62AEBFB4 /* IQTitleBarButtonItem.swift */,
-				8E17BAB770E4E34E29998926E74F8BB3 /* IQToolbar.swift */,
-				5377A14B2E72F18E266F53A0BED73058 /* IQUIScrollView+Additions.swift */,
-				3E788B4FA1088877F917C7EB77EF6AC1 /* IQUITextFieldView+Additions.swift */,
-				1210C69A9E7250BFF75892ED310B49B2 /* IQUIView+Hierarchy.swift */,
-				81CE2ACE1F9C9B554C01F6E3636899AD /* IQUIView+IQKeyboardToolbar.swift */,
-				3B92D667876EDA21C6DB873247B2E2C2 /* IQUIViewController+Additions.swift */,
-				948CE8DE2028EF7782854D70521FE8E7 /* Support Files */,
+				F5161D6FCEF499FEC00AB202D1236628 /* Support Files */,
 			);
-			path = IQKeyboardManagerSwift;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		D71376DB6AF32C0A822D7895493F2031 /* Pods */ = {
+		EFA0114B17381CE4697AFCAB52182CAE /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
-				056DEFCA109CF0B3B7AEE00F47F1CB52 /* BarcodeScanner */,
-				D4B0E565B98B9BDB045F5012EBD6F7AE /* IQKeyboardManagerSwift */,
+				7391660E86DEDC4F59266FD4DE904176 /* AVMetadataObject+Extensions.swift */,
+				C50B8FFF1C7B9A56162137B56982857F /* BarcodeScannerViewController.swift */,
+				50A84E4AE9C5130CEA74DAC0E29109EC /* CameraViewController.swift */,
+				6804DFB5DE1E1E5273B3576A317B9663 /* FocusViewType.swift */,
+				07E2D73F15571DB55B888300B34064D2 /* Functions.swift */,
+				DC7B92436C3FE27FA8B9BDEAE1E69653 /* HeaderViewController.swift */,
+				EE3B058BC9A53E5CAF32BADE5CCFCAB6 /* MessageViewController.swift */,
+				859FB04E0DE79E391E15634474996602 /* NSLayoutConstraint+Extensions.swift */,
+				8E8BB80E298438A955909FA70F68755A /* State.swift */,
+				7629E00DA3DFE47761215ED2AB912D62 /* TorchMode.swift */,
+				0E7BAD4BE74835DE60763ED75F24CC67 /* UIView+Extensions.swift */,
+				58EA8F7A50D360B00E8CBD046ACAAF6B /* UIViewController+Extensions.swift */,
+				C00C2DAAAB0BFDF4DCFBF3C612481EE8 /* VideoPermissionService.swift */,
+				BA01E9429BFF03DFEA93FEE8E13F12BB /* Resources */,
+				94BEDE2486BF89A2CA911DD22BF74B4C /* Support Files */,
 			);
-			name = Pods;
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		F5161D6FCEF499FEC00AB202D1236628 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B264812DDC49B67C9B72CC253136B935 /* SwiftLint.debug.xcconfig */,
+				2D4194EC85A3EFDDEC01236A276A30DA /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A70C5D87E799A30599AE4EBF6943720 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2945C207F6B20B24A61A0DFF4FF8DBF3 /* Pods-Calorico-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		577F5F023949EE5882AEC7EC9AA2D4F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,19 +561,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E1AEA054D5F1B29F34FB86C04331DFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF757A26D90F6937FBDC92EF3EE3B556 /* Pods-Calorico-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9153F12F3B353DB17D4F0BB9B5BC27C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF00830B54C2303218B5B9699EC13B6 /* Pods-Calorico-CaloricoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA7FA2785659379963BD4E455D555464 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AD1351D411B092E4F3FB8898AB71823E /* Pods-CaloricoTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB8D475D79AEF2713DCC14069B967419 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F8D1E5122DD6F004EFEFC4B62A8AD5A /* Pods-Calorico-CaloricoUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,11 +598,11 @@
 /* Begin PBXNativeTarget section */
 		02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BB78C8134DB20F1F62967804B9AF6A2 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */;
+			buildConfigurationList = 83B9BA1E4AC805A922A235EF89F696E4 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */;
 			buildPhases = (
-				A1881252655E0DAA59CFD0F1685ABEDD /* Sources */,
-				BBC00B8C40D83B6C941BF89084E65E78 /* Frameworks */,
-				BF6B8371302E930FECEC46DBBE8DC358 /* Resources */,
+				14A02CD619A414507DAA0318D4D9CEE5 /* Sources */,
+				E798EBB0A86E0B8F58D8CFDCB5000EE3 /* Frameworks */,
+				2A3F3D1450B25EAA5440731B40F45946 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -567,18 +615,19 @@
 		};
 		1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C83FF7A0920B90DA0CD23E781ECC30AD /* Build configuration list for PBXNativeTarget "Pods-Calorico" */;
+			buildConfigurationList = 4A24577CEC4C5CCC4C47B75205B30072 /* Build configuration list for PBXNativeTarget "Pods-Calorico" */;
 			buildPhases = (
-				1A70C5D87E799A30599AE4EBF6943720 /* Headers */,
-				C4F59CB1114B4393831FF29F9FCA8EB9 /* Sources */,
-				1AB4162F82C26E07ACE164DF65810436 /* Frameworks */,
-				110BB8A9E8A7C75FB530A224BE135146 /* Resources */,
+				6E1AEA054D5F1B29F34FB86C04331DFD /* Headers */,
+				054AA787EBA4A02A2C5F98FB40C10FB1 /* Sources */,
+				651ED15DFCB082FA98E2AF14A710AB3C /* Frameworks */,
+				E33143B4D9F261A703779E2F8D9AF1DB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				995593DB3D20FC88F0B30143849DD828 /* PBXTargetDependency */,
-				9775270F75979CA546281E8BC1FBC332 /* PBXTargetDependency */,
+				4EBC3175B6A48E04C4841ED264D4CDF4 /* PBXTargetDependency */,
+				D02F580D36D26ADB4E2F60DC2E3FDA28 /* PBXTargetDependency */,
+				A593E71B3AA4A18E3EAE608BCD892076 /* PBXTargetDependency */,
 			);
 			name = "Pods-Calorico";
 			productName = Pods_Calorico;
@@ -587,11 +636,11 @@
 		};
 		2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82BF77C4902E629D98C6F968C5DFF9EA /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */;
+			buildConfigurationList = 626A4D5EA7726D5697E9084123097FF3 /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */;
 			buildPhases = (
-				1BF2C2714504353A1DAC5A0D4A6DE5A1 /* Sources */,
-				4FBFFC55395046ED9AE5C768B4D30150 /* Frameworks */,
-				D3ADA00D3610339042F3B5F59E5AF1E7 /* Resources */,
+				E6C64DCAD2556B2BA711A13DBF2052AA /* Sources */,
+				E20BD9A6F48467F15D7EED2726AC3918 /* Frameworks */,
+				00B9D3AEA63526E06264EFE3709C465C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -614,8 +663,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				7BF42D5649C66C0A1781FBE4B0A27EB2 /* PBXTargetDependency */,
-				2444D0F355C954966F7AC1409A0A7CD1 /* PBXTargetDependency */,
+				EC8B484F2493471D104BFE15077B6E7E /* PBXTargetDependency */,
+				7D02185A484B9A1CCD717817199CBBB5 /* PBXTargetDependency */,
 			);
 			name = BarcodeScanner;
 			productName = BarcodeScanner;
@@ -624,18 +673,19 @@
 		};
 		807E8AB65431A0C6BD8D86944F4B3556 /* Pods-Calorico-CaloricoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 245684D9CDE02626E265CBE88DC95992 /* Build configuration list for PBXNativeTarget "Pods-Calorico-CaloricoUITests" */;
+			buildConfigurationList = C8D82EC2A0B10A46F615A9E4200F41F0 /* Build configuration list for PBXNativeTarget "Pods-Calorico-CaloricoUITests" */;
 			buildPhases = (
-				CB8D475D79AEF2713DCC14069B967419 /* Headers */,
-				40328CA10B93762D2286EF3D45A134C6 /* Sources */,
-				5A72B0F9FAEF24212A128323B20E3FA8 /* Frameworks */,
-				8A28A20304CC55232E30DFBAE9F5B0E3 /* Resources */,
+				9153F12F3B353DB17D4F0BB9B5BC27C0 /* Headers */,
+				16415FE9CC163B7058C14CF4C5B0805F /* Sources */,
+				CFAF514840715060143023C7DA6B0A58 /* Frameworks */,
+				DC5B2FAA1FE48C63A9D955C86AFA2F1A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E74E50DCDFA55392EDAFAF795019ADF4 /* PBXTargetDependency */,
-				BA9A815615B6CAD4EC878D8AA6257140 /* PBXTargetDependency */,
+				183482526C5FA5347B86376FE19B66F9 /* PBXTargetDependency */,
+				7B973729A4EC3AD5C0A0F0966D735E11 /* PBXTargetDependency */,
+				5A89A0FF44F6F6B9D3A3A1BFF03720C4 /* PBXTargetDependency */,
 			);
 			name = "Pods-Calorico-CaloricoUITests";
 			productName = Pods_Calorico_CaloricoUITests;
@@ -654,7 +704,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				837FE29A054F97BE9CA399005F932E66 /* PBXTargetDependency */,
+				BAD90B85362DF15170A2A0229311B01F /* PBXTargetDependency */,
 			);
 			name = "Pods-CaloricoTests";
 			productName = Pods_CaloricoTests;
@@ -676,7 +726,7 @@
 			);
 			name = IQKeyboardManagerSwift;
 			productName = IQKeyboardManagerSwift;
-			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -685,8 +735,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -713,15 +763,17 @@
 				1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */,
 				807E8AB65431A0C6BD8D86944F4B3556 /* Pods-Calorico-CaloricoUITests */,
 				87CE2FC556FC4A19B61FB40C6A945980 /* Pods-CaloricoTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		110BB8A9E8A7C75FB530A224BE135146 /* Resources */ = {
+		00B9D3AEA63526E06264EFE3709C465C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF4CB27825E762520455C6568A3ECE8 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,33 +784,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A28A20304CC55232E30DFBAE9F5B0E3 /* Resources */ = {
+		2A3F3D1450B25EAA5440731B40F45946 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF6B8371302E930FECEC46DBBE8DC358 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2BD61FF3E647B9B2563784D378A9DE6 /* cameraRotate@3x.png in Resources */,
-				9E6A283BED0305AE222A5774C0240657 /* flashOff@3x.png in Resources */,
-				7249598DF1E11ECA3718E37BDE1BE917 /* flashOn@3x.png in Resources */,
-				96D3C21E658373A9AB0B67435005F1A3 /* info@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3ADA00D3610339042F3B5F59E5AF1E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52DE893724562B1353663D381D2FF158 /* Localizable.strings in Resources */,
+				F81A89AE83064A4F986705DC88FFD3A3 /* cameraRotate@3x.png in Resources */,
+				FA7B4A1BEB333FD55CE118EA7F04A628 /* flashOff@3x.png in Resources */,
+				801A17DFCCFFFC4BD24DC357E0349F4E /* flashOn@3x.png in Resources */,
+				DABAA647731A60D50ACBA181326CC5E4 /* info@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DAEA1F953296419744C852BAA2739BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B2FAA1FE48C63A9D955C86AFA2F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33143B4D9F261A703779E2F8D9AF1DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -777,18 +828,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1BF2C2714504353A1DAC5A0D4A6DE5A1 /* Sources */ = {
+		054AA787EBA4A02A2C5F98FB40C10FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321CA0B89302D4992513524A19E6CC4B /* Pods-Calorico-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14A02CD619A414507DAA0318D4D9CEE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40328CA10B93762D2286EF3D45A134C6 /* Sources */ = {
+		16415FE9CC163B7058C14CF4C5B0805F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F108FA6504E0405201AD7FB5F6B74F /* Pods-Calorico-CaloricoUITests-dummy.m in Sources */,
+				284F86F3E1889FA74361B88ABC757C1E /* Pods-Calorico-CaloricoUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,13 +856,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC18473BBA8E4EFA39E28C3009B5F67 /* Pods-CaloricoTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1881252655E0DAA59CFD0F1685ABEDD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,71 +911,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4F59CB1114B4393831FF29F9FCA8EB9 /* Sources */ = {
+		E6C64DCAD2556B2BA711A13DBF2052AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4EA5348A563650778B6547BC381579 /* Pods-Calorico-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2444D0F355C954966F7AC1409A0A7CD1 /* PBXTargetDependency */ = {
+		183482526C5FA5347B86376FE19B66F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BarcodeScanner;
+			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
+			targetProxy = 4F3A1D690F05617CA50653F4D0B9D0DD /* PBXContainerItemProxy */;
+		};
+		4EBC3175B6A48E04C4841ED264D4CDF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BarcodeScanner;
+			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
+			targetProxy = DCA4A11FB802C33469872A206BB61CE0 /* PBXContainerItemProxy */;
+		};
+		5A89A0FF44F6F6B9D3A3A1BFF03720C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = D93660555543B03C2C5984DAC641DEFB /* PBXContainerItemProxy */;
+		};
+		7B973729A4EC3AD5C0A0F0966D735E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = 83C58363CF7EE8CC7F3A89045261FE26 /* PBXContainerItemProxy */;
+		};
+		7D02185A484B9A1CCD717817199CBBB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "BarcodeScanner-Localization";
 			target = 2598A00DF974C904143778EDC46CC0E5 /* BarcodeScanner-Localization */;
-			targetProxy = 55473A8DFEDBEE143CBB8B38571983A3 /* PBXContainerItemProxy */;
+			targetProxy = 038A8C517F2A4ACF8570B91023776F41 /* PBXContainerItemProxy */;
 		};
-		7BF42D5649C66C0A1781FBE4B0A27EB2 /* PBXTargetDependency */ = {
+		A593E71B3AA4A18E3EAE608BCD892076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "BarcodeScanner-BarcodeScanner";
-			target = 02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */;
-			targetProxy = 381E6BC1E2A8A1EBC9D148F72F7248C3 /* PBXContainerItemProxy */;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 518D319D60DDEE79A256D70B47E1E714 /* PBXContainerItemProxy */;
 		};
-		837FE29A054F97BE9CA399005F932E66 /* PBXTargetDependency */ = {
+		BAD90B85362DF15170A2A0229311B01F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Calorico";
 			target = 1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */;
-			targetProxy = D9D4C1727E9222C60F206925E6DE25C2 /* PBXContainerItemProxy */;
+			targetProxy = 9C85888AF986BE2AC6560F450135732F /* PBXContainerItemProxy */;
 		};
-		9775270F75979CA546281E8BC1FBC332 /* PBXTargetDependency */ = {
+		D02F580D36D26ADB4E2F60DC2E3FDA28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
 			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
-			targetProxy = C6EE7131E7540759054AD63D3C788860 /* PBXContainerItemProxy */;
+			targetProxy = B09CB5AE269A88EE6FF005B7537C2F9F /* PBXContainerItemProxy */;
 		};
-		995593DB3D20FC88F0B30143849DD828 /* PBXTargetDependency */ = {
+		EC8B484F2493471D104BFE15077B6E7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BarcodeScanner;
-			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
-			targetProxy = DAEB65FD7B4DCD57BEEB3B84AC7AC1E2 /* PBXContainerItemProxy */;
-		};
-		BA9A815615B6CAD4EC878D8AA6257140 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IQKeyboardManagerSwift;
-			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
-			targetProxy = 55B9C4E269D0C6ED6F58C6E455FFFC4D /* PBXContainerItemProxy */;
-		};
-		E74E50DCDFA55392EDAFAF795019ADF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BarcodeScanner;
-			target = 39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */;
-			targetProxy = 65A3025B8E55127D5B77E573C2B9CF03 /* PBXContainerItemProxy */;
+			name = "BarcodeScanner-BarcodeScanner";
+			target = 02E136446D8E897681981873306A783A /* BarcodeScanner-BarcodeScanner */;
+			targetProxy = 48DE3A9466660AC326DDC0C466A126FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD1B3E1812E2C0F578C4E636CC0811AE /* Localizable.strings */ = {
+		5B5AFDA928E6A4B4C82CDD19FD5734CB /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9BC0EE97151561BF535FA69327A6FE4 /* Localizable.strings */,
-				9E323D48CA6B132DF04290E97B778BC8 /* Localizable.strings */,
-				A1E44B0FC1D74454F3AAD3474CB558A8 /* Localizable.strings */,
-				A8E1FB351525B9E17FE512E0C87A323C /* Localizable.strings */,
-				D005F4302745C09841556E57FD78DAFF /* Localizable.strings */,
-				9FDE7BA126E60C64A93E500B3938811B /* Localizable.strings */,
+				6B2F12369679E12E9A1A6E7EE455117D /* Localizable.strings */,
+				F51E80B2BAE1D9AFCDC783D450A37772 /* Localizable.strings */,
+				808DB48159747199F07DF565C5CE2FB1 /* Localizable.strings */,
+				0E4190A2C5FA756645E4BEA6E0A0B8B3 /* Localizable.strings */,
+				DD0DEE9CA5F6D0E38B0CCC97A3ADB568 /* Localizable.strings */,
+				54C8DDFAF121BD322FAE01423E4E99EE /* Localizable.strings */,
 			);
 			name = Localizable.strings;
 			path = Localization;
@@ -932,7 +995,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		580CE06D89138761ECC79548B4466363 /* Debug */ = {
+		26EA5A9600226D2B7D8D25152A304F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4194EC85A3EFDDEC01236A276A30DA /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		331C82273B4F70C618F41187DF6E56F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC20A8305DB46EF0DDE3994982AFC44 /* Pods-Calorico-CaloricoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		387A538922BBE7716B7CC917ACDA6031 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 772C57C40F15206BFA0B9C0860257836 /* Pods-Calorico.debug.xcconfig */;
 			buildSettings = {
@@ -969,9 +1088,26 @@
 			};
 			name = Debug;
 		};
+		7049EEF4D1322B79046F9A00AB6D5BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9DD0B266BE13BEFE161CEB0ABD22AD /* BarcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Localization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		748C7417728DB5217F94865B40B1E686 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9089FC0D595B3F9474EA53444EA8E685 /* IQKeyboardManagerSwift.debug.xcconfig */;
+			baseConfigurationReference = 776B0A0DCC5995A45ACAB83D3D5ABBD4 /* IQKeyboardManagerSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -985,7 +1121,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1004,9 +1140,47 @@
 			};
 			name = Debug;
 		};
-		76775DBA40530D1624AEBB698A3C7EA0 /* Release */ = {
+		7AFE1B302BA2B721BEC376E5F98BE38C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CC20A8305DB46EF0DDE3994982AFC44 /* Pods-Calorico-CaloricoUITests.release.xcconfig */;
+			baseConfigurationReference = 6AC38E799F7B3BBFECCDA875B708679B /* Pods-Calorico.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		887B756FBFF81597E985AB176DD21794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD0161B21CA85175345224B5467AFC2 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1036,9 +1210,25 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8BA725DA853229179D5C97E28FC6C529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E3134A50F7E86CA725985FF5A2B63F /* BarcodeScanner.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Localization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1170,26 +1360,9 @@
 			};
 			name = Release;
 		};
-		9F85E3C75C2A29889B63B68181CB91F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Localization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		A7BEF09AFD2E921AE8F08B5922742358 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */;
+			baseConfigurationReference = DE9DD0B266BE13BEFE161CEB0ABD22AD /* BarcodeScanner.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1224,7 +1397,7 @@
 		};
 		A81104B13B5DCFB8FD09E2A13886F5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */;
+			baseConfigurationReference = 99E3134A50F7E86CA725985FF5A2B63F /* BarcodeScanner.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1257,6 +1430,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A8D238B3A58EEB4C3E4B20B8229B83B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9DD0B266BE13BEFE161CEB0ABD22AD /* BarcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
+				IBSC_MODULE = BarcodeScanner;
+				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BarcodeScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		B63C20073CD9E0B152D0C92BA15278F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1295,26 +1485,9 @@
 			};
 			name = Debug;
 		};
-		B7F70A29FA14EDD40A8AB38B3B8922A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Localization;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		C76AA726FD1DC2DDCE57161BF4818A8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F888B84D6CA691B213669BFBED5FB922 /* IQKeyboardManagerSwift.release.xcconfig */;
+			baseConfigurationReference = 687B7868FEB73C4D3B3BA7945E7F9BDD /* IQKeyboardManagerSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1328,7 +1501,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1348,9 +1521,9 @@
 			};
 			name = Release;
 		};
-		C81F8F87F4449CB0D932D49D0BE4135A /* Release */ = {
+		D5D03CE8716E61DE2B126539F6BCC66B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16A697E942CB7BD6F80E71B56A654C96 /* BarcodeScanner.release.xcconfig */;
+			baseConfigurationReference = 99E3134A50F7E86CA725985FF5A2B63F /* BarcodeScanner.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
@@ -1362,44 +1535,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		DD9B01C97E7FD630600BB2285D642928 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AC38E799F7B3BBFECCDA875B708679B /* Pods-Calorico.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Calorico/Pods-Calorico.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1441,57 +1576,20 @@
 			};
 			name = Release;
 		};
-		E7DEAF537CF8B863428469BC9BC0F923 /* Debug */ = {
+		E9E1A48A750B946DE9877594C6E735E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62AF4C81EA3A78632B1FEEF46EA8309F /* BarcodeScanner.debug.xcconfig */;
+			baseConfigurationReference = B264812DDC49B67C9B72CC253136B935 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
-				IBSC_MODULE = BarcodeScanner;
-				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = BarcodeScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		EA82D2300FE12DA6F312C0075B8AB40E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBD0161B21CA85175345224B5467AFC2 /* Pods-Calorico-CaloricoUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Calorico-CaloricoUITests/Pods-Calorico-CaloricoUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1503,24 +1601,6 @@
 			buildConfigurations = (
 				B63C20073CD9E0B152D0C92BA15278F7 /* Debug */,
 				E09BB7A73262FCBC051BBDECBC755EF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		245684D9CDE02626E265CBE88DC95992 /* Build configuration list for PBXNativeTarget "Pods-Calorico-CaloricoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA82D2300FE12DA6F312C0075B8AB40E /* Debug */,
-				76775DBA40530D1624AEBB698A3C7EA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BB78C8134DB20F1F62967804B9AF6A2 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7DEAF537CF8B863428469BC9BC0F923 /* Debug */,
-				C81F8F87F4449CB0D932D49D0BE4135A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1543,20 +1623,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82BF77C4902E629D98C6F968C5DFF9EA /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */ = {
+		4A24577CEC4C5CCC4C47B75205B30072 /* Build configuration list for PBXNativeTarget "Pods-Calorico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F85E3C75C2A29889B63B68181CB91F7 /* Debug */,
-				B7F70A29FA14EDD40A8AB38B3B8922A6 /* Release */,
+				387A538922BBE7716B7CC917ACDA6031 /* Debug */,
+				7AFE1B302BA2B721BEC376E5F98BE38C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C83FF7A0920B90DA0CD23E781ECC30AD /* Build configuration list for PBXNativeTarget "Pods-Calorico" */ = {
+		626A4D5EA7726D5697E9084123097FF3 /* Build configuration list for PBXNativeTarget "BarcodeScanner-Localization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				580CE06D89138761ECC79548B4466363 /* Debug */,
-				DD9B01C97E7FD630600BB2285D642928 /* Release */,
+				7049EEF4D1322B79046F9A00AB6D5BA7 /* Debug */,
+				8BA725DA853229179D5C97E28FC6C529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B9BA1E4AC805A922A235EF89F696E4 /* Build configuration list for PBXNativeTarget "BarcodeScanner-BarcodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D238B3A58EEB4C3E4B20B8229B83B2 /* Debug */,
+				D5D03CE8716E61DE2B126539F6BCC66B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E1A48A750B946DE9877594C6E735E4 /* Debug */,
+				26EA5A9600226D2B7D8D25152A304F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8D82EC2A0B10A46F615A9E4200F41F0 /* Build configuration list for PBXNativeTarget "Pods-Calorico-CaloricoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887B756FBFF81597E985AB176DD21794 /* Debug */,
+				331C82273B4F70C618F41187DF6E56F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
