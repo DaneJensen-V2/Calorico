@@ -7,11 +7,14 @@
 
 import Foundation
 
-struct Autocomplete : Decodable {
-    var suggestions : suggestion
+// swiftlint:disable type_name
+
+struct Autocomplete: Decodable {
+    var suggestions: suggestion
 }
 
-struct suggestion : Decodable{
-    var suggestion : [String]
-    
+struct suggestion: Decodable {
+    var suggestion: [String]
+
 }
+// swiftlint:enable type_name

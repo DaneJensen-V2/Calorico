@@ -134,7 +134,7 @@ public final class CameraViewController: UIViewController {
 
     torchMode = .off
       let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .background)
-      dispatchQueue.async{
+      dispatchQueue.async {
           self.captureSession.startRunning()
       }
     focusView.isHidden = false

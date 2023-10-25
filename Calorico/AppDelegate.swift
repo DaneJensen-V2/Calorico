@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             static let apiKey = "8a70cd32aae046aab880e1a206bfe312"
             static let apiSecret = "ca559d5e668d4d89968df047a92fe58a"
         }
-    
+
     lazy var coreDataStack: CoreDataStack = .init(modelName: "UserData")
 
     static let sharedAppDelegate: AppDelegate = {
@@ -24,27 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return delegate
     }()
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.\
         FatSecretCredentials.setConsumerKey(Constants.apiKey)
         FatSecretCredentials.setSharedSecret(Constants.apiSecret)
-        
-        
+
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
 
-        if(defaults.bool(forKey: "HasLaunchedOnce")) {
+        if defaults.bool(forKey: "HasLaunchedOnce") {
             print("Loading Data")
             let lastDate = (defaults.object(forKey: "lastLaunchedDate")) as! Date
             print("Last Opened: \(lastDate)")
 //            let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: lastDate)
-        
+
             let lastDay = Calendar.current.dateComponents([.day], from: lastDate)
             let currentDay = Calendar.current.dateComponents([.day], from: Date.now)
-          
-            
+
             print(lastDay.day!)
             print(currentDay.day!)
 
@@ -52,7 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Current Date: \(currentDate)")
             defaults.set(Date.now, forKey: "lastLaunchedDate")
 
-            
             if let data = UserDefaults.standard.data(forKey: "foodHistory") {
                 do {
                     // Create JSON Decoder
@@ -65,16 +61,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print("Unable to Decode Notes (\(error))")
                 }
             }
-            
-            if lastDay != currentDay
-            {
-                
+
+            if lastDay != currentDay {
+
                 print("It is a different day.")
-                
-                //currentUser?.dailyFood = []
+
+                // currentUser?.dailyFood = []
                 newDay = true
             }
-            
 
         } else {
           // This is the first launch ever
@@ -85,10 +79,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.set(0, forKey: "protein")
             defaults.set(0, forKey: "carbs")
             defaults.set(0, forKey: "fat")
-            
+
             defaults.set(Date.now, forKey: "lastLaunchedDate")
         }
-        
+
         return true
     }
 
@@ -116,11 +110,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          error conditions that could cause the creation of the store to fail.
         */
         let container = NSPersistentContainer(name: "Calorico")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+        container.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
+
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.
@@ -152,4 +146,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-

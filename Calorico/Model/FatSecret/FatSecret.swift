@@ -47,6 +47,7 @@ private enum HTTPError: LocalizedError {
  */
 
 open class FatSecret {
+    
     private var timestamp: String {
         get { return String(Int(Date().timeIntervalSince1970)) }
     }
@@ -66,24 +67,23 @@ open class FatSecret {
     /** Search
      - Description: Search for a food by name
      */
-    func searchFood(name: String, page : Int, completion: @escaping (Result<[Food], Error>) -> Void)  {
-        FatSecretParams.fatSecret = ["format":"json", "method":"foods.search.v2", "search_expression":name, "oauth_token": "8ed3f7f24e6848c7916653dafef0397e", "flag_default_serving": "true", "page_number": String(page), "max_results" : "10"] as Dictionary
-        
+    func searchFood(name: String, page: Int, completion: @escaping (Result<[Food], Error>) -> Void) {
+        FatSecretParams.fatSecret = ["format": "json", "method": "foods.search.v2", "search_expression": name, "oauth_token": "8ed3f7f24e6848c7916653dafef0397e", "flag_default_serving": "true", "page_number": String(page), "max_results": "10"] as Dictionary
+
         let components = generateSignature()
         fatSecretRequest(with: components) { data in
             guard let data = data else { return }
-          
+
             if let responseObject = try? JSONDecoder().decode(SearchResults.self, from: data) {
-                do{
+                do {
                     completion(.success(responseObject.foods_search.results.food))
                 }
-               
-            }
-            else {
+
+            } else {
                 let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "Could not format Search result"])
 
                     completion(.failure(error))
-                    
+
             }
         }
     }
@@ -91,46 +91,43 @@ open class FatSecret {
     /** Food
      - Description: Get a food item by id
      */
-    public func getFood(id: String, completion: @escaping (_ foods: Food) -> ()) {
-        FatSecretParams.fatSecret = ["format":"json", "food_id":id, "method":"food.get.v3", "oauth_token": "8ed3f7f24e6848c7916653dafef0397e"] as Dictionary
+    public func getFood(id: String, completion: @escaping (_ foods: Food) -> Void) {
+        FatSecretParams.fatSecret = ["format": "json", "food_id": id, "method": "food.get.v3", "oauth_token": "8ed3f7f24e6848c7916653dafef0397e"] as Dictionary
 
         let components = generateSignature()
         fatSecretRequest(with: components) { data in
             guard let data = data else { return }
-            let model = self.retrieve(data: data, type: [String:Food].self)
+            let model = self.retrieve(data: data, type: [String: Food].self)
             let food = model!["food"]
             completion(food!)
         }
     }
-    
-    public func searchAutoComplete(term: String, completion: @escaping ([String]) -> ()) {
-        FatSecretParams.fatSecret = ["max_results": "5", "format":"json", "expression":term, "method":"foods.autocomplete.v2", "oauth_token": "8ed3f7f24e6848c7916653dafef0397e"] as Dictionary
+
+    public func searchAutoComplete(term: String, completion: @escaping ([String]) -> Void) {
+        FatSecretParams.fatSecret = ["max_results": "5", "format": "json", "expression": term, "method": "foods.autocomplete.v2", "oauth_token": "8ed3f7f24e6848c7916653dafef0397e"] as Dictionary
 
         let components = generateSignature()
         fatSecretRequest(with: components) { data in
             guard let data = data else {
-
                 completion([])
                 return
-                
             }
-        
+
             if let responseObject = try? JSONDecoder().decode(Autocomplete.self, from: data) {
-                do{
+                do {
                     completion(responseObject.suggestions.suggestion)
-                }
-                catch{
+                } catch {
                     print(error)
                     completion([])
-                    
+
                 }
             }
         }
     }
-    
-     func getFoodFromBarcode(barcode: String, completion: @escaping (Result<Food_Barcode, Error>) -> Void)  {
-        FatSecretParams.fatSecret = ["format":"json", "barcode":barcode, "method":"food.find_id_for_barcode", "oauth_token": "8ed3f7f24e6848c7916653dafef0397e"] as Dictionary
-         
+
+     func getFoodFromBarcode(barcode: String, completion: @escaping (Result<Food_Barcode, Error>) -> Void) {
+        FatSecretParams.fatSecret = ["format": "json", "barcode": barcode, "method": "food.find_id_for_barcode", "oauth_token": "8ed3f7f24e6848c7916653dafef0397e"] as Dictionary
+
         let components = generateSignature()
         fatSecretRequest(with: components) { data in
             guard let data = data else {
@@ -141,18 +138,15 @@ open class FatSecret {
           //  let model = self.retrieve(data: data, type: [String:Food].self)
          //   let food = model!["food"]
             if let responseObject = try? JSONDecoder().decode(Food_Barcode.self, from: data) {
-                do{
+                do {
                     completion(.success(responseObject))
                 }
-                
-               
-            }
-            else {
+
+            } else {
                 let error = NSError(domain: "", code: 401, userInfo: [ NSLocalizedDescriptionKey: "Could not format Barcode result"])
 
                     completion(.failure(error))
-                    
-                
+
             }
             print(data)
        //     completion(food!)
@@ -163,18 +157,18 @@ open class FatSecret {
 }
 
 extension FatSecret {
-     func fatSecretRequest(with components: URLComponents, completion: @escaping (_ data: Data?)-> ()) {
+     func fatSecretRequest(with components: URLComponents, completion: @escaping (_ data: Data?) -> Void) {
         var request = URLRequest(url: URL(string: String(describing: components).replacingOccurrences(of: "+", with: "%2B"))!)
         request.httpMethod = FatSecretParams.httpType
 
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
            // print(request.url)
-      //      if let JSONString = String(data: data!, encoding: String.Encoding.utf8) {
-      //         print(JSONString)
-      //      }
+            //      if let JSONString = String(data: data!, encoding: String.Encoding.utf8) {
+            //         print(JSONString)
+            //      }
             if let data = data {
                 do {
-                    let model = self.retrieve(data: data, type: [String:FSError].self)
+                    let model = self.retrieve(data: data, type: [String: FSError].self)
                     if model != nil {
                         let error = model!["error"]
                         try self.checkForError(with: error!.code)
@@ -208,24 +202,22 @@ extension FatSecret {
      func generateSignature() -> URLComponents {
         FatSecretParams.oAuth.updateValue(self.timestamp, forKey: "oauth_timestamp")
         FatSecretParams.oAuth.updateValue(self.nonce, forKey: "oauth_nonce")
-        
 
         var oauthComponents = URLComponents(string: FatSecretParams.url)!
-        oauthComponents.componentsForOAuthSignature(from: Array<String>().parameters)
+        oauthComponents.componentsForOAuthSignature(from: [String]().parameters)
 
         let parameters = oauthComponents.getURLParameters()
         let encodedURL = FatSecretParams.url.addingPercentEncoding(withAllowedCharacters: CharacterSet().percentEncoded)!
         let encodedParameters = parameters.addingPercentEncoding(withAllowedCharacters: CharacterSet().percentEncoded)!
-         
-         
-        let signatureBaseString = "\(FatSecretParams.httpType)&\(encodedURL)&\(encodedParameters)"
-        //print(signatureBaseString)
-        let signature = String().getSignature(key: FatSecretParams.key, params: signatureBaseString)
 
+        let signatureBaseString = "\(FatSecretParams.httpType)&\(encodedURL)&\(encodedParameters)"
+        // print(signatureBaseString)
+        let signature = String().getSignature(key: FatSecretParams.key, params: signatureBaseString)
         var urlComponents = URLComponents(string: FatSecretParams.url)!
-        urlComponents.componentsForURL(from: Array<String>().parameters)
+        urlComponents.componentsForURL(from: [String]().parameters)
         urlComponents.queryItems?.append(URLQueryItem(name: "oauth_signature", value: signature))
         return urlComponents
+         
     }
 
     fileprivate func checkForError(with code: Int) throws {

@@ -1,17 +1,17 @@
- public extension Array {
+public extension Array {
     /**
     Creates the parameters key, value pair array.
      Sorts the parameters, by name, using ascending byte value ordering.
      */
     var parameters: [(key: String, value: String)] {
-        get{
+        get {
             var array = [(key: String, value: String)]()
 
-            for (key,value) in FatSecretParams.oAuth {
+            for (key, value) in FatSecretParams.oAuth {
                 array.append((key: key, value: value))
             }
 
-            for (key,value) in FatSecretParams.fatSecret {
+            for (key, value) in FatSecretParams.fatSecret {
                 array.append((key: key, value: value))
             }
 

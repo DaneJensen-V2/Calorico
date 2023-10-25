@@ -34,11 +34,10 @@ public struct Serving: Decodable {
     public let servingAmount: String?
     public let servingUnit: String?
 
-
     public init(calcium: String?, calories: String?, carbohydrate: String?, cholesterol: String?, fat: String?,
                 fiber: String?, iron: String?, monounsaturatedFat: String?, polyunsaturatedFat: String?,
                 potassium: String?, protein: String?, saturatedFat: String?, sodium: String?, sugar: String?,
-                transFat: String?, vitaminA: String?, vitaminC: String?, servingDescription : String?, servingAmount : String?, servingUnit: String?) {
+                transFat: String?, vitaminA: String?, vitaminC: String?, servingDescription: String?, servingAmount: String?, servingUnit: String?) {
         self.calcium = calcium
         self.calories = calories
         self.carbohydrate = carbohydrate
@@ -61,5 +60,5 @@ public struct Serving: Decodable {
         self.servingAmount = servingAmount
 
     }
-    
+
 }

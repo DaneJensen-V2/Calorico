@@ -12,7 +12,7 @@ class SearchResultsCell: UITableViewCell {
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var addButton: UIButton!
-    
+
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var fatLabel: UILabel!
     @IBOutlet weak var carbsLabel: UILabel!
@@ -20,8 +20,8 @@ class SearchResultsCell: UITableViewCell {
     @IBOutlet weak var servingLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    var food : finalFoodItem?
-    
+    var food: finalFoodItem?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,19 +32,12 @@ class SearchResultsCell: UITableViewCell {
         } else {
             // Fallback on earlier versions
         }
-       
 
         backgroundColor = .clear
         setupBG()
         updateView()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
-        
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     override func layoutSubviews() {
          super.layoutSubviews()
@@ -66,8 +59,8 @@ class SearchResultsCell: UITableViewCell {
 
         }
     }
-    func setupBG(){
-        
+    func setupBG() {
+
         // add shadow on cell
         backgroundColor = .clear // very important
         layer.masksToBounds = false
@@ -80,7 +73,7 @@ class SearchResultsCell: UITableViewCell {
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
     }
-    
+
     @IBAction func addButtonClicked(_ sender: UIButton) {
         print("Add Food \(food!.name)")
     }

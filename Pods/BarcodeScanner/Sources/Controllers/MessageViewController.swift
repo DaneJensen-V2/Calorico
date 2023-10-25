@@ -62,7 +62,7 @@ public final class MessageViewController: UIViewController {
     guard status.state == .processing else { return }
 
       print("Blurring")
-      
+
     UIView.animate(
       withDuration: 30.0,
       delay: 0.5,

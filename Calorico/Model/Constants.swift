@@ -11,9 +11,9 @@ import UIKit
 let defaults = UserDefaults.standard
 
 struct Constants {
-    
+
     let USDA_API_KEY = "2SO4n4kvvlzlTlrGw3xaNtK1WVKoNsQQoR3R3NNd"
-    
+
     }
 
 struct Colors {

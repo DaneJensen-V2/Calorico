@@ -12,10 +12,10 @@ public struct Food: Decodable {
     public let name: String
     public let type: String
     public let url: String
-    public let brand : String?
-    public let servings: Array<Serving>?
+    public let brand: String?
+    public let servings: [Serving]?
 
-    public init(id: String, name: String, type: String, url: String, brand : String?, servings: [Serving]) {
+    public init(id: String, name: String, type: String, url: String, brand: String?, servings: [Serving]) {
         self.id = id
         self.name = name
         self.type = type
@@ -30,25 +30,22 @@ public struct Food: Decodable {
         let name = try container.decode(String.self, forKey: .name)
         let type = try container.decode(String.self, forKey: .type)
         let url = try container.decode(String.self, forKey: .url)
-        
+
         var brandTemp = ""
         if let brand = try? container.decode(String.self, forKey: .brand) {
             brandTemp = brand
-        }
-        
-        else {
+        } else {
             brandTemp = "None"
         }
-            
+
         let  brand = brandTemp
-    
 
         do {
-            let servings = try container.decode([String:Serving].self, forKey: .servings)
+            let servings = try container.decode([String: Serving].self, forKey: .servings)
             let array = [servings["serving"]!]
             self.init(id: id, name: name, type: type, url: url, brand: brand, servings: array)
         } catch {
-            let servings = try container.decode([String:[Serving]].self, forKey: .servings)
+            let servings = try container.decode([String: [Serving]].self, forKey: .servings)
             let array = servings["serving"]!
             self.init(id: id, name: name, type: type, url: url, brand: brand, servings: array)
         }

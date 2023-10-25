@@ -101,9 +101,9 @@ UIView hierarchy category.
             var parentController: UIViewController = navController
 
             while let parent = parentController.parent,
-                (parent.isKind(of: UINavigationController.self) == false &&
+                parent.isKind(of: UINavigationController.self) == false &&
                     parent.isKind(of: UITabBarController.self) == false &&
-                    parent.isKind(of: UISplitViewController.self) == false) {
+                    parent.isKind(of: UISplitViewController.self) == false {
 
                         parentController = parent
             }
@@ -122,9 +122,9 @@ UIView hierarchy category.
             }
         } else {
             while let parentController = matchController?.parent,
-                (parentController.isKind(of: UINavigationController.self) == false &&
+                parentController.isKind(of: UINavigationController.self) == false &&
                     parentController.isKind(of: UITabBarController.self) == false &&
-                    parentController.isKind(of: UISplitViewController.self) == false) {
+                    parentController.isKind(of: UISplitViewController.self) == false {
 
                         matchController = parentController
             }
@@ -156,14 +156,14 @@ UIView hierarchy category.
 
             if unwrappedSuperView.isKind(of: classType) {
 
-                //If it's UIScrollView, then validating for special cases
+                // If it's UIScrollView, then validating for special cases
                 if unwrappedSuperView.isKind(of: UIScrollView.self) {
 
                     let classNameString: String = "\(type(of: unwrappedSuperView.self))"
 
                     //  If it's not UITableViewWrapperView class, this is internal class which is actually manage in UITableview. The speciality of this class is that it's superview is UITableView.
                     //  If it's not UITableViewCellScrollView class, this is internal class which is actually manage in UITableviewCell. The speciality of this class is that it's superview is UITableViewCell.
-                    //If it's not _UIQueuingScrollView class, actually we validate for _ prefix which usually used by Apple internal classes
+                    // If it's not _UIQueuingScrollView class, actually we validate for _ prefix which usually used by Apple internal classes
                     if unwrappedSuperView.superview?.isKind(of: UITableView.self) == false,
                         unwrappedSuperView.superview?.isKind(of: UITableViewCell.self) == false,
                         classNameString.hasPrefix("_") == false {
@@ -187,13 +187,13 @@ UIView hierarchy category.
     */
     internal func responderSiblings() -> [UIView] {
 
-        //Array of (UITextField/UITextView's).
+        // Array of (UITextField/UITextView's).
         var tempTextFields = [UIView]()
 
         //	Getting all siblings
         if let siblings = superview?.subviews {
             for textField in siblings {
-                if (textField == self || textField.ignoreSwitchingByNextPrevious == false), textField.IQcanBecomeFirstResponder() {
+                if textField == self || textField.ignoreSwitchingByNextPrevious == false, textField.IQcanBecomeFirstResponder() {
                     tempTextFields.append(textField)
                 }
             }
@@ -207,16 +207,16 @@ UIView hierarchy category.
     */
     internal func deepResponderViews() -> [UIView] {
 
-        //Array of (UITextField/UITextView's).
+        // Array of (UITextField/UITextView's).
         var textfields = [UIView]()
 
         for textField in subviews {
 
-            if (textField == self || textField.ignoreSwitchingByNextPrevious == false), textField.IQcanBecomeFirstResponder() {
+            if textField == self || textField.ignoreSwitchingByNextPrevious == false, textField.IQcanBecomeFirstResponder() {
                 textfields.append(textField)
             }
-            //Sometimes there are hidden or disabled views and textField inside them still recorded, so we added some more validations here (Bug ID: #458)
-            //Uncommented else (Bug ID: #625)
+            // Sometimes there are hidden or disabled views and textField inside them still recorded, so we added some more validations here (Bug ID: #458)
+            // Uncommented else (Bug ID: #625)
             else if textField.subviews.count != 0, isUserInteractionEnabled, !isHidden, alpha != 0.0 {
                 for deepView in textField.deepResponderViews() {
                     textfields.append(deepView)
@@ -224,7 +224,7 @@ UIView hierarchy category.
             }
         }
 
-        //subviews are returning in opposite order. Sorting according the frames 'y'.
+        // subviews are returning in opposite order. Sorting according the frames 'y'.
         return textfields.sorted(by: { (view1: UIView, view2: UIView) -> Bool in
 
             let frame1 = view1.convert(view1.bounds, to: self)

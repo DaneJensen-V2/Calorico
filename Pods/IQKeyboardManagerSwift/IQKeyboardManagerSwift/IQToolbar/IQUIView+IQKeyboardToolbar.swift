@@ -53,13 +53,13 @@ import UIKit
         super.init()
     }
 
-    public let barButtonSystemItem: UIBarButtonItem.SystemItem?    //System Item to be used to instantiate bar button.
+    public let barButtonSystemItem: UIBarButtonItem.SystemItem?    // System Item to be used to instantiate bar button.
 
-    @objc public let image: UIImage?    //Image to show on bar button item if it's not a system item.
+    @objc public let image: UIImage?    // Image to show on bar button item if it's not a system item.
 
-    @objc public let title: String?     //Title to show on bar button item if it's not a system item.
+    @objc public let title: String?     // Title to show on bar button item if it's not a system item.
 
-    @objc public let action: Selector?  //action for bar button item. Usually 'doneAction:(IQBarButtonItem*)item'.
+    @objc public let action: Selector?  // action for bar button item. Usually 'doneAction:(IQBarButtonItem*)item'.
 }
 
 /**
@@ -84,7 +84,7 @@ import UIKit
                 Static.keyboardLeftImage = UIImage(data: data, scale: 3)
             }
 
-            //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
+            // Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
             Static.keyboardLeftImage = Static.keyboardLeftImage?.imageFlippedForRightToLeftLayoutDirection()
         }
 
@@ -105,7 +105,7 @@ import UIKit
                 Static.keyboardRightImage = UIImage(data: data, scale: 3)
             }
 
-            //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
+            // Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
             Static.keyboardRightImage = Static.keyboardRightImage?.imageFlippedForRightToLeftLayoutDirection()
         }
 
@@ -126,7 +126,7 @@ import UIKit
                 Static.keyboardUpImage = UIImage(data: data, scale: 3)
             }
 
-            //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
+            // Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
             Static.keyboardUpImage = Static.keyboardUpImage?.imageFlippedForRightToLeftLayoutDirection()
         }
 
@@ -147,7 +147,7 @@ import UIKit
                 Static.keyboardDownImage = UIImage(data: data, scale: 3)
             }
 
-            //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
+            // Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
             Static.keyboardDownImage = Static.keyboardDownImage?.imageFlippedForRightToLeftLayoutDirection()
         }
 
@@ -279,7 +279,7 @@ UIView category methods to add IQToolbar on UIKeyboard.
 
     func addKeyboardToolbarWithTarget(target: AnyObject?, titleText: String?, rightBarButtonConfiguration: IQBarButtonItemConfiguration?, previousBarButtonConfiguration: IQBarButtonItemConfiguration? = nil, nextBarButtonConfiguration: IQBarButtonItemConfiguration? = nil) {
 
-        //If can't set InputAccessoryView. Then return
+        // If can't set InputAccessoryView. Then return
         if self.responds(to: #selector(setter: UITextField.inputAccessoryView)) {
 
             //  Creating a toolBar for phoneNumber keyboard
@@ -356,12 +356,12 @@ UIView category methods to add IQToolbar on UIKeyboard.
                 items.append(next)
             }
 
-            //Title bar button item
+            // Title bar button item
             do {
-                //Flexible space
+                // Flexible space
                 items.append(UIView.flexibleBarButtonItem())
 
-                //Title button
+                // Title button
                 toolbar.titleBarButton.title = titleText
 
                 if #available(iOS 11, *) {} else {
@@ -370,7 +370,7 @@ UIView category methods to add IQToolbar on UIKeyboard.
 
                 items.append(toolbar.titleBarButton)
 
-                //Flexible space
+                // Flexible space
                 items.append(UIView.flexibleBarButtonItem())
             }
 

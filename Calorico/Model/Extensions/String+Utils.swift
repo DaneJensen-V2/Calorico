@@ -30,8 +30,7 @@ import CryptoSwift
     func getSignature(key: String, params: String) -> String {
         var array = [UInt8]()
         array += params.utf8
-        
-        
+
         let keyTemp = key + "3e063856d4614902b1eb8cb5642c0363"
 
         let sign = try! HMAC(key: keyTemp, variant: .sha1).authenticate(array).toBase64()
@@ -43,5 +42,5 @@ import CryptoSwift
     Determines if string contains another string.
      Returns boolean value.
      */
-    func contains(find: String) -> Bool{ return self.range(of: find) != nil }
+    func contains(find: String) -> Bool { return self.range(of: find) != nil }
 }

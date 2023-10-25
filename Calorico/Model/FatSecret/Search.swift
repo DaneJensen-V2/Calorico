@@ -9,5 +9,3 @@ public struct Search: Decodable {
         self.foods = foods
     }
 }
-
-

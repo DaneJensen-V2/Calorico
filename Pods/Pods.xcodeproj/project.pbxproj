@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = SwiftLint;
-			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
@@ -54,7 +53,7 @@
 		6CCC68077295A821AC9C1E7CC2BC35BC /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FB04E0DE79E391E15634474996602 /* NSLayoutConstraint+Extensions.swift */; };
 		700C48768FCAEF0F35A4C9B252B20A0C /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391660E86DEDC4F59266FD4DE904176 /* AVMetadataObject+Extensions.swift */; };
 		7AC995F567A776FC1A80A9FA0733F3D1 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1321BA26616989BC6EDE93CF8A56101 /* IQNSArray+Sort.swift */; };
-		7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */; };
+		7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner-BarcodeScanner in Resources */ = {isa = PBXBuildFile; fileRef = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner-BarcodeScanner */; };
 		801A17DFCCFFFC4BD24DC357E0349F4E /* flashOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B935140501110D19A36B1A5EFE9F343 /* flashOn@3x.png */; };
 		85F13B069B06ADF2B6DCA622E4645110 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C2A0A32F8754CC77C8FA345812D3B /* IQKeyboardManagerConstants.swift */; };
 		86A03DE9366D1BE94EB99AA387EACD1F /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E816EEC30F608A1261D0A0775DFCA02 /* IQKeyboardManager.swift */; };
@@ -62,7 +61,7 @@
 		A0CE10B2AB5F96D28540B30454BF6E62 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A84E4AE9C5130CEA74DAC0E29109EC /* CameraViewController.swift */; };
 		A4BAEE317BFF650DCC888FC67BFBF7EF /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A849A25DE6500F0C047BD2D7230FDE1 /* IQKeyboardManager+UIKeyboardNotification.swift */; };
 		AD1351D411B092E4F3FB8898AB71823E /* Pods-CaloricoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEE7CE3120E5E8A22264E1591DC33CA /* Pods-CaloricoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADE02B44B0F6B14EDF45330E5C28ADF6 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */; };
+		ADE02B44B0F6B14EDF45330E5C28ADF6 /* BarcodeScanner-Localization in Resources */ = {isa = PBXBuildFile; fileRef = 74F4D59B519920CD954D013FCD061B86 /* BarcodeScanner-Localization */; };
 		B1B6A2491AC437909DABE20C71BECDBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F82C590D36C4FCD968B7B3D5F32D788 /* CoreGraphics.framework */; };
 		B447CB1C46B8F0DD2AAAB486883CE1CB /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6804DFB5DE1E1E5273B3576A317B9663 /* FocusViewType.swift */; };
 		B6B43B1B78EC0E52CC08F82841A22A31 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA949334D77465D5289449D9AFD7B7A /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -192,7 +191,7 @@
 		6B4142DEAAAF163D748DBD28F884D7EC /* Pods-Calorico-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calorico-frameworks.sh"; sourceTree = "<group>"; };
 		6E1C2A0A32F8754CC77C8FA345812D3B /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 		7391660E86DEDC4F59266FD4DE904176 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVMetadataObject+Extensions.swift"; path = "Sources/Extensions/AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
-		74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Localization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F4D59B519920CD954D013FCD061B86 /* BarcodeScanner-Localization */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "BarcodeScanner-Localization"; path = Localization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7629E00DA3DFE47761215ED2AB912D62 /* TorchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TorchMode.swift; path = Sources/DataStructures/TorchMode.swift; sourceTree = "<group>"; };
 		772C57C40F15206BFA0B9C0860257836 /* Pods-Calorico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calorico.debug.xcconfig"; sourceTree = "<group>"; };
 		776B0A0DCC5995A45ACAB83D3D5ABBD4 /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
@@ -210,9 +209,9 @@
 		99E3134A50F7E86CA725985FF5A2B63F /* BarcodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarcodeScanner.release.xcconfig; sourceTree = "<group>"; };
 		9D8E7C22D5D5C516459C78E59BBE7E0B /* Pods-Calorico-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calorico-Info.plist"; sourceTree = "<group>"; };
 		9D9278C604A7C65111941CC728B43C46 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7E605788350322F4F6B915547ABFBE /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
-		A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScanner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner-BarcodeScanner */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "BarcodeScanner-BarcodeScanner"; path = BarcodeScanner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F61146ABE5656A03F1157AEA696FA5 /* Pods-Calorico-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calorico-dummy.m"; sourceTree = "<group>"; };
 		A70DFA3DA45775DBAFC39CE10BF0E744 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		A78DC27B6965408ECD5E3279A12336BD /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
@@ -232,7 +231,7 @@
 		C50B8FFF1C7B9A56162137B56982857F /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarcodeScannerViewController.swift; path = Sources/Controllers/BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		C825C6B6232DD544C1FFDBA21CE5951E /* Pods-Calorico-CaloricoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calorico-CaloricoUITests-frameworks.sh"; sourceTree = "<group>"; };
 		CD9B577FDCAD418AAB83A48EA1C17DA2 /* Pods-Calorico-CaloricoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calorico-CaloricoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BarcodeScanner; path = BarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA949334D77465D5289449D9AFD7B7A /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		CFB2DED1C49AEBA1DE95D68B904DB769 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
 		D27A7B3893E9DE698E9EF028FDF30FD0 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
@@ -362,9 +361,9 @@
 		3988D0529191B807753FC403E34173C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */,
-				A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */,
-				74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */,
+				CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner */,
+				A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner-BarcodeScanner */,
+				74F4D59B519920CD954D013FCD061B86 /* BarcodeScanner-Localization */,
 				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */,
 				828EBBAD9FEFC8D91F06C00F8FBE465A /* Pods-Calorico */,
 				B541E886287283F66F355D73916006B4 /* Pods-Calorico-CaloricoUITests */,
@@ -417,6 +416,7 @@
 				AE2A930643C17B27CB9B20E7CA293106 /* IQUIViewController+Additions.swift */,
 				948A586E54283DA970A8A727E03A7F8D /* Support Files */,
 			);
+			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -515,6 +515,7 @@
 			children = (
 				F5161D6FCEF499FEC00AB202D1236628 /* Support Files */,
 			);
+			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -537,6 +538,7 @@
 				BA01E9429BFF03DFEA93FEE8E13F12BB /* Resources */,
 				94BEDE2486BF89A2CA911DD22BF74B4C /* Support Files */,
 			);
+			name = BarcodeScanner;
 			path = BarcodeScanner;
 			sourceTree = "<group>";
 		};
@@ -610,7 +612,7 @@
 			);
 			name = "BarcodeScanner-BarcodeScanner";
 			productName = BarcodeScanner;
-			productReference = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner.bundle */;
+			productReference = A234A8BFB979A78BC6E93200F1F79F8B /* BarcodeScanner-BarcodeScanner */;
 			productType = "com.apple.product-type.bundle";
 		};
 		1828800876D793C300C2DE9E490B6FA4 /* Pods-Calorico */ = {
@@ -648,7 +650,7 @@
 			);
 			name = "BarcodeScanner-Localization";
 			productName = Localization;
-			productReference = 74F4D59B519920CD954D013FCD061B86 /* Localization.bundle */;
+			productReference = 74F4D59B519920CD954D013FCD061B86 /* BarcodeScanner-Localization */;
 			productType = "com.apple.product-type.bundle";
 		};
 		39D656AC88E303625E9AA42D19C21D75 /* BarcodeScanner */ = {
@@ -668,7 +670,7 @@
 			);
 			name = BarcodeScanner;
 			productName = BarcodeScanner;
-			productReference = CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner.framework */;
+			productReference = CEC6E08D351631DC655F4A648DE0C061 /* BarcodeScanner */;
 			productType = "com.apple.product-type.framework";
 		};
 		807E8AB65431A0C6BD8D86944F4B3556 /* Pods-Calorico-CaloricoUITests */ = {
@@ -820,8 +822,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner.bundle in Resources */,
-				ADE02B44B0F6B14EDF45330E5C28ADF6 /* Localization.bundle in Resources */,
+				7FB57AA7F0DF91F474FBD94FCA284452 /* BarcodeScanner-BarcodeScanner in Resources */,
+				ADE02B44B0F6B14EDF45330E5C28ADF6 /* BarcodeScanner-Localization in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,7 +1098,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
 				IBSC_MODULE = BarcodeScanner;
 				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = Localization;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1223,7 +1225,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
 				IBSC_MODULE = BarcodeScanner;
 				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-Localization-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = Localization;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1376,7 +1378,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BarcodeScanner/BarcodeScanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1411,7 +1413,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BarcodeScanner/BarcodeScanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/BarcodeScanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1439,7 +1441,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
 				IBSC_MODULE = BarcodeScanner;
 				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = BarcodeScanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1529,7 +1531,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BarcodeScanner";
 				IBSC_MODULE = BarcodeScanner;
 				INFOPLIST_FILE = "Target Support Files/BarcodeScanner/ResourceBundle-BarcodeScanner-BarcodeScanner-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = BarcodeScanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

@@ -7,58 +7,58 @@
 
 import Foundation
 import UIKit
+// swiftlint:disable type_name
 
-var currentUser : User? = nil
+var currentUser: User?
 
-struct User : Codable{
-    
-    enum gender : Codable {
+struct User: Codable {
+
+    enum gender: Codable {
         case male
         case female
     }
-    enum exerciseLevel : Codable  {
+    enum exerciseLevel: Codable {
         case sedentary
         case light
         case moderate
         case heavy
         case athlete
     }
-    enum dietModel : Int, Codable {
+    enum dietModel: Int, Codable {
         case cutting = -500
         case maintaining = 0
         case bulking = 500
 
     }
-    
-    var height : Measurement<UnitLength>
-    var weight : Measurement<UnitMass>
-    var age : Int
-    var goals : userMacros?
-    var currentValues : userMacros?
-    var userExerciseLevel : exerciseLevel
-    let userGender : gender
-    var userDietModel : dietModel
-    var dailyFood : [food]
-    
-    func calculateTDEE() -> Double{
+
+    var height: Measurement<UnitLength>
+    var weight: Measurement<UnitMass>
+    var age: Int
+    var goals: userMacros?
+    var currentValues: userMacros?
+    var userExerciseLevel: exerciseLevel
+    let userGender: gender
+    var userDietModel: dietModel
+    var dailyFood: [food]
+
+    func calculateTDEE() -> Double {
         var constant = 0.0
         if self.userGender == .male {
             constant = 5.0
-        }
-        else {
+        } else {
             constant = -151.0
         }
-        
+
         let weightComponent = 10 * weight.converted(to: UnitMass.kilograms).value
         let heighComponent = 6.25 * height.converted(to: UnitLength.centimeters).value
         let ageComponent = 5.0 * Double(age)
-        
+
         var TDEE = ((weightComponent) + (heighComponent) - (ageComponent)) + constant
-        
-        TDEE = TDEE * getMultiplier()
+
+        TDEE *= getMultiplier()
         return TDEE
     }
-    
+
     func getMultiplier() -> Double {
         switch userExerciseLevel {
         case .sedentary:
@@ -73,36 +73,35 @@ struct User : Codable{
             return 1.9
         }
     }
-    
-  
+
     mutating func updateProgess() {
         var totalCalories = 0
         var totalProtein = 0
         var totalFat = 0
         var totalCarbs = 0
-        
+
         for item in dailyFood {
            totalCalories += item.macros.calories
             totalProtein += item.macros.protein
             totalFat += item.macros.fat
             totalCarbs += item.macros.carbs
         }
-        
+
         if currentValues == nil {
             currentValues = userMacros(fat: 0, protein: 0, carbs: 0, calories: 0)
         }
-        
+
         currentValues?.calories = totalCalories
         currentValues?.protein = totalProtein
         currentValues?.fat = totalFat
         currentValues?.carbs = totalCarbs
 
     }
-    
-    mutating func updateGoals(){
+
+    mutating func updateGoals() {
         goals = calculateGoals()
     }
-    
+
     func saveToCoreData() {
         do {
             // Create JSON Encoder
@@ -112,17 +111,17 @@ struct User : Codable{
             let data = try encoder.encode(self)
 
             UserDefaults.standard.set(data, forKey: "UserData")
-            
+
             print("Saved User to Defaults")
 
         } catch {
             print("Unable to Encode User (\(error))")
         }
     }
-    
-    func calculateGoals() -> userMacros{
+
+    func calculateGoals() -> userMacros {
         let TDEE = calculateTDEE()
-        
+
         let calorieGoal = Int(TDEE) + userDietModel.rawValue
         let proteinGoal = Int((0.3 * Double(calorieGoal)) / 4.0)
         let carbsGoal = Int((0.35 * Double(calorieGoal)) / 4.0)
@@ -131,31 +130,32 @@ struct User : Codable{
         let result = userMacros(fat: fatGoal, protein: proteinGoal, carbs: carbsGoal, calories: calorieGoal)
         return result
     }
-    
-    mutating func setCurrentMacros(calories : Int, protein : Int, carbs : Int, fat : Int) {
-        
+
+    mutating func setCurrentMacros(calories: Int, protein: Int, carbs: Int, fat: Int) {
+
         currentValues = userMacros(fat: fat, protein: protein, carbs: carbs, calories: calories)
-        
+
         defaults.set(calories, forKey: "calories")
         defaults.set(protein, forKey: "protein")
         defaults.set(carbs, forKey: "carbs")
         defaults.set(fat, forKey: "fat")
 
     }
-    
+
 }
 
-
-struct userMacros : Codable {
-    var fat : Int
-    var protein :  Int
-    var carbs : Int
-    var calories : Int
+struct userMacros: Codable {
+    var fat: Int
+    var protein: Int
+    var carbs: Int
+    var calories: Int
 }
 
-struct food : Codable {
-    let name : String
+struct food: Codable {
+    let name: String
     var id = UUID()
     var date = Date()
-    let macros : userMacros
+    let macros: userMacros
 }
+
+// swiftlint:enable type_name

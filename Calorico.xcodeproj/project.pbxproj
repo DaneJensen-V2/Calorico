@@ -33,6 +33,7 @@
 		DB58EBF72A37A03E00237AC7 /* NutritionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB58EBF62A37A03E00237AC7 /* NutritionCounter.swift */; };
 		DB7945D22AB2308F0064A5FA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7945D02AB2308F0064A5FA /* SearchViewController.swift */; };
 		DB7945D72AB247C00064A5FA /* Autocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7945D62AB247C00064A5FA /* Autocomplete.swift */; };
+		DB957EFA2AE87304006A9D94 /* FoodServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB957EF92AE87304006A9D94 /* FoodServing.swift */; };
 		DBAA037729DB6E5A008EF134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037629DB6E5A008EF134 /* AppDelegate.swift */; };
 		DBAA037929DB6E5A008EF134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */; };
 		DBAA037B29DB6E5A008EF134 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA037A29DB6E5A008EF134 /* HomeScreenVC.swift */; };
@@ -119,6 +120,7 @@
 		DB58EBF62A37A03E00237AC7 /* NutritionCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCounter.swift; sourceTree = "<group>"; };
 		DB7945D02AB2308F0064A5FA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DB7945D62AB247C00064A5FA /* Autocomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autocomplete.swift; sourceTree = "<group>"; };
+		DB957EF92AE87304006A9D94 /* FoodServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodServing.swift; sourceTree = "<group>"; };
 		DBAA037329DB6E5A008EF134 /* Calorico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAA037629DB6E5A008EF134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAA037829DB6E5A008EF134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				DB4128B22AAD3A4200024EED /* FatSecret */,
 				DBAA03A929DB6EA4008EF134 /* Constants.swift */,
 				DB2AE91629DCA37B00741673 /* NetworkManager.swift */,
+				DB957EF92AE87304006A9D94 /* FoodServing.swift */,
 				DB2AE91429DCA24400741673 /* FoodItem.swift */,
 				DBCD2E1B29E646D100513FEC /* UserModel.swift */,
 			);
@@ -649,7 +652,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint --fix && ${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -670,6 +673,7 @@
 				DBCD2DCE29E207F700513FEC /* CalorieView.swift in Sources */,
 				DB2AE91729DCA37B00741673 /* NetworkManager.swift in Sources */,
 				DBAA03AA29DB6EA4008EF134 /* Constants.swift in Sources */,
+				DB957EFA2AE87304006A9D94 /* FoodServing.swift in Sources */,
 				DB4128B12AAD393400024EED /* FatSecretCredentials.swift in Sources */,
 				DBAA037B29DB6E5A008EF134 /* HomeScreenVC.swift in Sources */,
 				DB3F24702ADB076800BFAE45 /* textFieldExt.swift in Sources */,

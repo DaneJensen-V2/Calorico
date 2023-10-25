@@ -8,8 +8,8 @@
 import UIKit
 
 class MainLabel: UILabel {
-    
-    enum labelTypeEnum {
+
+    enum LabelTypes {
         case heading
         case medium
         case base
@@ -22,35 +22,35 @@ class MainLabel: UILabel {
         case calorieLabel
         case caloriesLeft
     }
-    
-    enum colorStyle {
+
+    enum ColorStyles {
         case black
         case white
         case lightGray
     }
-    
-    public private(set) var labelType: labelTypeEnum
+
+    public private(set) var labelType: LabelTypes
     public private(set) var labelText: String
-    public private(set) var labelColor: colorStyle
-    
-    init(labelText: String, labelType: labelTypeEnum, labelColor: colorStyle) {
+    public private(set) var labelColor: ColorStyles
+
+    init(labelText: String, labelType: LabelTypes, labelColor: ColorStyles) {
         self.labelText = labelText
         self.labelType = labelType
         self.labelColor = labelColor
-        
+
         super.init(frame: .zero)
         self.configureLabelStyle()
         self.configureLabelColor()
-        
-        self.translatesAutoresizingMaskIntoConstraints = false //For AutoLayout
+
+        self.translatesAutoresizingMaskIntoConstraints = false // For AutoLayout
         let attributedString = NSMutableAttributedString(string: labelText)
-        self.attributedText = attributedString //Setup Label to AttributedString for custom font
+        self.attributedText = attributedString // Setup Label to AttributedString for custom font
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func configureLabelColor() {
         switch labelColor {
         case .black:
@@ -60,9 +60,9 @@ class MainLabel: UILabel {
         case .lightGray:
             self.textColor = UIColor.lightGray
         }
-        
+
     }
-    
+
     private func configureLabelStyle() {
         switch labelType {
         case .heading:
@@ -88,6 +88,6 @@ class MainLabel: UILabel {
         case .calorieLabel:
             self.font = UIFont(name: "Poppins-SemiBold", size: 54)
         }
-        
+
     }
 }
