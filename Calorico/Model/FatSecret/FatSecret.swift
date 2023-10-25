@@ -47,7 +47,7 @@ private enum HTTPError: LocalizedError {
  */
 
 open class FatSecret {
-    
+
     private var timestamp: String {
         get { return String(Int(Date().timeIntervalSince1970)) }
     }
@@ -217,7 +217,7 @@ extension FatSecret {
         urlComponents.componentsForURL(from: [String]().parameters)
         urlComponents.queryItems?.append(URLQueryItem(name: "oauth_signature", value: signature))
         return urlComponents
-         
+
     }
 
     fileprivate func checkForError(with code: Int) throws {

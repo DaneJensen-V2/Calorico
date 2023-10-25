@@ -9,32 +9,39 @@ import UIKit
 import BarcodeScanner
 import SwiftUI
 
-var newDay = false
-var foodHistory: [food] =  []
+//
+// MARK: - HomeScreen View Controller
+//
 
 class HomeScreen: UIViewController, UINavigationControllerDelegate {
 
-    // MARK: 
+    //
+    // MARK: - UI Initializers
+    //
     var cameraButton = UIButton()
     var addButton = UIButton()
     var searchButton = UIButton()
     var createButton = UIButton()
-    var buttonsRevealed = false
-
     var macroStack = UIStackView()
-
-    let networkManager = NetworkManager()
     let protein = MacroView(FoodType: .protein, maxValue: 120, currentValue: 0)
     let carbs = MacroView(FoodType: .carbs, maxValue: 120, currentValue: 0)
     let fats = MacroView(FoodType: .fat, maxValue: 120, currentValue: 0)
     let calorie = CalorieView(totalValue: 2000, currentValue: 0)
     let titleLabel: MainLabel = MainLabel(labelText: "Today", labelType: .heading, labelColor: .white)
+    
+    //
+    // MARK: - Variables And Properties
+    //
+    let networkManager = NetworkManager()
+    var buttonsRevealed = false
 
+    //
+    // MARK: - View Controller
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
-       // apiCall()
-
         self.navigationController?.delegate = self
+        
         // Do any additional setup after loading the view.
 
         NotificationCenter.default.addObserver(self, selector: #selector(self.foodAdded(notification:)), name: Notification.Name("FoodAdded"), object: nil)
@@ -88,21 +95,26 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
             carbs.updateValues(newMax: Double(goals.carbs), newValue: Double(macros!.carbs))
         }
 
-        DispatchQueue.main.async { [self] in
-            setupTitle()
-            setupButton()
-            setupMacros()
-        }
+        
 
         if (currentUser) != nil {
             currentUser?.updateGoals()
             print(currentUser?.goals ?? "No Goals")
 
         }
-
+        setupViews()
     }
+    
+    //
+    // MARK: - Setup Views
+    //
 
-    func setCurrentValues() {
+    func setupViews() {
+        DispatchQueue.main.async { [self] in
+            setupTitle()
+            setupButton()
+            setupMacros()
+        }
     }
 
     func setupTitle() {
@@ -177,7 +189,31 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         searchButton.addTarget(self, action: #selector(showSearch), for: .touchUpInside)
 
     }
+    
+    //
+    // MARK: - Button Selectors
+    //
+    @objc func showSearch() {
+        let searchPage = SearchViewController()
 
+       // searchPage.modalPresentationStyle = .fullScreen
+
+            searchPage.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: searchPage, action: nil)
+
+        let transition = CATransition()
+           transition.duration = 0.4
+           transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+           transition.type = CATransitionType.moveIn
+           transition.subtype = CATransitionSubtype.fromTop
+           self.navigationController?.view.layer.add(transition, forKey: nil)
+           self.navigationController?.pushViewController(searchPage, animated: false)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.42) {
+            self.toggleButtons()
+
+        }
+    }
+    
     @objc func toggleButtons() {
 
             if buttonsRevealed {
@@ -189,7 +225,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         buttonsRevealed.toggle()
 
     }
-
+    
     func showButtons() {
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
@@ -213,6 +249,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         }), completion: nil)
 
     }
+    
     func hideButtons() {
 
         UIView.animate(withDuration: 0.4, // 1
@@ -249,28 +286,6 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
 
         }
     }
-
-    @objc func showSearch() {
-        let searchPage = SearchViewController()
-
-       // searchPage.modalPresentationStyle = .fullScreen
-
-            searchPage.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: searchPage, action: nil)
-
-        let transition = CATransition()
-           transition.duration = 0.4
-           transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-           transition.type = CATransitionType.moveIn
-           transition.subtype = CATransitionSubtype.fromTop
-           self.navigationController?.view.layer.add(transition, forKey: nil)
-           self.navigationController?.pushViewController(searchPage, animated: false)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.42) {
-            self.toggleButtons()
-
-        }
-    }
-
     @objc func addFood() {
         let addPage = AddFoodViewController()
         addPage.existingFood = nil
@@ -285,11 +300,10 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
 
         }
     }
-
+    
     @objc func foodAdded(notification: Notification) {
 
         calorie.amountLeft.text = String(Int(calorie.totalValue - currentUser!.currentValues!.calories)) + " left"
-
         protein.amountLabel.text = "\(Int(currentUser!.currentValues!.protein))/\(Int(protein.maxValue)) grams"
         carbs.amountLabel.text = "\(Int(currentUser!.currentValues!.carbs))/\(Int(carbs.maxValue)) grams"
         fats.amountLabel.text = "\(Int(currentUser!.currentValues!.fat))/\(Int(fats.maxValue)) grams"
@@ -307,6 +321,9 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
     }
 }
 
+//
+// MARK: - Barcode Scanner
+//
 extension HomeScreen: BarcodeScannerCodeDelegate, BarcodeScannerErrorDelegate, BarcodeScannerDismissalDelegate {
     func scanner(_ controller: BarcodeScanner.BarcodeScannerViewController, didReceiveError error: Error) {
         print("ERROR")
@@ -357,6 +374,9 @@ extension HomeScreen: BarcodeScannerCodeDelegate, BarcodeScannerErrorDelegate, B
     }
 
 }
+//
+// MARK: - HomeScreen Preview
+//
 struct HomeViewController_Previews: PreviewProvider {
   static var previews: some View {
     Container().edgesIgnoringSafeArea(.all)

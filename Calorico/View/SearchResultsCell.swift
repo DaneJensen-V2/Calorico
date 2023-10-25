@@ -7,12 +7,18 @@
 
 import UIKit
 
+//
+// MARK: - SearchResults Table Cell
+//
+
 class SearchResultsCell: UITableViewCell {
 
+    //
+    // MARK: - Outlets
+    //
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var addButton: UIButton!
-
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var fatLabel: UILabel!
     @IBOutlet weak var carbsLabel: UILabel!
@@ -20,19 +26,16 @@ class SearchResultsCell: UITableViewCell {
     @IBOutlet weak var servingLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    //
+    // MARK: - Variables And Properties
+    //
     var food: finalFoodItem?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         addButton.layer.cornerRadius = addButton.frame.width / 2
-        if #available(iOS 17.0, *) {
-            addButton.isSymbolAnimationEnabled = true
-            addButton.imageView?.setSymbolImage(UIImage(systemName: "plus")!, contentTransition: .replace)
-        } else {
-            // Fallback on earlier versions
-        }
-
         backgroundColor = .clear
         setupBG()
         updateView()
@@ -44,6 +47,7 @@ class SearchResultsCell: UITableViewCell {
          let bottomSpace: CGFloat = 10.0 // Let's assume the space you want is 10
          self.contentView.frame = self.contentView.frame.inset(by: UIEdgeInsets(top: bottomSpace, left: bottomSpace, bottom: bottomSpace, right: bottomSpace))
     }
+    
     func updateView() {
         if let finalFood = food {
             foodName.text = finalFood.name
@@ -59,8 +63,8 @@ class SearchResultsCell: UITableViewCell {
 
         }
     }
+    
     func setupBG() {
-
         // add shadow on cell
         backgroundColor = .clear // very important
         layer.masksToBounds = false

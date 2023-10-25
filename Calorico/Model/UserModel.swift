@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 // swiftlint:disable type_name
-
+var foodHistory: [food] =  []
 var currentUser: User?
 
 struct User: Codable {

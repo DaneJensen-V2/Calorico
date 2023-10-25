@@ -6,11 +6,18 @@
 //
 
 import UIKit
+//
+// MARK: - Gloabl Variables
+//
 
 var selectedTerm = ""
 var showRecents = true
 var recentSearches: [String] = []
 var showHistory = true
+
+//
+// MARK: - Search View Controller
+//
 
 class AutoCompleteVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let colors = Colors()
@@ -267,8 +274,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
             addPage.existingFood = self.searchResults[indexPath.row]
 
             addPage.modalPresentationStyle = .overFullScreen
-
-                self.present(addPage, animated: true, completion: nil)
+            self.present(addPage, animated: true, completion: nil)
 
             }
     }
