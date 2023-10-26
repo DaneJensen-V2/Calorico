@@ -28,7 +28,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
     let fats = MacroView(FoodType: .fat, maxValue: 120, currentValue: 0)
     let calorie = CalorieView(totalValue: 2000, currentValue: 0)
     let titleLabel: MainLabel = MainLabel(labelText: "Today", labelType: .heading, labelColor: .white)
-    
+
     //
     // MARK: - Variables And Properties
     //
@@ -41,7 +41,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.delegate = self
-        
+
         // Do any additional setup after loading the view.
 
         NotificationCenter.default.addObserver(self, selector: #selector(self.foodAdded(notification:)), name: Notification.Name("FoodAdded"), object: nil)
@@ -79,7 +79,8 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
             } catch {
                 print("Unable to Decode UserData (\(error))")
             }
-        } else {
+
+            } else {
             currentUser = User(height: Measurement(value: 70.0, unit: UnitLength.inches), weight: Measurement(value: 185.0, unit: UnitMass.pounds), age: 22, userExerciseLevel: .moderate, userGender: .male, userDietModel: .cutting, dailyFood: [])
             currentUser?.updateGoals()
             currentUser?.updateProgess()
@@ -95,8 +96,6 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
             carbs.updateValues(newMax: Double(goals.carbs), newValue: Double(macros!.carbs))
         }
 
-        
-
         if (currentUser) != nil {
             currentUser?.updateGoals()
             print(currentUser?.goals ?? "No Goals")
@@ -104,7 +103,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         }
         setupViews()
     }
-    
+
     //
     // MARK: - Setup Views
     //
@@ -189,7 +188,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         searchButton.addTarget(self, action: #selector(showSearch), for: .touchUpInside)
 
     }
-    
+
     //
     // MARK: - Button Selectors
     //
@@ -213,7 +212,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
 
         }
     }
-    
+
     @objc func toggleButtons() {
 
             if buttonsRevealed {
@@ -225,7 +224,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         buttonsRevealed.toggle()
 
     }
-    
+
     func showButtons() {
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
@@ -249,7 +248,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
         }), completion: nil)
 
     }
-    
+
     func hideButtons() {
 
         UIView.animate(withDuration: 0.4, // 1
@@ -300,7 +299,7 @@ class HomeScreen: UIViewController, UINavigationControllerDelegate {
 
         }
     }
-    
+
     @objc func foodAdded(notification: Notification) {
 
         calorie.amountLeft.text = String(Int(calorie.totalValue - currentUser!.currentValues!.calories)) + " left"

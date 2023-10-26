@@ -51,7 +51,7 @@ struct nutrients: Decodable {
     let value: Double
 }
 
-struct finalFoodItem {
+struct finalFoodItem: Codable {
     var serving: Double?
     var protein: Double
     var fats: Double
@@ -71,7 +71,7 @@ struct finalFoodItem {
     }
 
 }
-enum foodType {
+enum foodType: Codable {
     case brand, generic
 }
 // swiftlint:enable type_name

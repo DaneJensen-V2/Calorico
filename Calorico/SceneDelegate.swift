@@ -7,7 +7,7 @@
 
 import UIKit
 
-//Indicates whether or not it is a new calendar date since the user last opened the app
+// Indicates whether or not it is a new calendar date since the user last opened the app
 var newDay = false
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

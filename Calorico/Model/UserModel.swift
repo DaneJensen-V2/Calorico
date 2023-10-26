@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 // swiftlint:disable type_name
-var foodHistory: [food] =  []
+var foodHistory: [finalFoodItem] =  []
 var currentUser: User?
 
 struct User: Codable {
@@ -39,7 +39,7 @@ struct User: Codable {
     var userExerciseLevel: exerciseLevel
     let userGender: gender
     var userDietModel: dietModel
-    var dailyFood: [food]
+    var dailyFood: [finalFoodItem]
 
     func calculateTDEE() -> Double {
         var constant = 0.0
@@ -75,26 +75,26 @@ struct User: Codable {
     }
 
     mutating func updateProgess() {
-        var totalCalories = 0
-        var totalProtein = 0
-        var totalFat = 0
-        var totalCarbs = 0
+        var totalCalories = 0.0
+        var totalProtein = 0.0
+        var totalFat = 0.0
+        var totalCarbs = 0.0
 
         for item in dailyFood {
-           totalCalories += item.macros.calories
-            totalProtein += item.macros.protein
-            totalFat += item.macros.fat
-            totalCarbs += item.macros.carbs
+           totalCalories += item.calories
+            totalProtein += item.protein
+            totalFat += item.fats
+            totalCarbs += item.carbs
         }
 
         if currentValues == nil {
             currentValues = userMacros(fat: 0, protein: 0, carbs: 0, calories: 0)
         }
 
-        currentValues?.calories = totalCalories
-        currentValues?.protein = totalProtein
-        currentValues?.fat = totalFat
-        currentValues?.carbs = totalCarbs
+        currentValues?.calories = Int(totalCalories)
+        currentValues?.protein = Int(totalProtein)
+        currentValues?.fat = Int(totalFat)
+        currentValues?.carbs = Int(totalCarbs)
 
     }
 

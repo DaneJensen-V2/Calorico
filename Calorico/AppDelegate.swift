@@ -55,10 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let decoder = JSONDecoder()
 
                     // Decode Note
-                    let history = try decoder.decode([food].self, from: data)
+                    let history = try decoder.decode([finalFoodItem].self, from: data)
                     foodHistory = history
+                    print("Decoded Food History")
                 } catch {
-                    print("Unable to Decode Notes (\(error))")
+                    print("Unable to Decode Food History (\(error))")
                 }
             }
 

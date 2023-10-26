@@ -94,8 +94,24 @@ class NutritionCounter: UIView {
     }
 
     func servingSet() {
+
         displayValue = Int(Double(trueValue) * serving)
-        totalValue = displayValue * 2
+
+        switch type {
+        case .calorie:
+           newCalorieValue = displayValue
+           totalValue = Int(2 * displayValue)
+
+        case .protein:
+            totalValue =  Int(Double(newCalorieValue) / 4.0)
+
+        case .carbs:
+            totalValue =  Int(Double(newCalorieValue) / 4.0)
+
+        case .fat:
+            totalValue =  Int(Double(newCalorieValue) / 9.0)
+        }
+
         updateUI(animated: false)
     }
 
@@ -341,6 +357,22 @@ open class CustomSlider: UISlider {
         didSet {setNeedsDisplay()}
     }
 
+    open override func layoutSubviews() {
+              super.layoutSubviews()
+
+        if #available(iOS 14.0, *) {
+            if let layers = layer.sublayers?.first?.sublayers, !layers.isEmpty {
+                       let layer = layers[1]
+                       layer.cornerRadius = layer.bounds.height / 2
+                   }
+               } else {
+                   if let layers = layer.sublayers, !layers.isEmpty {
+                       let layer = layers[1]
+                       layer.cornerRadius = layer.bounds.height / 2
+                   }
+               }
+
+        }
     override open func trackRect(forBounds bounds: CGRect) -> CGRect {
         let defaultBounds = super.trackRect(forBounds: bounds)
         return CGRect(

@@ -26,7 +26,7 @@ class SearchResultsCell: UITableViewCell {
     @IBOutlet weak var servingLabel: UILabel!
     @IBOutlet weak var calorieLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    
+
     //
     // MARK: - Variables And Properties
     //
@@ -47,7 +47,7 @@ class SearchResultsCell: UITableViewCell {
          let bottomSpace: CGFloat = 10.0 // Let's assume the space you want is 10
          self.contentView.frame = self.contentView.frame.inset(by: UIEdgeInsets(top: bottomSpace, left: bottomSpace, bottom: bottomSpace, right: bottomSpace))
     }
-    
+
     func updateView() {
         if let finalFood = food {
             foodName.text = finalFood.name
@@ -63,7 +63,7 @@ class SearchResultsCell: UITableViewCell {
 
         }
     }
-    
+
     func setupBG() {
         // add shadow on cell
         backgroundColor = .clear // very important

@@ -16,7 +16,7 @@ var recentSearches: [String] = []
 var showHistory = true
 
 //
-// MARK: - Search View Controller
+// MARK: - Auto Complete View Controller
 //
 
 class AutoCompleteVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -66,6 +66,11 @@ class AutoCompleteVC: UIViewController, UITableViewDataSource, UITableViewDelega
         ])
 
     }
+
+    //
+    // MARK: - Auto Complete Table
+    //
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -89,17 +94,29 @@ class AutoCompleteVC: UIViewController, UITableViewDataSource, UITableViewDelega
 
 }
 
+//
+// MARK: - Search View Controller
+//
 class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
-    var searchResults: [finalFoodItem] = []
+    //
+    // MARK: - UI Initializers
+    //
     let searchResultsTable = UITableView(frame: CGRect.zero, style: .grouped)
-
     let colors = Colors()
-    let networkManager = NetworkManager()
     let searchController = UISearchController(searchResultsController: AutoCompleteVC())
     let closeButton = UIBarButtonItem()
     let spinner = UIActivityIndicatorView(style: .medium)
 
+    //
+    // MARK: - Variables and Properties
+    //
+    var searchResults: [finalFoodItem] = []
+    let networkManager = NetworkManager()
+
+    //
+    // MARK: - View Controller
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         recentSearches = (defaults.array(forKey: "recentSearches")) as? [String] ?? [""]
@@ -116,6 +133,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
 
         setupSearchBar()
 
+        searchResults = foodHistory
         searchResultsTable.delegate = self
         searchResultsTable.dataSource = self
         self.searchResultsTable.register(UINib(nibName: "SearchResultsCell", bundle: nil), forCellReuseIdentifier: "ResultsCell")
@@ -152,15 +170,20 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
             navigationController?.navigationBar.standardAppearance = navigationBarAppearance
         }
 
-    @objc func searchFood() {
-        DispatchQueue.main.async { [self] in
-            searchController.isActive = false
-            searchController.searchBar.text = selectedTerm
-        }
-        fetchFoodFromTerm(term: selectedTerm)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
 
     }
 
+    //
+    // MARK: - Setup Views
+    //
     func addNoResults() {
         let vStack = UIStackView(frame: CGRect(x: 0, y: 0, width: 200, height: 85))
         vStack.axis = .vertical
@@ -179,18 +202,6 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
      //   vStack.translatesAutoresizingMaskIntoConstraints = false
         vStack.center = self.view.center
 
-    }
-
-    @objc func closeView() {
-        super.viewWillDisappear(true)
-        navigationController?.setNavigationBarHidden(true, animated: false)
-        let transition: CATransition = CATransition()
-        transition.duration = 0.4
-        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        transition.type = CATransitionType.reveal
-        transition.subtype = CATransitionSubtype.fromBottom
-        self.navigationController?.view.layer.add(transition, forKey: kCATransition)
-        self.navigationController?.popViewController(animated: false)
     }
 
     func setupResultsTable() {
@@ -232,17 +243,44 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
 
         // searchController.isActive =
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+
+    //
+    // MARK: - Button Selectors
+    //
+    @objc func searchFood() {
+        DispatchQueue.main.async { [self] in
+            searchController.isActive = false
+            searchController.searchBar.text = selectedTerm
+        }
+        fetchFoodFromTerm(term: selectedTerm)
+
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
 
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        searchController.isActive = false
+        searchController.searchBar.text = text
+        fetchFoodFromTerm(term: text)
     }
 
+    @objc func closeView() {
+        super.viewWillDisappear(true)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        let transition: CATransition = CATransition()
+        transition.duration = 0.4
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.reveal
+        transition.subtype = CATransitionSubtype.fromBottom
+        self.navigationController?.view.layer.add(transition, forKey: kCATransition)
+        self.navigationController?.popViewController(animated: false)
+    }
+
+    //
+    // MARK: - Search Results TableView
+    //
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
         let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
@@ -310,6 +348,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
                 print("Returned \(foods.count) foods")
                 self.searchResults = foods
                 DispatchQueue.main.async {
+                    self.spinner.isHidden = true
                     self.searchResultsTable.reloadData()
                 }
             case .failure(let error):
@@ -319,28 +358,6 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
                 }
             }
         }
-
-    }
-
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-
-        guard let text = searchController.searchBar.text else {
-            return
-        }
-        searchController.isActive = false
-        searchController.searchBar.text = text
-        fetchFoodFromTerm(term: text)
-    }
-
-    func recentSearch(term: String) {
-
-        if recentSearches.count == 5 {
-            recentSearches.removeLast()
-            recentSearches.insert(term, at: 0)
-        } else {
-            recentSearches.insert(term, at: 0)
-        }
-        defaults.set(recentSearches, forKey: "recentSearches")
 
     }
 
@@ -363,12 +380,8 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
                         test.data = searchTerms
                         test.autoCompleteTable.reloadData()
                     }
-                    break
                 case .failure(let error):
                     print(error)
-
-                    break
-
                 }
 
             }
@@ -382,4 +395,17 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
             }
         }
     }
+
+     func recentSearch(term: String) {
+
+         if recentSearches.count == 5 {
+             recentSearches.removeLast()
+             recentSearches.insert(term, at: 0)
+         } else {
+             recentSearches.insert(term, at: 0)
+         }
+         defaults.set(recentSearches, forKey: "recentSearches")
+
+     }
+
 }

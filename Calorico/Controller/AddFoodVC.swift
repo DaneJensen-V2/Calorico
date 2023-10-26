@@ -28,7 +28,7 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     let proteinCounter = NutritionCounter(totalValue: 100, currentValue: 0, type: .protein)
     let carbsCounter = NutritionCounter(totalValue: 100, currentValue: 0, type: .carbs)
     let fatCounter = NutritionCounter(totalValue: 100, currentValue: 0, type: .fat)
-    
+
     //
     // MARK: - Variables And Properties
     //
@@ -61,11 +61,11 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         NotificationCenter.default.addObserver(self, selector: #selector(self.nextTapped(_:)), name: Notification.Name("nextClicked"), object: nil)
 
     }
-    
+
     //
     // MARK: - Setup Views
     //
-    
+
     func setupTitle() {
 
         view.addSubview(titleStack)
@@ -229,146 +229,6 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         sizeButton.setTitle("1 item", for: .normal)
         sizeButton.translatesAutoresizingMaskIntoConstraints = false
     }
-    
-    //
-    // MARK: - Picker Setup
-    //
-    func addPicker() {
-        servingPicker.delegate = self
-        servingPicker.dataSource = self
-        servingPicker.backgroundColor = colors.darkBlueBG
-        servingPicker.setValue(UIColor.white, forKey: "textColor")
-        servingPicker.autoresizingMask = .flexibleWidth
-        servingPicker.contentMode = .center
-        servingPicker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height, width: UIScreen.main.bounds.size.width, height: 300)
-            self.view.addSubview(servingPicker)
-
-        toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height, width: UIScreen.main.bounds.size.width, height: 50))
-        toolBar.barStyle = .default
-
-        toolBar.items = [UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onDoneButtonTapped))]
-        self.view.addSubview(toolBar)
-        servingPicker.selectRow(1, inComponent: 0, animated: true)
-    }
-
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
-
-    }
-
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerArray[component].count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let row = pickerArray[component][row]
-        return row
-    }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("You selected \(row) \(component)")
-
-        if component == 0 {
-            selectedServing.value = pickerArray[component][row]
-
-        } else if component == 1 {
-            selectedServing.fraction = pickerArray[component][row]
-        }
-        setServingsString()
-        servingChanged()
-    }
-    
-    func setServingsString() {
-        DispatchQueue.main.async {
-            self.servingButton.setTitle(self.selectedServing.displayString, for: .normal)
-        }
-    }
-
-    @objc func nextTapped(_ notification: NSNotification) {
-        if let currentField = notification.object as? NutritionTypes {
-            switch currentField {
-            case .calorie:
-                print("calorie")
-                proteinCounter.textField.becomeFirstResponder()
-            case .protein:
-                print("Protein")
-                carbsCounter.textField.becomeFirstResponder()
-            case .carbs:
-                print("Carbs")
-                fatCounter.textField.becomeFirstResponder()
-            case .fat:
-                print("Fat")
-                fatCounter.textField.resignFirstResponder()
-
-            }
-        }
-    }
-
-    func setFoodValues() {
-    let food = existingFood!
-
-        caloriesCounter.displayValue = Int(food.calories)
-        NotificationCenter.default.post(name: Notification.Name("CaloriesChanged"), object: nil)
-
-        fatCounter.displayValue = Int(food.fats)
-        carbsCounter.displayValue = Int(food.carbs)
-        proteinCounter.displayValue = Int(food.protein)
-
-        sizeButton.setTitle("\(Int(food.servingAmount)) \(food.servingUnit)", for: .normal)
-   //     caloriesCounter.currentValue = Int(food.calories)
-    }
-
-    
-
-    func servingChanged() {
-        caloriesCounter.serving = selectedServing.finalValue
-        proteinCounter.serving = selectedServing.finalValue
-        carbsCounter.serving = selectedServing.finalValue
-    }
-
-    
-    @objc func closeView() {
-        self.dismiss(animated: true)
-    }
-    
-    @objc func addFood() {
-        let foodName = textField.text ?? "Food"
-        let calories = Int(caloriesCounter.displayValue)
-        let protein = Int(proteinCounter.displayValue)
-        let carbs = Int(carbsCounter.displayValue)
-        let fat = Int(fatCounter.displayValue)
-        let dateAdded = Date()
-
-        let newFood = food(name: foodName, id: UUID(), macros: userMacros(fat: fat, protein: protein, carbs: carbs, calories: calories))
-
-        currentUser?.dailyFood.append(newFood)
-        currentUser?.updateProgess()
-
-        foodHistory.insert(newFood, at: 0)
-
-        if foodHistory.count == 20 {
-            foodHistory.remove(at: foodHistory.count - 1)
-        }
-        do {
-            // Create JSON Encoder
-            let encoder = JSONEncoder()
-
-            // Encode Note
-            let data = try encoder.encode(foodHistory)
-
-            // Write/Set Data
-            UserDefaults.standard.set(data, forKey: "foodHistory")
-
-        } catch {
-            print("Unable to Encode Array of Notes (\(error))")
-        }
-
-        NotificationCenter.default.post(name: Notification.Name("FoodAdded"), object: nil)
-
-        print(currentUser?.dailyFood ?? "No Daily Food")
-
-        self.dismiss(animated: true)
-
-    }
-
     func setupNutrition(quantityView: UIView) {
         let quantityContainer = UIView()
         self.view.addSubview(quantityContainer)
@@ -458,6 +318,151 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         addButton.addTarget(self, action: #selector(addFood), for: .touchUpInside)
     }
 
+    //
+    // MARK: - Picker Setup
+    //
+    func addPicker() {
+        servingPicker.delegate = self
+        servingPicker.dataSource = self
+        servingPicker.backgroundColor = colors.darkBlueBG
+        servingPicker.setValue(UIColor.white, forKey: "textColor")
+        servingPicker.autoresizingMask = .flexibleWidth
+        servingPicker.contentMode = .center
+        servingPicker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height, width: UIScreen.main.bounds.size.width, height: 300)
+            self.view.addSubview(servingPicker)
+
+        toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height, width: UIScreen.main.bounds.size.width, height: 50))
+        toolBar.barStyle = .default
+
+        toolBar.items = [UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(onDoneButtonTapped))]
+        self.view.addSubview(toolBar)
+        servingPicker.selectRow(1, inComponent: 0, animated: true)
+    }
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 2
+
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerArray[component].count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let row = pickerArray[component][row]
+        return row
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("You selected \(row) \(component)")
+
+        if component == 0 {
+            selectedServing.value = pickerArray[component][row]
+
+        } else if component == 1 {
+            selectedServing.fraction = pickerArray[component][row]
+        }
+        setServingsString()
+        servingChanged()
+    }
+
+    func setServingsString() {
+        DispatchQueue.main.async {
+            self.servingButton.setTitle(self.selectedServing.displayString, for: .normal)
+        }
+    }
+
+    //
+    // MARK: - Button Selectors
+    //
+    @objc func nextTapped(_ notification: NSNotification) {
+        if let currentField = notification.object as? NutritionTypes {
+            switch currentField {
+            case .calorie:
+                print("calorie")
+                proteinCounter.textField.becomeFirstResponder()
+            case .protein:
+                print("Protein")
+                carbsCounter.textField.becomeFirstResponder()
+            case .carbs:
+                print("Carbs")
+                fatCounter.textField.becomeFirstResponder()
+            case .fat:
+                print("Fat")
+                fatCounter.textField.resignFirstResponder()
+
+            }
+        }
+    }
+
+    @objc func addFood() {
+        let foodName = textField.text ?? "My Food"
+        let calories = Double(caloriesCounter.displayValue)
+        let protein = Double(proteinCounter.displayValue)
+        let carbs = Double(carbsCounter.displayValue)
+        let fat = Double(fatCounter.displayValue)
+        // let dateAdded = Date()
+        let servingDescription = existingFood?.servingDescription ?? "1 item"
+        let servingUnit = existingFood?.servingUnit ?? "item"
+        let brandName = existingFood?.brandName ?? "Custom"
+        let foodType = existingFood?.foodType ?? .generic
+
+        let newFood = finalFoodItem(protein: protein, fats: fat, carbs: carbs, calories: calories, name: foodName, servingAmount: selectedServing.finalValue, servingUnit: servingUnit, foodType: foodType, brandName: brandName, servingDescription: servingDescription)
+
+        currentUser?.dailyFood.append(newFood)
+        currentUser?.updateProgess()
+
+        foodHistory.insert(newFood, at: 0)
+
+        if foodHistory.count == 20 {
+            foodHistory.remove(at: foodHistory.count - 1)
+        }
+        do {
+            // Create JSON Encoder
+            let encoder = JSONEncoder()
+
+            // Encode Note
+            let data = try encoder.encode(foodHistory)
+
+            // Write/Set Data
+            UserDefaults.standard.set(data, forKey: "foodHistory")
+
+        } catch {
+            print("Unable to Encode Array of Notes (\(error))")
+        }
+
+        NotificationCenter.default.post(name: Notification.Name("FoodAdded"), object: nil)
+
+        print(currentUser?.dailyFood ?? "No Daily Food")
+
+        self.dismiss(animated: true)
+
+    }
+
+    @objc func closeView() {
+        self.dismiss(animated: true)
+    }
+
+    func setFoodValues() {
+    let food = existingFood!
+
+        caloriesCounter.trueValue = Int(food.calories)
+        NotificationCenter.default.post(name: Notification.Name("CaloriesChanged"), object: nil)
+
+        fatCounter.trueValue = Int(food.fats)
+        carbsCounter.trueValue = Int(food.carbs)
+        proteinCounter.trueValue = Int(food.protein)
+
+        sizeButton.setTitle("\(Int(food.servingAmount)) \(food.servingUnit)", for: .normal)
+   //     caloriesCounter.currentValue = Int(food.calories)
+    }
+
+    func servingChanged() {
+        caloriesCounter.serving = selectedServing.finalValue
+        proteinCounter.serving = selectedServing.finalValue
+        carbsCounter.serving = selectedServing.finalValue
+        fatCounter.serving = selectedServing.finalValue
+
+    }
+
     @objc func showPicker() {
         print(pickerOpen)
         print("SHOW PICKER")
@@ -503,7 +508,9 @@ class AddFoodViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
          return true
     }
 }
-
+//
+// MARK: - Hide Keyboard
+//
 extension UIViewController {
 
     @objc func hideKeyboardWhenTappedAround() {
@@ -517,6 +524,9 @@ extension UIViewController {
     }
 }
 
+//
+// MARK: - AddFood Preview
+//
 struct AddFoodPreview: PreviewProvider {
   static var previews: some View {
     Container().edgesIgnoringSafeArea(.all)
