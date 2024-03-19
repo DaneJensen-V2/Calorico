@@ -68,6 +68,7 @@ class CalorieView: UIView {
         ])
         addComponents()
     }
+
     func animateProgress(to new: Int) {
 
         print(new)
@@ -87,8 +88,8 @@ class CalorieView: UIView {
              }
 
         self.currentValue = new
-
     }
+
     func updateValues(newMax: Int, newValue: Int) {
 
         self.totalValue = newMax

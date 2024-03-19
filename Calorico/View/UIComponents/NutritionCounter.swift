@@ -357,11 +357,14 @@ open class CustomSlider: UISlider {
         didSet {setNeedsDisplay()}
     }
 
+    /*
     open override func layoutSubviews() {
               super.layoutSubviews()
 
+        
         if #available(iOS 14.0, *) {
             if let layers = layer.sublayers?.first?.sublayers, !layers.isEmpty {
+                       
                        let layer = layers[1]
                        layer.cornerRadius = layer.bounds.height / 2
                    }
@@ -373,6 +376,8 @@ open class CustomSlider: UISlider {
                }
 
         }
+     */
+
     override open func trackRect(forBounds bounds: CGRect) -> CGRect {
         let defaultBounds = super.trackRect(forBounds: bounds)
         return CGRect(
